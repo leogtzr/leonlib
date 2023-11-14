@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Biblioteca</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1030;
+        }
+
+        .search-container {
+            margin: 0 auto; /* Center the container */
+        }
+
+        .search-input-group, .top-5-books > div {
+            width: 100%;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">leonlib</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/books_by_author">Lista de libros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+                <!--
+                <li class="nav-item">
+                    <a class="nav-link" href="/ingresar">Ingresar</a>
+                </li>
+                -->
+            </ul>
+        </div>
+    </nav>
+
+    <section class="mt-5 mb-5">
+        <div class="container search-container">
+            <form id="searchForm">
+                <div class="input-group mb-3 search-input-group">
+                    <input type="text" class="form-control" id="textSearch" placeholder="Buscar libro..." required>
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+                    </div>
+                </div>
+
+                <!-- <div class="g-recaptcha" data-sitekey="{{.SiteKey}}"></div> -->
+
+                <p class="error-message" style="display: none;">Por favor, introduce una palabra antes de buscar.</p>
+
+                <div class="mb-3">
+                    <input type="checkbox" id="byTitle" name="searchType" value="byTitle">
+                    <label for="byTitle">Por título</label>
+
+                    <input type="checkbox" id="byAuthor" name="searchType" value="byAuthor">
+                    <label for="byAuthor">Por autor</label>
+                </div>
+            </form>
+        </div>
+    </section>
+
+<!--    <div class="container mb-5">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12 bg-light text-center p-4">-->
+<!--                Espacio para anuncio-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <div class="container mb-5">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12 bg-light text-center p-4">-->
+<!--                Espacio para otro anuncio-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+    <!-- Sticky footer -->
+    <footer class="footer bg-dark py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 text-left text-white">
+                    Libros en la base de datos: <span id="booksCount">12345</span>
+                </div>
+                <div class="col-6 text-right text-white">
+                    © {{.Year}} leonlib
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- jQuery UI for Autocomplete -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

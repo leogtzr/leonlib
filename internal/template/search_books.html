@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="sp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Biblioteca</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google reCAPTCHA -->
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+    <style>
+        /* Sticky footer styles */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1030;
+        }
+
+        .search-container {
+            margin: 0 auto;
+        }
+
+        .search-input-group > div {
+            width: 100%;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 0.9rem;
+        }
+
+        .error-modal {
+            display: none;
+            position: absolute;
+            border: 1px solid red;
+            background-color: #fee;
+            padding: 5px;
+            border-radius: 5px;
+            z-index: 10;
+            margin-top: 5px;
+            font-size: 0.8rem;
+            color: red;
+        }
+
+        .info-modal {
+            display: none;
+            position: absolute;
+            border: 1px solid #2183e3;
+            background-color: #fee;
+            padding: 5px;
+            border-radius: 5px;
+            z-index: 10;
+            margin-top: 5px;
+            font-size: 0.8rem;
+            color: blue;
+        }
+
+        /* Estilo por defecto cuando NO hay like */
+        .like-emoji {
+            cursor: pointer;
+            opacity: 0.5; /* Le damos cierta transparencia para que se vea inactivo */
+            transition: opacity 0.3s, transform 0.3s;
+            font-size: 24px; /* Aumenta el tamaño del emoji */
+        }
+
+        .like-emoji:hover {
+            transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+        }
+
+        /* Estilo cuando ya hay un like */
+        .like-emoji.active {
+            opacity: 1; /* Sin transparencia, completamente visible */
+            color: #ff4500; /* Cambia al color que desees para un like activo */
+            transform: scale(1.2); /* Aumenta un poco más el tamaño cuando está activo */
+        }
+
+        .img-thumbnail {
+            max-width: 150px; /* Limita el ancho de la miniatura */
+            height: auto; /* Mantiene la proporción de la imagen */
+            border: 1px solid #ddd; /* Borde opcional para la miniatura */
+            margin: 5px; /* Espacio alrededor de la miniatura */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">leonlib</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/books_by_author">Lista de libros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+                <!--
+                <li class="nav-item">
+                    <a class="nav-link" href="/ingresar">Ingresar</a>
+                </li>
+                -->
+            </ul>
+        </div>
+    </nav>
+
+    <section class="mt-3 mb-3">
+        <div class="container search-container">
+            <div class="results-list mt-5">
+                {{range .Results}}
+                    <div class="result-item border p-3 mb-3">
+                        <h3 class="book-title">{{.Title}} by <em>{{.Author}}</em></h3>
+                    {{if .Description}}
+                        <h4 class="book-title">{{.Description}}</h4>
+                    {{end}}
+
+                    {{if .HasBeenRead}}
+                        <h4 clas="book-beenread"><span class="badge badge-info">Ya</span> lo leí</h4>
+                    {{else}}
+                        <h4 clas="book-beenread"><span class="badge badge-info">No</span> lo he leído</h4>
+                    {{end}}
+
+                        <h4>Añadido el <span class="badge badge-info">{{.AddedOn}}</span></h4>
+
+                        {{if .Base64Image}}
+                            <img src="data:image/jpeg;base64,{{.Base64Image}}" alt="Book {{.Title}}" class="img-thumbnail" data-toggle="modal" data-target="#imageModal-{{.ID}}">
+                            <div class="modal fade" id="imageModal-{{.ID}}" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel-{{.ID}}" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="imageModalLabel-{{.ID}}">{{.Title}} by <em>{{.Author}}</em></h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="data:image/jpeg;base64,{{.Base64Image}}" alt="Book {{.Title}}" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {{end}}
+
+                        <div class="like-section">
+                            <span role="img" aria-label="like" class="like-emoji" data-book-id="{{.ID}}" data-toggle="tooltip" data-original-title="Dar like">👍</span>
+                            <span class="badge badge-primary ml-2" data-book-id="{{.ID}}">0</span>
+                            <div class="error-modal">Error del servidor. Por favor, inténtalo de nuevo.</div>
+                            <div class="info-modal"></div>
+                        </div>
+                    </div>
+            {{end}}
+            </div>
+        </div>
+    </section>
+
+<!--    <div class="container mb-5">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12 bg-light text-center p-4">-->
+<!--                Espacio para anuncio-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+    <!-- Sticky footer -->
+    <footer class="footer bg-dark py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 text-left text-white">
+                    Libros en la base de datos: <span id="booksCount">12345</span>
+                </div>
+                <div class="col-6 text-right text-white">
+                    © {{.Year}} leonlib
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- jQuery UI for Autocomplete -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
