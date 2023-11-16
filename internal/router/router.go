@@ -45,18 +45,26 @@ func initRoutes(db *sql.DB) {
 				handler.LikeBook(db, w, r)
 			},
 		},
+		//Router{
+		//	"GoogleAuth",
+		//	"GET",
+		//	"/auth/google/login",
+		//	handler.GoogleLogin,
+		//},
+		//Router{
+		//	"GoogleCallback",
+		//	"GET",
+		//	"/auth/callback",
+		//	func(w http.ResponseWriter, r *http.Request) {
+		//		handler.GoogleCallback(db, w, r)
+		//	},
+		//},
 		Router{
-			"GoogleAuth",
-			"GET",
-			"/auth/google/login",
-			handler.GoogleLogin,
-		},
-		Router{
-			"GoogleCallback",
+			"Auth0Callback",
 			"GET",
 			"/auth/callback",
 			func(w http.ResponseWriter, r *http.Request) {
-				handler.GoogleCallback(db, w, r)
+				handler.Auth0Callback(db, w, r)
 			},
 		},
 		Router{

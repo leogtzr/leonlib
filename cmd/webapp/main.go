@@ -7,7 +7,6 @@ import (
 	"github.com/gorilla/sessions"
 	_ "github.com/lib/pq"
 	"golang.org/x/oauth2"
-	"golang.org/x/oauth2/google"
 	"leonlib/internal/auth"
 	"leonlib/internal/captcha"
 	"leonlib/internal/router"
@@ -37,13 +36,17 @@ func init() {
 		log.Fatal("error: LEONLIB_CAPTCHA_SECRET_KEY not defined")
 	}
 
-	auth.GoogleOauthConfig = &oauth2.Config{
-		RedirectURL:  os.Getenv("LEONLIB_GOOGLE_OATH_CALLBACK"),
-		ClientID:     os.Getenv("LEONLIB_GOOGLE_OAUTH_CLIENT_ID"),
-		ClientSecret: os.Getenv("LEONLIB_GOOGLE_OAUTH_CLIENT_SECRET"),
-		Scopes:       []string{"https://www.googleapis.com/auth/userinfo.email"},
-		Endpoint:     google.Endpoint,
+	auth.Auth0Config = &oauth2.Config{
+		ClientID:     os.Getenv("AUTH0_CLIENT_ID"),
+		ClientSecret: os.Getenv("AUTH0_CLIENT_SECRET"),
+		RedirectURL:  os.Getenv("AUTH0_CALLBACK_URL"),
+		Scopes:       []string{"openid", "profile", "email"},
+		Endpoint: oauth2.Endpoint{
+			AuthURL:  "https://" + os.Getenv("AUTH0_DOMAIN") + "/authorize",
+			TokenURL: "https://" + os.Getenv("AUTH0_DOMAIN") + "/oauth/token",
+		},
 	}
+
 	auth.SessionStore = sessions.NewCookieStore([]byte(os.Getenv("SESSION_SECRET")))
 }
 

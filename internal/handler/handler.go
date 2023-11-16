@@ -7,7 +7,9 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/gorilla/mux"
 	"html/template"
+	"io"
 	"leonlib/internal/auth"
 	"leonlib/internal/captcha"
 	"log"
@@ -18,27 +20,27 @@ import (
 	"strings"
 	"time"
 
-	"google.golang.org/api/oauth2/v2"
-	"google.golang.org/api/option"
-
 	"github.com/BurntSushi/toml"
 )
 
 type PageVariables struct {
-	Year    string
-	SiteKey string
+	Year     string
+	SiteKey  string
+	LoggedIn bool
 }
 
 type PageVariablesForAuthors struct {
-	Year    string
-	SiteKey string
-	Authors []string
+	Year     string
+	SiteKey  string
+	Authors  []string
+	LoggedIn bool
 }
 
 type PageResultsVariables struct {
-	Year    string
-	SiteKey string
-	Results []BookInfo
+	Year     string
+	SiteKey  string
+	Results  []BookInfo
+	LoggedIn bool
 }
 
 type BookInfo struct {
@@ -52,6 +54,20 @@ type BookInfo struct {
 	Base64Image   string
 	AddedOn       string
 	GoodreadsLink string
+}
+
+type UserInfo struct {
+	Sub      string `json:"sub"`            // Identificador único del usuario
+	Name     string `json:"name"`           // Nombre completo del usuario
+	Nickname string `json:"nickname"`       // Apodo del usuario
+	Picture  string `json:"picture"`        // URL de la imagen de perfil del usuario
+	Email    string `json:"email"`          // Correo electrónico del usuario
+	Verified bool   `json:"email_verified"` // Si el correo electrónico está verificado
+	// Puedes agregar más campos según los datos que necesites
+}
+
+func (ui UserInfo) String() string {
+	return fmt.Sprintf("Name=(%s), email=(%s), nickname=(%s), verified=(%t), sub=(%s)", ui.Name, ui.Email, ui.Nickname, ui.Verified, ui.Sub)
 }
 
 type Library struct {
@@ -97,11 +113,21 @@ type LikeStatus struct {
 	Status string
 }
 
-func Index(w http.ResponseWriter, _ *http.Request) {
+func Index(w http.ResponseWriter, r *http.Request) {
 	now := time.Now()
+
 	pageVariables := PageVariables{
 		Year:    now.Format("2006"),
 		SiteKey: captcha.SiteKey,
+	}
+
+	_, err := getCurrentUserID(r)
+	if err != nil {
+		log.Printf("(Index) User is not logged in: %v", err)
+		pageVariables.LoggedIn = false
+	} else {
+		log.Println("User is logged in")
+		pageVariables.LoggedIn = true
 	}
 
 	templateDir := os.Getenv("TEMPLATE_DIR")
@@ -139,6 +165,15 @@ func BooksByAuthor(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	}
 
 	log.Printf("debug:x authors=(%s)", authors)
+
+	_, err = getCurrentUserID(r)
+	if err != nil {
+		log.Printf("(BooksByAuthor) User is not logged in: %v", err)
+		pageVariables.LoggedIn = false
+	} else {
+		log.Println("User is logged in")
+		pageVariables.LoggedIn = true
+	}
 
 	pageVariables.Authors = authors
 
@@ -226,7 +261,7 @@ func BooksList(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(results)
+	_ = json.NewEncoder(w).Encode(results)
 }
 
 func BooksCount(db *sql.DB, w http.ResponseWriter, r *http.Request) {
@@ -479,46 +514,71 @@ func Ingresar(w http.ResponseWriter, r *http.Request) {
 	session.Values["oauth_state"] = oauthState
 	session.Save(r, w)
 
-	url := auth.GoogleOauthConfig.AuthCodeURL(oauthState)
-
+	//url := auth.GoogleOauthConfig.AuthCodeURL(oauthState)
+	url := auth.Auth0Config.AuthCodeURL(oauthState)
 	http.Redirect(w, r, url, http.StatusSeeOther)
 }
 
-func GoogleLogin(w http.ResponseWriter, r *http.Request) {
-	url := auth.GoogleOauthConfig.AuthCodeURL("random_state")
-	http.Redirect(w, r, url, http.StatusSeeOther)
+func getUserInfoFromAuth0(accessToken string) (*UserInfo, error) {
+	userInfoEndpoint := fmt.Sprintf("https://%s/userinfo", os.Getenv("AUTH0_DOMAIN"))
+
+	req, err := http.NewRequest("GET", userInfoEndpoint, nil)
+	if err != nil {
+		return nil, fmt.Errorf("error creando la solicitud: %v", err)
+	}
+
+	req.Header.Add("Authorization", "Bearer "+accessToken)
+
+	client := &http.Client{}
+	resp, err := client.Do(req)
+	if err != nil {
+		return nil, fmt.Errorf("error al realizar la solicitud: %v", err)
+	}
+	defer resp.Body.Close()
+
+	body, err := io.ReadAll(resp.Body)
+	if err != nil {
+		return nil, fmt.Errorf("error al leer la respuesta: %v", err)
+	}
+
+	if resp.StatusCode != http.StatusOK {
+		return nil, fmt.Errorf("error en la respuesta de Auth0: %s", body)
+	}
+
+	var userInfo UserInfo
+	err = json.Unmarshal(body, &userInfo)
+	if err != nil {
+		return nil, fmt.Errorf("error al decodificar la respuesta JSON: %v", err)
+	}
+
+	return &userInfo, nil
 }
 
-func GoogleCallback(db *sql.DB, w http.ResponseWriter, r *http.Request) {
+func Auth0Callback(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	code := r.URL.Query().Get("code")
-	token, err := auth.GoogleOauthConfig.Exchange(r.Context(), code)
+
+	token, err := auth.Auth0Config.Exchange(r.Context(), code)
 	if err != nil {
-		http.Error(w, "No se pudo obtener el token de Google", http.StatusInternalServerError)
+		log.Printf("Error: %v", err)
+		http.Error(w, "Cannot get Auth0 token", http.StatusInternalServerError)
 		return
 	}
 
-	oauth2Service, err := oauth2.NewService(r.Context(), option.WithTokenSource(auth.GoogleOauthConfig.TokenSource(r.Context(), token)))
+	userInfo, err := getUserInfoFromAuth0(token.AccessToken)
 	if err != nil {
-		http.Error(w, "No se pudo crear el servicio OAuth2", http.StatusInternalServerError)
+		log.Printf("error: cannot get user info from Auth0: %v", err)
+		http.Error(w, "cannot get user info from Auth0", http.StatusInternalServerError)
 		return
 	}
 
-	userInfo, err := oauth2Service.Userinfo.Get().Do()
-	if err != nil {
-		http.Error(w, "No se pudo obtener la información del usuario", http.StatusInternalServerError)
-		return
-	}
+	fmt.Println(userInfo)
 
-	fmt.Println("ID:", userInfo.Id)
-	fmt.Println("Email:", userInfo.Email)
-	fmt.Println("Name:", userInfo.Name)
-
-	_, err = db.Exec(`-- noinspection SqlResolveForFile
+	_, err = db.Exec(`
 	
 			INSERT INTO users(user_id, email, name, oauth_identifier) 
 			VALUES($1, $2, $3, $4)
 			ON CONFLICT(user_id) DO UPDATE
-			SET email = $2, name = $3`, userInfo.Id, userInfo.Email, userInfo.Name, "Google")
+			SET email = $2, name = $3`, userInfo.Sub, userInfo.Email, userInfo.Name, "Google")
 
 	if err != nil {
 		http.Error(w, "Error al guardar el usuario en la base de datos", http.StatusInternalServerError)
@@ -526,13 +586,41 @@ func GoogleCallback(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	}
 
 	session, _ := auth.SessionStore.Get(r, "user-session")
-	session.Values["user_id"] = userInfo.Id
-
-	fmt.Println(session)
-
+	session.Values["user_id"] = userInfo.Sub
 	session.Save(r, w)
 
-	http.Redirect(w, r, "/", http.StatusSeeOther)
+	now := time.Now()
+
+	pageVariables := PageVariables{
+		Year:    now.Format("2006"),
+		SiteKey: captcha.SiteKey,
+	}
+
+	_, err = getCurrentUserID(r)
+	if err != nil {
+		pageVariables.LoggedIn = false
+	} else {
+		pageVariables.LoggedIn = true
+	}
+
+	templateDir := os.Getenv("TEMPLATE_DIR")
+	if templateDir == "" {
+		templateDir = "internal/template" // valor predeterminado para desarrollo local
+	}
+	templatePath := filepath.Join(templateDir, "index.html")
+
+	t, err := template.ParseFiles(templatePath)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		log.Printf("Error al analizar la plantilla: %v", err)
+		return
+	}
+
+	err = t.Execute(w, pageVariables)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		log.Printf("Error al ejecutar la plantilla: %v", err)
+	}
 }
 
 func getCurrentUserID(r *http.Request) (string, error) {
@@ -543,7 +631,7 @@ func getCurrentUserID(r *http.Request) (string, error) {
 
 	userID, ok := session.Values["user_id"].(string)
 	if !ok {
-		return "", errors.New("user_id not found in session")
+		return "", errors.New("0) user_id not found in session")
 	}
 
 	fmt.Println("--------")
@@ -552,6 +640,66 @@ func getCurrentUserID(r *http.Request) (string, error) {
 	fmt.Println("----- end")
 
 	return userID, nil
+}
+
+func writeErrorLikeStatus(w http.ResponseWriter, err error) {
+	log.Printf("Error parsing template: %v", err)
+
+	w.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(map[string]string{
+		"status": "error",
+	})
+}
+
+func writeUnauthenticated(w http.ResponseWriter, err error) {
+	w.Header().Set("Content-Type", "application/json")
+
+	json.NewEncoder(w).Encode(map[string]string{"status": "unauthenticated"})
+}
+
+func CheckLikeStatus(db *sql.DB, w http.ResponseWriter, r *http.Request) {
+	userID, err := getCurrentUserID(r)
+	if err != nil {
+		writeUnauthenticated(w, err)
+
+		return
+	}
+
+	vars := mux.Vars(r)
+	wordID := vars["word_id"]
+
+	fmt.Printf("debug:x params, (%s), (%s)\n", userID, wordID)
+
+	queryStr := "SELECT EXISTS(SELECT 1 FROM word_likes WHERE word_id=$1 AND user_id=$2)"
+
+	rows, err := db.Query(queryStr, wordID, userID)
+	if err != nil {
+		writeErrorLikeStatus(w, err)
+		return
+	}
+	defer rows.Close()
+
+	var exists bool
+
+	if rows.Next() {
+		if err := rows.Scan(&exists); err != nil {
+			writeErrorLikeStatus(w, err)
+			return
+		}
+	}
+
+	if err != nil {
+		writeErrorLikeStatus(w, err)
+		return
+	}
+
+	w.Header().Set("Content-Type", "application/json")
+
+	if exists {
+		json.NewEncoder(w).Encode(map[string]string{"status": "liked"})
+	} else {
+		json.NewEncoder(w).Encode(map[string]string{"status": "not-liked"})
+	}
 }
 
 func writeErrorGeneralStatus(w http.ResponseWriter, err error) {
@@ -668,12 +816,19 @@ func InfoBook(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 
 	now := time.Now()
 
-	fmt.Printf("debug:x SiteKey=(%s)\n", captcha.SiteKey)
-
 	pageVariables := PageResultsVariables{
 		Year:    now.Format("2006"),
 		SiteKey: captcha.SiteKey,
 		Results: []BookInfo{bookByID},
+	}
+
+	_, err = getCurrentUserID(r)
+	if err != nil {
+		log.Printf("(InfoBook) User is not logged in: %v", err)
+		pageVariables.LoggedIn = false
+	} else {
+		log.Println("User is logged in")
+		pageVariables.LoggedIn = true
 	}
 
 	templateDir := os.Getenv("TEMPLATE_DIR")

@@ -10,6 +10,13 @@ CREATE TABLE books (
    CONSTRAINT unique_title_author UNIQUE (title, author)
 );
 
+CREATE TABLE users (
+   user_id TEXT PRIMARY KEY,
+   email TEXT NOT NULL UNIQUE,
+   name TEXT,
+   oauth_identifier VARCHAR NOT NULL
+);
+
 CREATE TABLE book_likes (
     like_id SERIAL PRIMARY KEY,
     book_id INTEGER REFERENCES books(id),

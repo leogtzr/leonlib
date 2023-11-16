@@ -6,6 +6,6 @@ import (
 )
 
 var (
-	GoogleOauthConfig *oauth2.Config
-	SessionStore      *sessions.CookieStore
+	SessionStore *sessions.CookieStore
+	Auth0Config  *oauth2.Config
 )
