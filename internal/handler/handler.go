@@ -23,6 +23,10 @@ import (
 	"github.com/BurntSushi/toml"
 )
 
+type RequestData struct {
+	BookID string `json:"book_id"`
+}
+
 type PageVariables struct {
 	Year     string
 	SiteKey  string
@@ -670,7 +674,7 @@ func CheckLikeStatus(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 
 	fmt.Printf("debug:x params, (%s), (%s)\n", userID, wordID)
 
-	queryStr := "SELECT EXISTS(SELECT 1 FROM word_likes WHERE word_id=$1 AND user_id=$2)"
+	queryStr := "SELECT EXISTS(SELECT 1 FROM book_likes WHERE book_id=$1 AND user_id=$2)"
 
 	rows, err := db.Query(queryStr, wordID, userID)
 	if err != nil {
@@ -712,18 +716,16 @@ func writeErrorGeneralStatus(w http.ResponseWriter, err error) {
 }
 
 func LikeBook(db *sql.DB, w http.ResponseWriter, r *http.Request) {
-	/*
-		userID, err := getCurrentUserID(r)
-		if err != nil {
-			http.Error(w, "2) Error al obtener información de la sesión", http.StatusInternalServerError)
-			return
-		}*/
-	var err error
+	userID, err := getCurrentUserID(r)
+	if err != nil {
+		http.Error(w, "2) Error al obtener información de la sesión", http.StatusInternalServerError)
+		return
+	}
 
 	r.ParseForm()
 	bookID := r.PostFormValue("book_id")
 
-	_, err = db.Exec("INSERT INTO book_likes(book_id) VALUES($1)", bookID)
+	_, err = db.Exec("INSERT INTO book_likes(book_id, user_id) VALUES($1, $2) ON CONFLICT(book_id, user_id) DO NOTHING", bookID, userID)
 
 	if err != nil {
 		http.Error(w, "Error al dar like en la base de datos", http.StatusInternalServerError)
@@ -731,6 +733,34 @@ func LikeBook(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.Write([]byte("Liked successfully"))
+}
+
+func UnlikeBook(db *sql.DB, w http.ResponseWriter, r *http.Request) {
+	userID, err := getCurrentUserID(r)
+	if err != nil {
+		http.Error(w, "Error al obtener información de la sesión", http.StatusInternalServerError)
+		return
+	}
+
+	var requestData RequestData
+
+	err = json.NewDecoder(r.Body).Decode(&requestData)
+	if err != nil {
+		http.Error(w, "Error al decodificar el cuerpo de la solicitud", http.StatusInternalServerError)
+		return
+	}
+
+	bookID := requestData.BookID
+
+	fmt.Printf("debug:x trying to unlike book_id=(%s), user_id=(%s)\n", bookID, userID)
+
+	_, err = db.Exec("DELETE FROM book_likes WHERE book_id=$1 AND user_id=$2", bookID, userID)
+	if err != nil {
+		http.Error(w, "Error al quitar el like en la base de datos", http.StatusInternalServerError)
+		return
+	}
+
+	w.Write([]byte("Unliked successfully"))
 }
 
 func LikesCount(db *sql.DB, w http.ResponseWriter, r *http.Request) {

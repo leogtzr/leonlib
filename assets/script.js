@@ -16,21 +16,6 @@ $(document).ready(function() {
         }
     }
 
-    function debounce(func, wait, immediate) {
-        let timeout;
-        return function() {
-            const context = this, args = arguments;
-            const later = function() {
-                timeout = null;
-                if (!immediate) func.apply(context, args);
-            };
-            const callNow = immediate && !timeout;
-            clearTimeout(timeout);
-            timeout = setTimeout(later, wait);
-            if (callNow) func.apply(context, args);
-        };
-    }
-
     $('.badge[data-book-id]').each(async function() {
         const badgeElement = $(this);
         const bookID = badgeElement.data('book-id');
@@ -48,11 +33,81 @@ $(document).ready(function() {
         console.log('The book ID is: ');
         console.log(bookID);
         window.bookIdForRecaptcha = bookID;
-        const siteKey = $('#captcha-container').data('sitekey'); // obtiene el SiteKey del atributo de datos
+        const siteKey = $('#captcha-container').data('sitekey');
+        try {
+            const response = await $.get(`/api/check_like/${bookID}`);
+            console.log(response);
+            switch (response.status) {
+                case "unauthenticated":
+                    const infoModal = clickedElement.siblings('.info-modal');
+                    infoModal.text('Ingresa al sitio primero');
+                    infoModal.show();
+                    setTimeout(() => infoModal.hide(), 3000);
+                    break;
 
-        $('#captcha-container').html('<div class="g-recaptcha" data-sitekey="' + siteKey + '" data-callback="onRecaptchaSuccess"></div>');
-        grecaptcha.render($('.g-recaptcha')[0]); // Renderiza el widget de reCAPTCHA
-        $('#captcha-container').show();
+                case "liked":
+                    try {
+                        await $.ajax({
+                            url: '/api/like',
+                            type: 'DELETE',
+                            data: JSON.stringify({ book_id: bookID.toString() }),
+                            contentType: 'application/json'
+                        });
+                        clickedElement.removeClass('active');
+                        clickedElement.attr('data-original-title', 'Dar like');
+                        console.log('Updating word like count after unliking word');
+                        await updateBadgeCount(bookID);
+                    } catch (error) {
+                        console.log('Got an error: ');
+                        console.log(error);
+                        if (error.status >= 500 && error.status < 600) {
+                            console.error("Server error:", error.statusText);
+                        }
+                    }
+                    break;
+
+                case "not-liked":
+                    try {
+                        await $.post('/api/like', { book_id: bookID });
+                        clickedElement.addClass('active');
+                        clickedElement.attr('data-original-title', 'Quitar like');
+                        console.log('Updating word like count after liking word.');
+                        await updateBadgeCount(bookID);
+                    } catch (error) {
+                        console.log('Got an error: ');
+                        console.log(error);
+                        if (error.status >= 500 && error.status < 600) {
+                            console.error("Server error:", error.statusText);
+                        }
+
+                    }
+                    break;
+            }
+        } catch (error) {
+            if (error.status >= 500 && error.status < 600) {
+                const errorModal = clickedElement.siblings('.error-modal');
+                errorModal.show();
+                setTimeout(() => errorModal.hide(), 3000);
+            }
+        }
+
+        // try {
+        //     const response = await $.get(`/api/check_like/${bookID}`);
+        //     console.log('Response: ');
+        //     console.log(response);
+        // } catch (error) {
+        //     console.log('Error: ');
+        //     console.log(error);
+        //     if (error.status >= 500 && error.status < 600) {
+        //         const errorModal = clickedElement.siblings('.error-modal');
+        //         errorModal.show();
+        //         setTimeout(() => errorModal.hide(), 3000);
+        //     }
+        // }
+        //
+        // $('#captcha-container').html('<div class="g-recaptcha" data-sitekey="' + siteKey + '" data-callback="onRecaptchaSuccess"></div>');
+        // grecaptcha.render($('.g-recaptcha')[0]); // Renderiza el widget de reCAPTCHA
+        // $('#captcha-container').show();
     });
 
     window.onRecaptchaSuccess = async function(token) {
@@ -97,7 +152,6 @@ $(document).ready(function() {
             $("#booksList").empty();
             try {
                 const books = await $.get(`/api/books?start_with=${author}`);
-                console.log('1) Got: ');
                 console.log(books);
 
                 books.forEach(book => {
@@ -121,7 +175,6 @@ $(document).ready(function() {
     async function updateBadgeCount(bookID) {
         console.log('Book ID to update: ' + bookID);
         const count = await loadLikesForBook(bookID);
-        console.log('Count -> ' + count);
         const badgeElement = $(`.badge[data-book-id=${bookID}]`);
         if (count !== null) {
             badgeElement.text(count);

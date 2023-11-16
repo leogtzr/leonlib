@@ -16,14 +16,13 @@ import (
 )
 
 var (
-	dbHost      = os.Getenv("PGHOST")
-	dbUser      = os.Getenv("PGUSER")
-	dbPassword  = os.Getenv("POSTGRES_PASSWORD")
-	dbName      = os.Getenv("PGDATABASE")
-	dbPort      = os.Getenv("PGPORT")
-	DB          *sql.DB
-	ctx         = context.Background()
-	databaseURL = os.Getenv("DATABASE_URL")
+	dbHost     = os.Getenv("PGHOST")
+	dbUser     = os.Getenv("PGUSER")
+	dbPassword = os.Getenv("POSTGRES_PASSWORD")
+	dbName     = os.Getenv("PGDATABASE")
+	dbPort     = os.Getenv("PGPORT")
+	DB         *sql.DB
+	ctx        = context.Background()
 )
 
 func init() {
@@ -53,11 +52,7 @@ func init() {
 func main() {
 	var psqlInfo string
 
-	if databaseURL == "" {
-		psqlInfo = "host=" + dbHost + " port=" + dbPort + " user=" + dbUser + " password=" + dbPassword + " dbname=" + dbName + " sslmode=disable"
-	} else {
-		psqlInfo = databaseURL
-	}
+	psqlInfo = "host=" + dbHost + " port=" + dbPort + " user=" + dbUser + " password=" + dbPassword + " dbname=" + dbName + " sslmode=disable"
 
 	fmt.Printf("debug:x connection=(%s)\n", psqlInfo)
 

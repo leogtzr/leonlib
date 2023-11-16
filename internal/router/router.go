@@ -22,6 +22,14 @@ var routes Routes
 func initRoutes(db *sql.DB) {
 	routes = Routes{
 		Router{
+			"CheckLikeStatus",
+			"GET",
+			"/api/check_like/{word_id}",
+			func(w http.ResponseWriter, r *http.Request) {
+				handler.CheckLikeStatus(db, w, r)
+			},
+		},
+		Router{
 			"",
 			"GET",
 			"/adm/initdb",
@@ -43,6 +51,14 @@ func initRoutes(db *sql.DB) {
 			"/api/like",
 			func(w http.ResponseWriter, r *http.Request) {
 				handler.LikeBook(db, w, r)
+			},
+		},
+		Router{
+			"UnlikeWord",
+			"DELETE",
+			"/api/like",
+			func(w http.ResponseWriter, r *http.Request) {
+				handler.UnlikeBook(db, w, r)
 			},
 		},
 		//Router{
