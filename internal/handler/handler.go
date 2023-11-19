@@ -23,6 +23,27 @@ import (
 	"github.com/BurntSushi/toml"
 )
 
+const (
+	Unknown BookSearchType = iota
+	ByTitle
+	ByAuthor
+)
+
+type BookInfo struct {
+	ID            int
+	Title         string
+	Author        string
+	Description   string
+	HasBeenRead   bool
+	ImageName     string
+	Image         []byte
+	Base64Image   string
+	AddedOn       string
+	GoodreadsLink string
+}
+
+type BookSearchType int
+
 type RequestData struct {
 	BookID string `json:"book_id"`
 }
@@ -47,19 +68,6 @@ type PageResultsVariables struct {
 	LoggedIn bool
 }
 
-type BookInfo struct {
-	ID            int
-	Title         string
-	Author        string
-	Description   string
-	HasBeenRead   bool
-	ImageName     string
-	Image         []byte
-	Base64Image   string
-	AddedOn       string
-	GoodreadsLink string
-}
-
 type UserInfo struct {
 	Sub      string `json:"sub"`            // Identificador único del usuario
 	Name     string `json:"name"`           // Nombre completo del usuario
@@ -67,10 +75,6 @@ type UserInfo struct {
 	Picture  string `json:"picture"`        // URL de la imagen de perfil del usuario
 	Email    string `json:"email"`          // Correo electrónico del usuario
 	Verified bool   `json:"email_verified"` // Si el correo electrónico está verificado
-}
-
-func (ui UserInfo) String() string {
-	return fmt.Sprintf("Name=(%s), email=(%s), nickname=(%s), verified=(%t), sub=(%s)", ui.Name, ui.Email, ui.Nickname, ui.Verified, ui.Sub)
 }
 
 type Library struct {
@@ -86,13 +90,9 @@ func (bi BookInfo) String() string {
 	return fmt.Sprintf(`%d) "%s" by "%s"`, bi.ID, bi.Title, bi.Author)
 }
 
-type BookSearchType int
-
-const (
-	Unknown BookSearchType = iota
-	ByTitle
-	ByAuthor
-)
+func (ui UserInfo) String() string {
+	return fmt.Sprintf("Name=(%s), email=(%s), nickname=(%s), verified=(%t), sub=(%s)", ui.Name, ui.Email, ui.Nickname, ui.Verified, ui.Sub)
+}
 
 func (bt BookSearchType) String() string {
 	switch bt {
@@ -102,101 +102,6 @@ func (bt BookSearchType) String() string {
 		return "ByAuthor"
 	default:
 		return "Unknown"
-	}
-}
-
-func parseBookSearchType(input string) BookSearchType {
-	switch strings.TrimSpace(strings.ToLower(input)) {
-	case "bytitle":
-		return ByTitle
-	case "byauthor":
-		return ByAuthor
-	default:
-		return Unknown
-	}
-}
-
-func Index(w http.ResponseWriter, r *http.Request) {
-	now := time.Now()
-
-	pageVariables := PageVariables{
-		Year:    now.Format("2006"),
-		SiteKey: captcha.SiteKey,
-	}
-
-	_, err := getCurrentUserID(r)
-	if err != nil {
-		log.Printf("(Index) User is not logged in: %v", err)
-		pageVariables.LoggedIn = false
-	} else {
-		log.Println("User is logged in")
-		pageVariables.LoggedIn = true
-	}
-
-	templateDir := os.Getenv("TEMPLATE_DIR")
-	if templateDir == "" {
-		templateDir = "internal/template" // default value for local development
-	}
-	templatePath := filepath.Join(templateDir, "index.html")
-
-	t, err := template.ParseFiles(templatePath)
-	if err != nil {
-		http.Error(w, err.Error(), http.StatusInternalServerError)
-		log.Printf("Error parsing template: %v", err)
-		return
-	}
-
-	err = t.Execute(w, pageVariables)
-	if err != nil {
-		http.Error(w, err.Error(), http.StatusInternalServerError)
-		log.Printf("Error executing template: %v", err)
-	}
-}
-
-func BooksByAuthor(db *sql.DB, w http.ResponseWriter, r *http.Request) {
-	now := time.Now()
-	pageVariables := PageVariablesForAuthors{
-		Year:    now.Format("2006"),
-		SiteKey: captcha.SiteKey,
-	}
-
-	authors, err := getAllAuthors(db)
-	if err != nil {
-		log.Printf("Error getting authors: %v", err)
-		redirectToErrorPage(w, r)
-		return
-	}
-
-	log.Printf("debug:x authors=(%s)", authors)
-
-	_, err = getCurrentUserID(r)
-	if err != nil {
-		log.Printf("(BooksByAuthor) User is not logged in: %v", err)
-		pageVariables.LoggedIn = false
-	} else {
-		log.Println("User is logged in")
-		pageVariables.LoggedIn = true
-	}
-
-	pageVariables.Authors = authors
-
-	templateDir := os.Getenv("TEMPLATE_DIR")
-	if templateDir == "" {
-		templateDir = "internal/template" // default value for local development
-	}
-	templatePath := filepath.Join(templateDir, "books_by_author.html")
-
-	t, err := template.ParseFiles(templatePath)
-	if err != nil {
-		http.Error(w, err.Error(), http.StatusInternalServerError)
-		log.Printf("Error parsing template: %v", err)
-		return
-	}
-
-	err = t.Execute(w, pageVariables)
-	if err != nil {
-		http.Error(w, err.Error(), http.StatusInternalServerError)
-		log.Printf("Error executing template: %v", err)
 	}
 }
 
@@ -210,85 +115,155 @@ func generateRandomString(length int) string {
 	return base64.URLEncoding.EncodeToString(b)
 }
 
-//func Autocomplete(db *sql.DB, w http.ResponseWriter, r *http.Request) {
-//	query := r.URL.Query().Get("q")
-//
-//	searchTypesStr := r.URL.Query().Get("searchType")
-//	searchTypes := strings.Split(searchTypesStr, ",")
-//
-//	var suggestions []string
-//
-//	var queryStr string
-//	var rows *sql.Rows
-//	var err error
-//
-//	// Perform DB query based on queryParam("q")
-//
-//	w.Header().Set("Content-Type", "application/json")
-//	json.NewEncoder(w).Encode(map[string][]string{
-//		"suggestions": suggestions,
-//	})
-//}
+func getDatabaseEmailFromSessionID(db *sql.DB, userID string) (string, error) {
+	queryStr := "SELECT u.email FROM users u WHERE u.user_id=$1"
 
-func BooksList(db *sql.DB, w http.ResponseWriter, r *http.Request) {
-	authorParam := r.URL.Query().Get("start_with")
-
-	booksByAuthor, err := getBooksBySearchTypeCoincidence(db, authorParam, ByAuthor)
+	rows, err := db.Query(queryStr, userID)
 	if err != nil {
-		http.Error(w, "Database error", http.StatusInternalServerError)
-		return
+		return "", err
 	}
+	defer rows.Close()
 
-	type BookDetail struct {
-		ID          int    `json:"id"`
-		Title       string `json:"title"`
-		Author      string `json:"author"`
-		Description string `json:"description"`
-		Base64Image string `json:"image"`
-	}
+	var email string
 
-	var results []BookDetail
-
-	for _, book := range booksByAuthor {
-		bookDetail := BookDetail{}
-		bookDetail.ID = book.ID
-		bookDetail.Title = book.Title
-		bookDetail.Author = book.Author
-		bookDetail.Description = book.Description
-		if len(book.Image) > 0 {
-			base64Image := base64.StdEncoding.EncodeToString(book.Image)
-			bookDetail.Base64Image = "data:image/jpeg;base64," + base64Image
+	if rows.Next() {
+		if err := rows.Scan(&email); err != nil {
+			return "", err
 		}
-
-		results = append(results, bookDetail)
 	}
 
-	w.Header().Set("Content-Type", "application/json")
-	_ = json.NewEncoder(w).Encode(results)
+	return email, nil
 }
 
-func BooksCount(db *sql.DB, w http.ResponseWriter, r *http.Request) {
-	queryStr := `SELECT count(*) FROM books`
-	rows, err := db.Query(queryStr)
+func parseBookSearchType(input string) BookSearchType {
+	switch strings.TrimSpace(strings.ToLower(input)) {
+	case "bytitle":
+		return ByTitle
+	case "byauthor":
+		return ByAuthor
+	default:
+		return Unknown
+	}
+}
+
+func getUserInfoFromAuth0(accessToken string) (*UserInfo, error) {
+	userInfoEndpoint := fmt.Sprintf("https://%s/userinfo", os.Getenv("AUTH0_DOMAIN"))
+
+	req, err := http.NewRequest("GET", userInfoEndpoint, nil)
 	if err != nil {
-		http.Error(w, "Database error", http.StatusInternalServerError)
+		return nil, fmt.Errorf("error creando la solicitud: %v", err)
+	}
+
+	req.Header.Add("Authorization", "Bearer "+accessToken)
+
+	client := &http.Client{}
+	resp, err := client.Do(req)
+	if err != nil {
+		return nil, fmt.Errorf("error al realizar la solicitud: %v", err)
+	}
+	defer resp.Body.Close()
+
+	body, err := io.ReadAll(resp.Body)
+	if err != nil {
+		return nil, fmt.Errorf("error al leer la respuesta: %v", err)
+	}
+
+	if resp.StatusCode != http.StatusOK {
+		return nil, fmt.Errorf("error en la respuesta de Auth0: %s", body)
+	}
+
+	var userInfo UserInfo
+	err = json.Unmarshal(body, &userInfo)
+	if err != nil {
+		return nil, fmt.Errorf("error al decodificar la respuesta JSON: %v", err)
+	}
+
+	return &userInfo, nil
+}
+
+func redirectToErrorPage(w http.ResponseWriter, r *http.Request) {
+	http.Redirect(w, r, "/error", http.StatusSeeOther)
+}
+
+func redirectToErrorPageWithMessageAndStatusCode(w http.ResponseWriter, errorMessage string, httpStatusCode int) {
+	templateDir := os.Getenv("TEMPLATE_DIR")
+	if templateDir == "" {
+		templateDir = "internal/template" // default value for local development
+	}
+	templatePath := filepath.Join(templateDir, "error5xx.html")
+
+	t, err := template.ParseFiles(templatePath)
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		log.Printf("error: %v", err)
+		// Consider sending a simple error message or a generic error page here
 		return
 	}
 
-	var count int
-
-	for rows.Next() {
-		err := rows.Scan(&count)
-		if err != nil {
-			http.Error(w, "Database error", http.StatusInternalServerError)
-			return
-		}
+	type ErrorVariables struct {
+		Year         string
+		ErrorMessage string
 	}
 
+	now := time.Now()
+
+	pageVariables := ErrorVariables{
+		Year:         now.Format("2006"),
+		ErrorMessage: errorMessage,
+	}
+
+	fmt.Printf("variables=(%s)\n", pageVariables)
+
+	w.WriteHeader(httpStatusCode)
+
+	err = t.Execute(w, pageVariables)
+	if err != nil {
+		log.Printf("error: %v", err)
+		return
+	}
+}
+
+func writeErrorGeneralStatus(w http.ResponseWriter, err error) {
+	log.Printf("Error parsing template: %v", err)
+
 	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(map[string]int{
-		"booksCount": count,
+	json.NewEncoder(w).Encode(map[string]string{
+		"status": "error",
 	})
+}
+
+func writeErrorLikeStatus(w http.ResponseWriter, err error) {
+	log.Printf("Error parsing template: %v", err)
+
+	w.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(map[string]string{
+		"status": "error",
+	})
+}
+
+func writeUnauthenticated(w http.ResponseWriter, err error) {
+	w.Header().Set("Content-Type", "application/json")
+
+	json.NewEncoder(w).Encode(map[string]string{"status": "unauthenticated"})
+}
+
+func getCurrentUserID(r *http.Request) (string, error) {
+	session, err := auth.SessionStore.Get(r, "user-session")
+	if err != nil {
+		return "", err
+	}
+
+	userID, ok := session.Values["user_id"].(string)
+	if !ok {
+		return "", errors.New("0) user_id not found in session")
+	}
+
+	fmt.Println("--------")
+	fmt.Println(session)
+	fmt.Println(userID)
+	fmt.Println("----- end")
+
+	return userID, nil
 }
 
 func getAllAuthors(db *sql.DB) ([]string, error) {
@@ -401,10 +376,6 @@ func getBooksBySearchTypeCoincidence(db *sql.DB, titleSearchText string, bookSea
 	return books, nil
 }
 
-func redirectToErrorPage(w http.ResponseWriter, r *http.Request) {
-	http.Redirect(w, r, "/error", http.StatusSeeOther)
-}
-
 func uniqueSearchTypes(searchTypes []string) []string {
 	set := make(map[string]struct{})
 	var result []string
@@ -419,7 +390,171 @@ func uniqueSearchTypes(searchTypes []string) []string {
 	return result
 }
 
-/* Search for books */
+func Index(w http.ResponseWriter, r *http.Request) {
+	now := time.Now()
+
+	pageVariables := PageVariables{
+		Year:    now.Format("2006"),
+		SiteKey: captcha.SiteKey,
+	}
+
+	_, err := getCurrentUserID(r)
+	if err != nil {
+		log.Printf("(Index) User is not logged in: %v", err)
+		pageVariables.LoggedIn = false
+	} else {
+		log.Println("User is logged in")
+		pageVariables.LoggedIn = true
+	}
+
+	templateDir := os.Getenv("TEMPLATE_DIR")
+	if templateDir == "" {
+		templateDir = "internal/template" // default value for local development
+	}
+	templatePath := filepath.Join(templateDir, "index.html")
+
+	t, err := template.ParseFiles(templatePath)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		log.Printf("Error parsing template: %v", err)
+		return
+	}
+
+	err = t.Execute(w, pageVariables)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		log.Printf("Error executing template: %v", err)
+	}
+}
+
+func BooksByAuthor(db *sql.DB, w http.ResponseWriter, r *http.Request) {
+	now := time.Now()
+	pageVariables := PageVariablesForAuthors{
+		Year:    now.Format("2006"),
+		SiteKey: captcha.SiteKey,
+	}
+
+	authors, err := getAllAuthors(db)
+	if err != nil {
+		log.Printf("Error getting authors: %v", err)
+		redirectToErrorPage(w, r)
+		return
+	}
+
+	log.Printf("debug:x authors=(%s)", authors)
+
+	_, err = getCurrentUserID(r)
+	if err != nil {
+		log.Printf("(BooksByAuthor) User is not logged in: %v", err)
+		pageVariables.LoggedIn = false
+	} else {
+		log.Println("User is logged in")
+		pageVariables.LoggedIn = true
+	}
+
+	pageVariables.Authors = authors
+
+	templateDir := os.Getenv("TEMPLATE_DIR")
+	if templateDir == "" {
+		templateDir = "internal/template" // default value for local development
+	}
+	templatePath := filepath.Join(templateDir, "books_by_author.html")
+
+	t, err := template.ParseFiles(templatePath)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		log.Printf("Error parsing template: %v", err)
+		return
+	}
+
+	err = t.Execute(w, pageVariables)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		log.Printf("Error executing template: %v", err)
+	}
+}
+
+//func Autocomplete(db *sql.DB, w http.ResponseWriter, r *http.Request) {
+//	query := r.URL.Query().Get("q")
+//
+//	searchTypesStr := r.URL.Query().Get("searchType")
+//	searchTypes := strings.Split(searchTypesStr, ",")
+//
+//	var suggestions []string
+//
+//	var queryStr string
+//	var rows *sql.Rows
+//	var err error
+//
+//	// Perform DB query based on queryParam("q")
+//
+//	w.Header().Set("Content-Type", "application/json")
+//	json.NewEncoder(w).Encode(map[string][]string{
+//		"suggestions": suggestions,
+//	})
+//}
+
+func BooksList(db *sql.DB, w http.ResponseWriter, r *http.Request) {
+	authorParam := r.URL.Query().Get("start_with")
+
+	booksByAuthor, err := getBooksBySearchTypeCoincidence(db, authorParam, ByAuthor)
+	if err != nil {
+		http.Error(w, "Database error", http.StatusInternalServerError)
+		return
+	}
+
+	type BookDetail struct {
+		ID          int    `json:"id"`
+		Title       string `json:"title"`
+		Author      string `json:"author"`
+		Description string `json:"description"`
+		Base64Image string `json:"image"`
+	}
+
+	var results []BookDetail
+
+	for _, book := range booksByAuthor {
+		bookDetail := BookDetail{}
+		bookDetail.ID = book.ID
+		bookDetail.Title = book.Title
+		bookDetail.Author = book.Author
+		bookDetail.Description = book.Description
+		if len(book.Image) > 0 {
+			base64Image := base64.StdEncoding.EncodeToString(book.Image)
+			bookDetail.Base64Image = "data:image/jpeg;base64," + base64Image
+		}
+
+		results = append(results, bookDetail)
+	}
+
+	w.Header().Set("Content-Type", "application/json")
+	_ = json.NewEncoder(w).Encode(results)
+}
+
+func BooksCount(db *sql.DB, w http.ResponseWriter, r *http.Request) {
+	queryStr := `SELECT count(*) FROM books`
+	rows, err := db.Query(queryStr)
+	if err != nil {
+		http.Error(w, "Database error", http.StatusInternalServerError)
+		return
+	}
+
+	var count int
+
+	for rows.Next() {
+		err := rows.Scan(&count)
+		if err != nil {
+			http.Error(w, "Database error", http.StatusInternalServerError)
+			return
+		}
+	}
+
+	w.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(map[string]int{
+		"booksCount": count,
+	})
+}
+
 func SearchBooks(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	bookQuery := r.URL.Query().Get("textSearch")
 	searchTypesStr := r.URL.Query().Get("searchType")
@@ -522,41 +657,6 @@ func Ingresar(w http.ResponseWriter, r *http.Request) {
 	http.Redirect(w, r, url, http.StatusSeeOther)
 }
 
-func getUserInfoFromAuth0(accessToken string) (*UserInfo, error) {
-	userInfoEndpoint := fmt.Sprintf("https://%s/userinfo", os.Getenv("AUTH0_DOMAIN"))
-
-	req, err := http.NewRequest("GET", userInfoEndpoint, nil)
-	if err != nil {
-		return nil, fmt.Errorf("error creando la solicitud: %v", err)
-	}
-
-	req.Header.Add("Authorization", "Bearer "+accessToken)
-
-	client := &http.Client{}
-	resp, err := client.Do(req)
-	if err != nil {
-		return nil, fmt.Errorf("error al realizar la solicitud: %v", err)
-	}
-	defer resp.Body.Close()
-
-	body, err := io.ReadAll(resp.Body)
-	if err != nil {
-		return nil, fmt.Errorf("error al leer la respuesta: %v", err)
-	}
-
-	if resp.StatusCode != http.StatusOK {
-		return nil, fmt.Errorf("error en la respuesta de Auth0: %s", body)
-	}
-
-	var userInfo UserInfo
-	err = json.Unmarshal(body, &userInfo)
-	if err != nil {
-		return nil, fmt.Errorf("error al decodificar la respuesta JSON: %v", err)
-	}
-
-	return &userInfo, nil
-}
-
 func Auth0Callback(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	code := r.URL.Query().Get("code")
 
@@ -626,60 +726,6 @@ func Auth0Callback(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func getDatabaseEmailFromSessionID(db *sql.DB, userID string) (string, error) {
-	queryStr := "SELECT u.email FROM users u WHERE u.user_id=$1"
-
-	rows, err := db.Query(queryStr, userID)
-	if err != nil {
-		return "", err
-	}
-	defer rows.Close()
-
-	var email string
-
-	if rows.Next() {
-		if err := rows.Scan(&email); err != nil {
-			return "", err
-		}
-	}
-
-	return email, nil
-}
-
-func getCurrentUserID(r *http.Request) (string, error) {
-	session, err := auth.SessionStore.Get(r, "user-session")
-	if err != nil {
-		return "", err
-	}
-
-	userID, ok := session.Values["user_id"].(string)
-	if !ok {
-		return "", errors.New("0) user_id not found in session")
-	}
-
-	fmt.Println("--------")
-	fmt.Println(session)
-	fmt.Println(userID)
-	fmt.Println("----- end")
-
-	return userID, nil
-}
-
-func writeErrorLikeStatus(w http.ResponseWriter, err error) {
-	log.Printf("Error parsing template: %v", err)
-
-	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(map[string]string{
-		"status": "error",
-	})
-}
-
-func writeUnauthenticated(w http.ResponseWriter, err error) {
-	w.Header().Set("Content-Type", "application/json")
-
-	json.NewEncoder(w).Encode(map[string]string{"status": "unauthenticated"})
-}
-
 func CheckLikeStatus(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	userID, err := getCurrentUserID(r)
 	if err != nil {
@@ -690,8 +736,6 @@ func CheckLikeStatus(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 
 	vars := mux.Vars(r)
 	wordID := vars["word_id"]
-
-	fmt.Printf("debug:x params, (%s), (%s)\n", userID, wordID)
 
 	queryStr := "SELECT EXISTS(SELECT 1 FROM book_likes WHERE book_id=$1 AND user_id=$2)"
 
@@ -723,15 +767,6 @@ func CheckLikeStatus(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	} else {
 		json.NewEncoder(w).Encode(map[string]string{"status": "not-liked"})
 	}
-}
-
-func writeErrorGeneralStatus(w http.ResponseWriter, err error) {
-	log.Printf("Error parsing template: %v", err)
-
-	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(map[string]string{
-		"status": "error",
-	})
 }
 
 func LikeBook(db *sql.DB, w http.ResponseWriter, r *http.Request) {
@@ -999,76 +1034,6 @@ func AddBookPage(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
 		log.Printf("Descripción del error: %v", err)
-		return
-	}
-}
-
-func redirectToErrorPageWithMessageAndStatusCode(w http.ResponseWriter, errorMessage string, httpStatusCode int) {
-	templateDir := os.Getenv("TEMPLATE_DIR")
-	if templateDir == "" {
-		templateDir = "internal/template" // default value for local development
-	}
-	templatePath := filepath.Join(templateDir, "error5xx.html")
-
-	t, err := template.ParseFiles(templatePath)
-	if err != nil {
-		w.WriteHeader(http.StatusInternalServerError)
-		log.Printf("error: %v", err)
-		// Consider sending a simple error message or a generic error page here
-		return
-	}
-
-	type ErrorVariables struct {
-		Year         string
-		ErrorMessage string
-	}
-
-	now := time.Now()
-
-	pageVariables := ErrorVariables{
-		Year:         now.Format("2006"),
-		ErrorMessage: errorMessage,
-	}
-
-	fmt.Printf("variables=(%s)\n", pageVariables)
-
-	w.WriteHeader(httpStatusCode)
-
-	err = t.Execute(w, pageVariables)
-	if err != nil {
-		log.Printf("error: %v", err)
-		return
-	}
-}
-
-func redirectToErrorPageWithMessage(w http.ResponseWriter, errorMessage string) {
-	templateDir := os.Getenv("TEMPLATE_DIR")
-	if templateDir == "" {
-		templateDir = "internal/template" // default value for local development
-	}
-	templatePath := filepath.Join(templateDir, "error5xx.html")
-
-	t, err := template.ParseFiles(templatePath)
-	if err != nil {
-		w.WriteHeader(http.StatusInternalServerError)
-		return
-	}
-
-	type ErrorVariables struct {
-		Year         string
-		ErrorMessage string
-	}
-
-	now := time.Now()
-
-	pageVariables := ErrorVariables{
-		Year:         now.Format("2006"),
-		ErrorMessage: errorMessage,
-	}
-
-	err = t.Execute(w, pageVariables)
-	if err != nil {
-		w.WriteHeader(http.StatusInternalServerError)
 		return
 	}
 }
