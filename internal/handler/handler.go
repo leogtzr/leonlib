@@ -241,7 +241,7 @@ func writeErrorLikeStatus(w http.ResponseWriter, err error) {
 	})
 }
 
-func writeUnauthenticated(w http.ResponseWriter, err error) {
+func writeUnauthenticated(w http.ResponseWriter) {
 	w.Header().Set("Content-Type", "application/json")
 
 	json.NewEncoder(w).Encode(map[string]string{"status": "unauthenticated"})
@@ -729,7 +729,7 @@ func Auth0Callback(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 func CheckLikeStatus(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	userID, err := getCurrentUserID(r)
 	if err != nil {
-		writeUnauthenticated(w, err)
+		writeUnauthenticated(w)
 
 		return
 	}
