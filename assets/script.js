@@ -94,14 +94,12 @@ $(document).ready(function() {
                             data: { book_id: bookID }
                         });
 
-                        // Si la petición es exitosa, ejecutar el siguiente código
                         clickedElement.addClass('active');
                         clickedElement.attr('data-original-title', 'Quitar like');
                         console.log('Updating word like count after liking word.');
                         await updateBadgeCount(bookID);
 
                     } catch (error) {
-                        // Manejo de errores
                         console.log('Got an error: ', error);
                         if (error && error.status >= 500 && error.status < 600) {
                             console.error("Server error:", error.statusText);

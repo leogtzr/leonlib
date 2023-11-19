@@ -400,7 +400,7 @@ func Index(w http.ResponseWriter, r *http.Request) {
 
 	_, err := getCurrentUserID(r)
 	if err != nil {
-		log.Printf("(Index) User is not logged in: %v", err)
+		log.Printf("User is not logged in: %v", err)
 		pageVariables.LoggedIn = false
 	} else {
 		log.Println("User is logged in")
@@ -620,7 +620,7 @@ func SearchBooks(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	err = t.Execute(w, pageVariables)
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
-		log.Printf("Descripción del error: %v", err)
+		log.Printf("error: %v", err)
 		return
 	}
 }
@@ -790,17 +790,13 @@ func LikeBook(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 }
 
 func AddBook(db *sql.DB, w http.ResponseWriter, r *http.Request) {
-	// Parsea el formulario con un tamaño máximo de memoria. Ajusta según tus necesidades.
-	// El segundo parámetro es el tamaño máximo para el cuerpo del formulario en memoria.
-	// Los archivos más grandes se almacenarán en el disco en directorios temporales.
-	err := r.ParseMultipartForm(10 << 20) // Por ejemplo, 10 MB
+	err := r.ParseMultipartForm(2 << 20) // Por ejemplo, 10 MB
 	if err != nil {
 		log.Printf("1) error: %v", err)
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
 
-	// Obtén los valores del formulario
 	title := r.FormValue("title")
 	author := r.FormValue("author")
 	description := r.FormValue("description")
@@ -810,7 +806,6 @@ func AddBook(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	fmt.Printf("debug:x title=(%s), author=(%s), description=(%s), read=(%s), goodreadslink=(%s)",
 		title, author, description, read, goodreadsLink)
 
-	// Manejo del archivo (imagen)
 	var imageData []byte
 	file, _, err := r.FormFile("image")
 	if err == nil {
@@ -825,7 +820,6 @@ func AddBook(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Prepara la sentencia SQL
 	stmt, err := db.Prepare("INSERT INTO books (title, author, image, description, read, goodreads_link) VALUES ($1, $2, $3, $4, $5, $6)")
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
@@ -833,14 +827,12 @@ func AddBook(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	}
 	defer stmt.Close()
 
-	// Ejecuta la sentencia SQL
 	_, err = stmt.Exec(title, author, imageData, description, read, goodreadsLink)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
 
-	// Envía una respuesta al cliente
 	w.Write([]byte("Libro agregado con éxito"))
 }
 
@@ -985,7 +977,55 @@ func InfoBook(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	err = t.Execute(w, pageVariables)
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
-		log.Printf("Descripción del error: %v", err)
+		log.Printf("template error: %v", err)
+		return
+	}
+}
+
+func AboutPage(w http.ResponseWriter, r *http.Request) {
+	/*
+		userID, err := getCurrentUserID(r)
+		if err != nil {
+			redirectToErrorPageWithMessageAndStatusCode(w, "Error al obtener información de la sesión", http.StatusInternalServerError)
+
+			return
+		}
+
+		email, err := getDatabaseEmailFromSessionID(db, userID)
+
+		if err != nil {
+			redirectToErrorPageWithMessageAndStatusCode(w, "Only admins can access to this page", http.StatusForbidden)
+
+			return
+		}
+
+		fmt.Printf("debug:x email=(%s)\n", email)
+	*/
+
+	templateDir := os.Getenv("TEMPLATE_DIR")
+	if templateDir == "" {
+		templateDir = "internal/template" // default value for local development
+	}
+	templatePath := filepath.Join(templateDir, "about.html")
+
+	t, err := template.ParseFiles(templatePath)
+	if err != nil {
+		redirectToErrorPage(w, r)
+		return
+	}
+
+	now := time.Now()
+
+	pageVariables := PageVariables{
+		Year:     now.Format("2006"),
+		SiteKey:  captcha.SiteKey,
+		LoggedIn: false,
+	}
+
+	err = t.Execute(w, pageVariables)
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		log.Printf("error: %v", err)
 		return
 	}
 }
@@ -1033,7 +1073,7 @@ func AddBookPage(w http.ResponseWriter, r *http.Request) {
 	err = t.Execute(w, pageVariables)
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
-		log.Printf("Descripción del error: %v", err)
+		log.Printf("template error: %v", err)
 		return
 	}
 }

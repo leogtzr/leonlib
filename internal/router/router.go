@@ -22,6 +22,14 @@ var routes Routes
 func initRoutes(db *sql.DB) {
 	routes = Routes{
 		Router{
+			"About Page",
+			"GET",
+			"/about",
+			func(w http.ResponseWriter, r *http.Request) {
+				handler.AboutPage(w, r)
+			},
+		},
+		Router{
 			"Add Book Page",
 			"GET",
 			"/admin/add",

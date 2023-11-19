@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Biblioteca</title>
+    <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google reCAPTCHA -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <style>
         body {
@@ -32,6 +34,7 @@
 
         .error-message {
             color: red;
+            font-size: 0.9rem;
         }
     </style>
 </head>
@@ -57,16 +60,28 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">Contacto</a>
             </li>
+            {{if not .LoggedIn}}
+            <li class="nav-item">
+                <a class="nav-link" href="/ingresar">Ingresar</a>
+            </li>
+            {{end}}
         </ul>
     </div>
 </nav>
 
 <section class="mt-5 mb-5">
-    <div class="container">
-        <h2><p class="error-message">{{.ErrorMessage}}</p></h2>
+    <div class="container search-container">
+        <h2>
+            Acerca a mi Biblioteca
+        </h2>
+        <h6>
+            Bienvenido a la Biblioteca de <em>Leonardo Gutiérrez Ramírez</em>, un espacio digital donde comparto mi pasión por los libros y la lectura. Con una colección personal de más de 1500 libros,
+            este sitio web es un reflejo de años de exploración literaria y amor por el conocimiento.
+        </h6>
     </div>
 </section>
 
+<!-- Sticky footer -->
 <footer class="footer bg-dark py-3">
     <div class="container">
         <div class="row">
