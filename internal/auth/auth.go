@@ -7,5 +7,5 @@ import (
 
 var (
 	SessionStore *sessions.CookieStore
-	Auth0Config  *oauth2.Config
+	Config       *oauth2.Config
 )

@@ -39,7 +39,7 @@ func init() {
 		log.Fatal("error: LEONLIB_CAPTCHA_SECRET_KEY not defined")
 	}
 
-	auth.Auth0Config = &oauth2.Config{
+	auth.Config = &oauth2.Config{
 		ClientID:     os.Getenv("AUTH0_CLIENT_ID"),
 		ClientSecret: os.Getenv("AUTH0_CLIENT_SECRET"),
 		RedirectURL:  os.Getenv("AUTH0_CALLBACK_URL"),
@@ -73,10 +73,10 @@ func main() {
 
 	defer DB.Close()
 
-	router := router.NewRouter(DB)
+	r := router.NewRouter(DB)
 
 	fs := http.FileServer(http.Dir("assets/"))
-	router.PathPrefix("/assets/").Handler(http.StripPrefix("/assets/", fs))
+	r.PathPrefix("/assets/").Handler(http.StripPrefix("/assets/", fs))
 
 	port := os.Getenv("PORT")
 	if port == "" {
@@ -84,5 +84,5 @@ func main() {
 	}
 
 	log.Printf("Listening on port %s\n", port)
-	log.Fatal(http.ListenAndServe(":"+port, router))
+	log.Fatal(http.ListenAndServe(":"+port, r))
 }

@@ -26,7 +26,7 @@ func initRoutes(db *sql.DB) {
 			"GET",
 			"/admin/add",
 			func(w http.ResponseWriter, r *http.Request) {
-				handler.AddBookPage(db, w, r)
+				handler.AddBookPage(w, r)
 			},
 		},
 		Router{
@@ -50,7 +50,7 @@ func initRoutes(db *sql.DB) {
 			"GET",
 			"/adm/initdb",
 			func(w http.ResponseWriter, r *http.Request) {
-				handler.CreateDBFromFile(db, w, r)
+				handler.CreateDBFromFile(db, w)
 			},
 		},
 		Router{
@@ -154,7 +154,7 @@ func initRoutes(db *sql.DB) {
 			"GET",
 			"/api/booksCount",
 			func(w http.ResponseWriter, r *http.Request) {
-				handler.BooksCount(db, w, r)
+				handler.BooksCount(db, w)
 			},
 		},
 		Router{
@@ -179,7 +179,7 @@ func NewRouter(db *sql.DB) *mux.Router {
 			Methods(route.Method).
 			Path(route.Path).
 			Name(route.Name).
-			Handler(http.HandlerFunc(route.HandlerFunc))
+			Handler(route.HandlerFunc)
 	}
 
 	fs := http.FileServer(http.Dir("assets/"))

@@ -81,7 +81,7 @@ type Library struct {
 	Book []BookInfo
 }
 
-// { "status" : "error" | "liked" | "not-liked" }
+// LikeStatus { "status" : "error" | "liked" | "not-liked" }
 type LikeStatus struct {
 	Status string
 }
@@ -531,7 +531,7 @@ func BooksList(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	_ = json.NewEncoder(w).Encode(results)
 }
 
-func BooksCount(db *sql.DB, w http.ResponseWriter, r *http.Request) {
+func BooksCount(db *sql.DB, w http.ResponseWriter) {
 	queryStr := `SELECT count(*) FROM books`
 	rows, err := db.Query(queryStr)
 	if err != nil {
@@ -653,14 +653,14 @@ func Ingresar(w http.ResponseWriter, r *http.Request) {
 	session.Save(r, w)
 
 	//url := auth.GoogleOauthConfig.AuthCodeURL(oauthState)
-	url := auth.Auth0Config.AuthCodeURL(oauthState)
+	url := auth.Config.AuthCodeURL(oauthState)
 	http.Redirect(w, r, url, http.StatusSeeOther)
 }
 
 func Auth0Callback(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	code := r.URL.Query().Get("code")
 
-	token, err := auth.Auth0Config.Exchange(r.Context(), code)
+	token, err := auth.Config.Exchange(r.Context(), code)
 	if err != nil {
 		log.Printf("Error: %v", err)
 		http.Error(w, "Cannot get Auth0 token", http.StatusInternalServerError)
@@ -820,7 +820,7 @@ func AddBook(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 			return
 		}
-	} else if err != http.ErrMissingFile {
+	} else if !errors.Is(err, http.ErrMissingFile) {
 		http.Error(w, err.Error(), http.StatusBadRequest)
 		return
 	}
@@ -900,7 +900,7 @@ func LikesCount(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(resp)
 }
 
-func CreateDBFromFile(db *sql.DB, w http.ResponseWriter, r *http.Request) {
+func CreateDBFromFile(db *sql.DB, w http.ResponseWriter) {
 	libraryDir := "library"
 	libraryDirPath := filepath.Join(libraryDir, "books_db.toml")
 
@@ -990,7 +990,7 @@ func InfoBook(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func AddBookPage(db *sql.DB, w http.ResponseWriter, r *http.Request) {
+func AddBookPage(w http.ResponseWriter, r *http.Request) {
 	/*
 		userID, err := getCurrentUserID(r)
 		if err != nil {
