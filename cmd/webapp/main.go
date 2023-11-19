@@ -16,16 +16,20 @@ import (
 )
 
 var (
-	dbHost     = os.Getenv("PGHOST")
-	dbUser     = os.Getenv("PGUSER")
-	dbPassword = os.Getenv("POSTGRES_PASSWORD")
-	dbName     = os.Getenv("PGDATABASE")
-	dbPort     = os.Getenv("PGPORT")
-	DB         *sql.DB
-	ctx        = context.Background()
+	dbHost      = os.Getenv("PGHOST")
+	dbUser      = os.Getenv("PGUSER")
+	dbPassword  = os.Getenv("POSTGRES_PASSWORD")
+	dbName      = os.Getenv("PGDATABASE")
+	dbPort      = os.Getenv("PGPORT")
+	DB          *sql.DB
+	ctx         = context.Background()
+	mainAppUser = os.Getenv("LEONLIB_MAINAPP_USER")
 )
 
 func init() {
+	if mainAppUser == "" {
+		log.Fatal("error: LEONLIB_MAINAPP_USER not defined")
+	}
 	captcha.SiteKey = os.Getenv("LEONLIB_CAPTCHA_SITE_KEY")
 	captcha.SecretKey = os.Getenv("LEONLIB_CAPTCHA_SECRET_KEY")
 	if captcha.SiteKey == "" {

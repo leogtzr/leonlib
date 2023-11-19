@@ -27,6 +27,26 @@ $(document).ready(function() {
         }
     });
 
+    $('#bookForm').on('submit', function(e) {
+        e.preventDefault();
+
+        var formData = new FormData(this);
+
+        $.ajax({
+            url: '/addbook',
+            type: 'POST',
+            data: formData,
+            contentType: false,
+            processData: false,
+            success: function(response) {
+                console.log('Libro agregado con éxito', response);
+            },
+            error: function(xhr, status, error) {
+                console.error('Error al agregar el libro:', error);
+            }
+        });
+    });
+
     $('.like-emoji').click(async function() {
         const clickedElement = $(this);
         const bookID = clickedElement.data('book-id');
@@ -68,19 +88,26 @@ $(document).ready(function() {
 
                 case "not-liked":
                     try {
-                        await $.post('/api/like', { book_id: bookID });
+                        await $.ajax({
+                            url: '/api/like',
+                            type: 'POST',
+                            data: { book_id: bookID }
+                        });
+
+                        // Si la petición es exitosa, ejecutar el siguiente código
                         clickedElement.addClass('active');
                         clickedElement.attr('data-original-title', 'Quitar like');
                         console.log('Updating word like count after liking word.');
                         await updateBadgeCount(bookID);
+
                     } catch (error) {
-                        console.log('Got an error: ');
-                        console.log(error);
-                        if (error.status >= 500 && error.status < 600) {
+                        // Manejo de errores
+                        console.log('Got an error: ', error);
+                        if (error && error.status >= 500 && error.status < 600) {
                             console.error("Server error:", error.statusText);
                         }
-
                     }
+
                     break;
             }
         } catch (error) {

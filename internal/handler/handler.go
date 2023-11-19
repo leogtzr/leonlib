@@ -67,7 +67,6 @@ type UserInfo struct {
 	Picture  string `json:"picture"`        // URL de la imagen de perfil del usuario
 	Email    string `json:"email"`          // Correo electrónico del usuario
 	Verified bool   `json:"email_verified"` // Si el correo electrónico está verificado
-	// Puedes agregar más campos según los datos que necesites
 }
 
 func (ui UserInfo) String() string {
@@ -76,6 +75,11 @@ func (ui UserInfo) String() string {
 
 type Library struct {
 	Book []BookInfo
+}
+
+// { "status" : "error" | "liked" | "not-liked" }
+type LikeStatus struct {
+	Status string
 }
 
 func (bi BookInfo) String() string {
@@ -110,11 +114,6 @@ func parseBookSearchType(input string) BookSearchType {
 	default:
 		return Unknown
 	}
-}
-
-// { "status" : "error" | "liked" | "not-liked" }
-type LikeStatus struct {
-	Status string
 }
 
 func Index(w http.ResponseWriter, r *http.Request) {
@@ -627,6 +626,26 @@ func Auth0Callback(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+func getDatabaseEmailFromSessionID(db *sql.DB, userID string) (string, error) {
+	queryStr := "SELECT u.email FROM users u WHERE u.user_id=$1"
+
+	rows, err := db.Query(queryStr, userID)
+	if err != nil {
+		return "", err
+	}
+	defer rows.Close()
+
+	var email string
+
+	if rows.Next() {
+		if err := rows.Scan(&email); err != nil {
+			return "", err
+		}
+	}
+
+	return email, nil
+}
+
 func getCurrentUserID(r *http.Request) (string, error) {
 	session, err := auth.SessionStore.Get(r, "user-session")
 	if err != nil {
@@ -733,6 +752,61 @@ func LikeBook(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.Write([]byte("Liked successfully"))
+}
+
+func AddBook(db *sql.DB, w http.ResponseWriter, r *http.Request) {
+	// Parsea el formulario con un tamaño máximo de memoria. Ajusta según tus necesidades.
+	// El segundo parámetro es el tamaño máximo para el cuerpo del formulario en memoria.
+	// Los archivos más grandes se almacenarán en el disco en directorios temporales.
+	err := r.ParseMultipartForm(10 << 20) // Por ejemplo, 10 MB
+	if err != nil {
+		log.Printf("1) error: %v", err)
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
+	// Obtén los valores del formulario
+	title := r.FormValue("title")
+	author := r.FormValue("author")
+	description := r.FormValue("description")
+	read := r.FormValue("read") == "on"
+	goodreadsLink := r.FormValue("goodreadsLink")
+
+	fmt.Printf("debug:x title=(%s), author=(%s), description=(%s), read=(%s), goodreadslink=(%s)",
+		title, author, description, read, goodreadsLink)
+
+	// Manejo del archivo (imagen)
+	var imageData []byte
+	file, _, err := r.FormFile("image")
+	if err == nil {
+		defer file.Close()
+		imageData, err = io.ReadAll(file)
+		if err != nil {
+			http.Error(w, err.Error(), http.StatusInternalServerError)
+			return
+		}
+	} else if err != http.ErrMissingFile {
+		http.Error(w, err.Error(), http.StatusBadRequest)
+		return
+	}
+
+	// Prepara la sentencia SQL
+	stmt, err := db.Prepare("INSERT INTO books (title, author, image, description, read, goodreads_link) VALUES ($1, $2, $3, $4, $5, $6)")
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+	defer stmt.Close()
+
+	// Ejecuta la sentencia SQL
+	_, err = stmt.Exec(title, author, imageData, description, read, goodreadsLink)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
+	// Envía una respuesta al cliente
+	w.Write([]byte("Libro agregado con éxito"))
 }
 
 func UnlikeBook(db *sql.DB, w http.ResponseWriter, r *http.Request) {
@@ -877,6 +951,124 @@ func InfoBook(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
 		log.Printf("Descripción del error: %v", err)
+		return
+	}
+}
+
+func AddBookPage(db *sql.DB, w http.ResponseWriter, r *http.Request) {
+	/*
+		userID, err := getCurrentUserID(r)
+		if err != nil {
+			redirectToErrorPageWithMessageAndStatusCode(w, "Error al obtener información de la sesión", http.StatusInternalServerError)
+
+			return
+		}
+
+		email, err := getDatabaseEmailFromSessionID(db, userID)
+
+		if err != nil {
+			redirectToErrorPageWithMessageAndStatusCode(w, "Only admins can access to this page", http.StatusForbidden)
+
+			return
+		}
+
+		fmt.Printf("debug:x email=(%s)\n", email)
+	*/
+
+	templateDir := os.Getenv("TEMPLATE_DIR")
+	if templateDir == "" {
+		templateDir = "internal/template" // default value for local development
+	}
+	templatePath := filepath.Join(templateDir, "add_book.html")
+
+	t, err := template.ParseFiles(templatePath)
+	if err != nil {
+		redirectToErrorPage(w, r)
+		return
+	}
+
+	now := time.Now()
+
+	pageVariables := PageVariables{
+		Year:     now.Format("2006"),
+		SiteKey:  captcha.SiteKey,
+		LoggedIn: false,
+	}
+
+	err = t.Execute(w, pageVariables)
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		log.Printf("Descripción del error: %v", err)
+		return
+	}
+}
+
+func redirectToErrorPageWithMessageAndStatusCode(w http.ResponseWriter, errorMessage string, httpStatusCode int) {
+	templateDir := os.Getenv("TEMPLATE_DIR")
+	if templateDir == "" {
+		templateDir = "internal/template" // default value for local development
+	}
+	templatePath := filepath.Join(templateDir, "error5xx.html")
+
+	t, err := template.ParseFiles(templatePath)
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		log.Printf("error: %v", err)
+		// Consider sending a simple error message or a generic error page here
+		return
+	}
+
+	type ErrorVariables struct {
+		Year         string
+		ErrorMessage string
+	}
+
+	now := time.Now()
+
+	pageVariables := ErrorVariables{
+		Year:         now.Format("2006"),
+		ErrorMessage: errorMessage,
+	}
+
+	fmt.Printf("variables=(%s)\n", pageVariables)
+
+	w.WriteHeader(httpStatusCode)
+
+	err = t.Execute(w, pageVariables)
+	if err != nil {
+		log.Printf("error: %v", err)
+		return
+	}
+}
+
+func redirectToErrorPageWithMessage(w http.ResponseWriter, errorMessage string) {
+	templateDir := os.Getenv("TEMPLATE_DIR")
+	if templateDir == "" {
+		templateDir = "internal/template" // default value for local development
+	}
+	templatePath := filepath.Join(templateDir, "error5xx.html")
+
+	t, err := template.ParseFiles(templatePath)
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		return
+	}
+
+	type ErrorVariables struct {
+		Year         string
+		ErrorMessage string
+	}
+
+	now := time.Now()
+
+	pageVariables := ErrorVariables{
+		Year:         now.Format("2006"),
+		ErrorMessage: errorMessage,
+	}
+
+	err = t.Execute(w, pageVariables)
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
 		return
 	}
 }

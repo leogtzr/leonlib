@@ -40,6 +40,7 @@ services:
       - AUTH0_CALLBACK_URL=${AUTH0_CALLBACK_URL}
       - AUTH0_DOMAIN=${AUTH0_DOMAIN}
       - SESSION_SECRET=${SESSION_SECRET}
+      - LEONLIB_MAINAPP_USER=${LEONLIB_MAINAPP_USER}
     depends_on:
       - books_db
 
