@@ -35,9 +35,9 @@ type BookInfo struct {
 	Author        string
 	Description   string
 	HasBeenRead   bool
-	ImageName     string
+	ImageNames    []string
 	Image         []byte
-	Base64Image   string
+	Base64Images  []string
 	AddedOn       string
 	GoodreadsLink string
 }
@@ -212,8 +212,6 @@ func redirectToErrorPageWithMessageAndStatusCode(w http.ResponseWriter, errorMes
 		ErrorMessage: errorMessage,
 	}
 
-	fmt.Printf("variables=(%s)\n", pageVariables)
-
 	w.WriteHeader(httpStatusCode)
 
 	err = t.Execute(w, pageVariables)
@@ -224,7 +222,7 @@ func redirectToErrorPageWithMessageAndStatusCode(w http.ResponseWriter, errorMes
 }
 
 func writeErrorGeneralStatus(w http.ResponseWriter, err error) {
-	log.Printf("Error parsing template: %v", err)
+	log.Printf("error: %v", err)
 
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(map[string]string{
@@ -288,52 +286,84 @@ func getAllAuthors(db *sql.DB) ([]string, error) {
 	return authors, nil
 }
 
+func getImagesByBookID(db *sql.DB, bookID int) ([]string, error) {
+	bookImagesRows, err := db.Query(`SELECT i.image FROM book_images i WHERE i.book_id=$1`, bookID)
+	if err != nil {
+		return []string{}, err
+	}
+
+	defer func() {
+		_ = bookImagesRows.Close()
+	}()
+
+	var images []string
+
+	for bookImagesRows.Next() {
+		var base64Image []byte
+		if err := bookImagesRows.Scan(&base64Image); err != nil {
+			return []string{}, err
+		}
+
+		if len(base64Image) > 0 {
+			encodedImage := base64.StdEncoding.EncodeToString(base64Image)
+			images = append(images, encodedImage)
+		}
+	}
+
+	return images, nil
+}
+
+// TODO: fix this
 func getBookByID(db *sql.DB, id int) (BookInfo, error) {
 	var err error
-	var queryStr = `SELECT b.id, b.title, b.author, b.image, b.description, b.read, b.added_on, b.goodreads_link FROM books b WHERE b.id=$1`
+	var queryStr = `SELECT b.id, b.title, b.author, b.description, b.read, b.added_on, b.goodreads_link FROM books b WHERE b.id=$1`
 
 	bookRows, err := db.Query(queryStr, id)
 	if err != nil {
 		return BookInfo{}, err
 	}
 
+	defer func() {
+		bookRows.Close()
+	}()
+
 	var bookInfo BookInfo
 	var bookID int
 	var title string
 	var author string
-	var image []byte
 	var description string
 	var hasBeenRead bool
 	var addedOn time.Time
 	var goodreadsLink string
 	if bookRows.Next() {
-		if err := bookRows.Scan(&bookID, &title, &author, &image, &description, &hasBeenRead, &addedOn, &goodreadsLink); err != nil {
+		if err := bookRows.Scan(&bookID, &title, &author, &description, &hasBeenRead, &addedOn, &goodreadsLink); err != nil {
 			return BookInfo{}, err
 		}
 
 		bookInfo.ID = bookID
 		bookInfo.Title = title
 		bookInfo.Author = author
-		bookInfo.Image = image
-		base64Image := ""
-		if len(bookInfo.Image) > 0 {
-			base64Image = base64.StdEncoding.EncodeToString(bookInfo.Image)
-		}
-		bookInfo.Base64Image = base64Image
 		bookInfo.Description = description
 		bookInfo.HasBeenRead = hasBeenRead
 		bookInfo.AddedOn = addedOn.Format("2006-01-02")
 	}
+
+	bookImages, err := getImagesByBookID(db, id)
+	if err != nil {
+		return BookInfo{}, err
+	}
+
+	bookInfo.Base64Images = bookImages
 
 	return bookInfo, nil
 }
 
 func getBooksBySearchTypeCoincidence(db *sql.DB, titleSearchText string, bookSearchType BookSearchType) ([]BookInfo, error) {
 	var err error
-	var queryStr = `SELECT b.id, b.title, b.author, b.image, b.description, b.read, b.added_on, b.goodreads_link FROM books b WHERE b.title ILIKE $1`
+	var queryStr = `SELECT b.id, b.title, b.author, b.description, b.read, b.added_on, b.goodreads_link FROM books b WHERE b.title ILIKE $1`
 
 	if bookSearchType == ByAuthor {
-		queryStr = `SELECT b.id, b.title, b.author, b.image, b.description, b.read, b.added_on, b.goodreads_link FROM books b WHERE b.author ILIKE $1`
+		queryStr = `SELECT b.id, b.title, b.author, b.description, b.read, b.added_on, b.goodreads_link FROM books b WHERE b.author ILIKE $1`
 	}
 
 	booksByTitleRows, err := db.Query(queryStr, "%"+titleSearchText+"%")
@@ -347,26 +377,25 @@ func getBooksBySearchTypeCoincidence(db *sql.DB, titleSearchText string, bookSea
 	var id int
 	var title string
 	var author string
-	var image []byte
 	var description string
 	var hasBeenRead bool
 	var addedOn time.Time
 	var goodreadsLink string
 	for booksByTitleRows.Next() {
 		var bookInfo BookInfo
-		if err := booksByTitleRows.Scan(&id, &title, &author, &image, &description, &hasBeenRead, &addedOn, &goodreadsLink); err != nil {
+		if err := booksByTitleRows.Scan(&id, &title, &author, &description, &hasBeenRead, &addedOn, &goodreadsLink); err != nil {
 			return []BookInfo{}, err
 		}
 
 		bookInfo.ID = id
 		bookInfo.Title = title
 		bookInfo.Author = author
-		bookInfo.Image = image
-		base64Image := ""
-		if len(bookInfo.Image) > 0 {
-			base64Image = base64.StdEncoding.EncodeToString(bookInfo.Image)
+		bookImages, err := getImagesByBookID(db, id)
+		if err != nil {
+			return []BookInfo{}, err
 		}
-		bookInfo.Base64Image = base64Image
+
+		bookInfo.Base64Images = bookImages
 		bookInfo.Description = description
 		bookInfo.HasBeenRead = hasBeenRead
 		bookInfo.AddedOn = addedOn.Format("2006-01-02")
@@ -504,11 +533,11 @@ func BooksList(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	}
 
 	type BookDetail struct {
-		ID          int    `json:"id"`
-		Title       string `json:"title"`
-		Author      string `json:"author"`
-		Description string `json:"description"`
-		Base64Image string `json:"image"`
+		ID           int      `json:"id"`
+		Title        string   `json:"title"`
+		Author       string   `json:"author"`
+		Description  string   `json:"description"`
+		Base64Images []string `json:"images"`
 	}
 
 	var results []BookDetail
@@ -519,10 +548,7 @@ func BooksList(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 		bookDetail.Title = book.Title
 		bookDetail.Author = book.Author
 		bookDetail.Description = book.Description
-		if len(book.Image) > 0 {
-			base64Image := base64.StdEncoding.EncodeToString(book.Image)
-			bookDetail.Base64Image = "data:image/jpeg;base64," + base64Image
-		}
+		bookDetail.Base64Images = book.Base64Images
 
 		results = append(results, bookDetail)
 	}
@@ -803,9 +829,6 @@ func AddBook(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	read := r.FormValue("read") == "on"
 	goodreadsLink := r.FormValue("goodreadsLink")
 
-	fmt.Printf("debug:x title=(%s), author=(%s), description=(%s), read=(%s), goodreadslink=(%s)",
-		title, author, description, read, goodreadsLink)
-
 	var imageData []byte
 	file, _, err := r.FormFile("image")
 	if err == nil {
@@ -908,22 +931,38 @@ func CreateDBFromFile(db *sql.DB, w http.ResponseWriter) {
 	for _, book := range library.Book {
 		log.Printf("Reading: (%s)", book)
 
-		imgBytes, err := os.ReadFile(filepath.Join("images", book.ImageName))
+		var bookID int
+		stmt, err := db.Prepare("INSERT INTO books(title, author, description, read, added_on, goodreads_link) VALUES($1, $2, $3, $4, $5, $6) RETURNING id")
 		if err != nil {
 			writeErrorGeneralStatus(w, err)
 			return
 		}
 
-		stmt, err := db.Prepare("INSERT INTO books(title, author, image, description, read, added_on, goodreads_link) VALUES($1, $2, $3, $4, $5, $6, $7)")
+		err = stmt.QueryRow(book.Title, book.Author, book.Description, book.HasBeenRead, book.AddedOn, book.GoodreadsLink).Scan(&bookID)
 		if err != nil {
 			writeErrorGeneralStatus(w, err)
 			return
 		}
 
-		_, err = stmt.Exec(book.Title, book.Author, imgBytes, book.Description, book.HasBeenRead, book.AddedOn, book.GoodreadsLink)
-		if err != nil {
-			writeErrorGeneralStatus(w, err)
-			return
+		// Process images:
+		for _, imageName := range book.ImageNames {
+			imgBytes, err := os.ReadFile(filepath.Join("images", imageName))
+			if err != nil {
+				writeErrorGeneralStatus(w, err)
+				return
+			}
+
+			imgStmt, err := db.Prepare("INSERT INTO book_images(book_id, image) VALUES($1, $2)")
+			if err != nil {
+				writeErrorGeneralStatus(w, err)
+				return
+			}
+
+			_, err = imgStmt.Exec(bookID, imgBytes)
+			if err != nil {
+				writeErrorGeneralStatus(w, err)
+				return
+			}
 		}
 	}
 
@@ -955,10 +994,8 @@ func InfoBook(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 
 	_, err = getCurrentUserID(r)
 	if err != nil {
-		log.Printf("(InfoBook) User is not logged in: %v", err)
 		pageVariables.LoggedIn = false
 	} else {
-		log.Println("User is logged in")
 		pageVariables.LoggedIn = true
 	}
 
@@ -983,25 +1020,6 @@ func InfoBook(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 }
 
 func AboutPage(w http.ResponseWriter, r *http.Request) {
-	/*
-		userID, err := getCurrentUserID(r)
-		if err != nil {
-			redirectToErrorPageWithMessageAndStatusCode(w, "Error al obtener información de la sesión", http.StatusInternalServerError)
-
-			return
-		}
-
-		email, err := getDatabaseEmailFromSessionID(db, userID)
-
-		if err != nil {
-			redirectToErrorPageWithMessageAndStatusCode(w, "Only admins can access to this page", http.StatusForbidden)
-
-			return
-		}
-
-		fmt.Printf("debug:x email=(%s)\n", email)
-	*/
-
 	templateDir := os.Getenv("TEMPLATE_DIR")
 	if templateDir == "" {
 		templateDir = "internal/template" // default value for local development

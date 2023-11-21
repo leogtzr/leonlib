@@ -180,14 +180,21 @@ $(document).ready(function() {
                 console.log(books);
 
                 books.forEach(book => {
+                    let imagesHtml = '';
+                    if (book.images && book.images.length > 0) {
+                        book.images.forEach(image => {
+                            imagesHtml += `<img src="data:image/jpeg;base64,${image}" class="card-img-bottom" alt="Image of ${book.title}">`;
+                        });
+                    }
+
                     $("#booksList").append(`
                         <div class="card my-2">
                             <div class="card-body">
                                 <h5 class="card-title"><a href="book_info?id=${book.id}">${book.title}</a></h5>
                                 <h6 class="card-subtitle mb-2 text-muted">${book.author}</h6>
                                 <p class="card-text">${book.description || ""}</p>
-                            </div>                            
-                            <img src="${book.image}" class="card-img-bottom" alt="Image of ${book.title}">
+                            </div>
+                            ${imagesHtml}
                         </div>
                     `);
                 });
