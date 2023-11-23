@@ -16,6 +16,30 @@ $(document).ready(function() {
         }
     }
 
+    $('.remove-image').click(function() {
+        if(confirm('¿Estás seguro de que quieres eliminar esta imagen?')) {
+            const imageId = $(this).data('image-id');
+            // Aquí puedes añadir lógica para eliminar la imagen
+            // Por ejemplo, haciendo una petición AJAX al servidor
+            console.log('Eliminar imagen con ID:', imageId);
+
+            // Ejemplo de petición AJAX para eliminar la imagen (ajustar según sea necesario)
+            /*
+            $.ajax({
+                url: '/ruta_para_eliminar_imagen',
+                type: 'POST',
+                data: { image_id: imageId },
+                success: function(response) {
+                    // Manejar la respuesta del servidor
+                },
+                error: function(error) {
+                    // Manejar el error
+                }
+            });
+            */
+        }
+    });
+
     $('.badge[data-book-id]').each(async function() {
         const badgeElement = $(this);
         const bookID = badgeElement.data('book-id');

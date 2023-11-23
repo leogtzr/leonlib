@@ -196,7 +196,6 @@ func redirectToErrorPageWithMessageAndStatusCode(w http.ResponseWriter, errorMes
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
 		log.Printf("error: %v", err)
-		// Consider sending a simple error message or a generic error page here
 		return
 	}
 
@@ -334,7 +333,7 @@ func getBookByID(db *sql.DB, id int) (BookInfo, error) {
 	var description string
 	var hasBeenRead bool
 	var addedOn time.Time
-	var goodreadsLink string
+	var goodreadsLink sql.NullString
 	if bookRows.Next() {
 		if err := bookRows.Scan(&bookID, &title, &author, &description, &hasBeenRead, &addedOn, &goodreadsLink); err != nil {
 			return BookInfo{}, err
@@ -346,6 +345,11 @@ func getBookByID(db *sql.DB, id int) (BookInfo, error) {
 		bookInfo.Description = description
 		bookInfo.HasBeenRead = hasBeenRead
 		bookInfo.AddedOn = addedOn.Format("2006-01-02")
+		if goodreadsLink.Valid {
+			bookInfo.GoodreadsLink = goodreadsLink.String
+		} else {
+			bookInfo.GoodreadsLink = "" // o cualquier valor predeterminado
+		}
 	}
 
 	bookImages, err := getImagesByBookID(db, id)
@@ -1004,6 +1008,68 @@ func InfoBook(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 		templateDir = "internal/template" // default value for local development
 	}
 	templatePath := filepath.Join(templateDir, "book_info.html")
+
+	t, err := template.ParseFiles(templatePath)
+	if err != nil {
+		redirectToErrorPage(w, r)
+		return
+	}
+
+	err = t.Execute(w, pageVariables)
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		log.Printf("template error: %v", err)
+		return
+	}
+}
+
+func ModifyBookPage(db *sql.DB, w http.ResponseWriter, r *http.Request) {
+	idQueryParam := r.URL.Query().Get("book_id")
+
+	id, err := strconv.Atoi(idQueryParam)
+	if err != nil {
+		redirectToErrorPage(w, r)
+		return
+	}
+
+	fmt.Printf("debug:x will modify book=(%d)\n", id)
+
+	bookByID, err := getBookByID(db, id)
+	if err != nil {
+		redirectToErrorPage(w, r)
+		return
+	}
+
+	now := time.Now()
+
+	type BookToModifyVariables struct {
+		Year          string
+		SiteKey       string
+		Book          BookInfo
+		LoggedIn      bool
+		GoodreadsLink template.URL
+	}
+
+	pageVariables := BookToModifyVariables{
+		Year:          now.Format("2006"),
+		SiteKey:       captcha.SiteKey,
+		Book:          bookByID,
+		GoodreadsLink: template.URL(bookByID.GoodreadsLink),
+	}
+
+	//_, err = getCurrentUserID(r)
+	//if err != nil {
+	//	redirectToErrorPageWithMessageAndStatusCode(w, "Error al obtener información de la sesión", http.StatusInternalServerError)
+	//
+	//	return
+	//}
+	pageVariables.LoggedIn = true
+
+	templateDir := os.Getenv("TEMPLATE_DIR")
+	if templateDir == "" {
+		templateDir = "internal/template" // default value for local development
+	}
+	templatePath := filepath.Join(templateDir, "modify.html")
 
 	t, err := template.ParseFiles(templatePath)
 	if err != nil {

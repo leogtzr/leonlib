@@ -198,7 +198,7 @@
                         </form>
                         <span role="img" aria-label="like" class="like-emoji" data-book-id="{{.ID}}" data-toggle="tooltip" data-original-title="Dar like">👍</span>
                         <span class="badge badge-counter ml-2" data-book-id="{{.ID}}">0</span>
-                        <span role="img" aria-label="settings" class="gear-emoji" data-toggle="tooltip" data-original-title="Configurar">⚙️</span>
+                        <span role="img" aria-label="settings" class="gear-emoji" data-toggle="tooltip" data-original-title="Configurar"><a href="/modify?book_id={{$book.ID}}">⚙</a>️</span>
 
                         <div class="error-modal">Error del servidor. Por favor, inténtalo de nuevo.</div>
                         <div class="info-modal"></div>

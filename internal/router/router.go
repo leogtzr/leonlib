@@ -144,6 +144,14 @@ func initRoutes(db *sql.DB) {
 			},
 		},
 		Router{
+			"Modify Book Info",
+			"GET",
+			"/modify",
+			func(w http.ResponseWriter, r *http.Request) {
+				handler.ModifyBookPage(db, w, r)
+			},
+		},
+		Router{
 			"Ingresar",
 			"GET",
 			"/ingresar",

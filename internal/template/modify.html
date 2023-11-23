@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modify book</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .footer {
+            bottom: 0;
+            width: 100%;
+            z-index: 1030;
+        }
+
+        .search-input-group > div {
+            width: 100%;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 0.9rem;
+        }
+
+        .error-modal {
+            display: none;
+            position: absolute;
+            border: 1px solid red;
+            background-color: #fee;
+            padding: 5px;
+            border-radius: 5px;
+            z-index: 10;
+            margin-top: 5px;
+            font-size: 0.8rem;
+            color: red;
+        }
+
+        .info-modal {
+            display: none;
+            position: absolute;
+            border: 1px solid #2183e3;
+            background-color: #fee;
+            padding: 5px;
+            border-radius: 5px;
+            z-index: 10;
+            margin-top: 5px;
+            font-size: 0.8rem;
+            color: blue;
+        }
+
+        .like-section {
+            position: relative;
+            display: flex;
+        }
+
+        .like-emoji {
+            cursor: pointer;
+            opacity: 0.5;
+            transition: opacity 0.3s, transform 0.3s;
+            font-size: 20px;
+        }
+
+        .like-emoji:hover {
+            transform: scale(1.5); /* Aumenta ligeramente el tamaño al pasar el mouse */
+        }
+
+        .like-emoji.active {
+            opacity: 1;
+            color: #ff4500;
+            transform: scale(1.2);
+        }
+
+        .card-img-bottom {
+            max-width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+        }
+
+        .img-thumbnail {
+            max-width: 150px; /* Limita el ancho de la miniatura */
+            height: auto; /* Mantiene la proporción de la imagen */
+            border: 1px solid #ddd; /* Borde opcional para la miniatura */
+            margin: 5px; /* Espacio alrededor de la miniatura */
+        }
+
+        .gear-emoji {
+            position: absolute;
+            right: 0; /* Posiciona a la derecha dentro del contenedor */
+            top: 50%; /* Centra verticalmente */
+            transform: translateY(-50%); /* Ajuste fino para centrar verticalmente */
+            font-size: 20px; /* Tamaño del emoji */
+            cursor: pointer;
+        }
+
+        .badge-counter {
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: #007bff;
+            color: white;
+        }
+
+        .like-section .badge-counter,
+        .like-section .gear-emoji {
+            align-self: center;
+        }
+
+        .image-container {
+            position: relative;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .remove-image {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .main-container {
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">leonlib</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/books_by_author">Lista de libros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/about">Acerca de</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+            </li>
+            {{if not .LoggedIn}}
+            <li class="nav-item">
+                <a class="nav-link" href="/ingresar">Ingresar</a>
+            </li>
+            {{end}}
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-5 main-container">
+    {{$book := .Book}}
+    <form action="/ruta_para_modificar_books_y_book_images" method="post" enctype="multipart/form-data">
+        <p>Modifying <span class="badge badge-counter ml-2">{{$book.ID}}</span></p>
+<!--        <div class="form-group">-->
+<!--            <label for="bookId">ID del Libro (para actualización):</label>-->
+<!--            <input type="number" class="form-control" id="bookId" name="id">-->
+<!--            <small class="form-text text-muted">Dejar en blanco para agregar un nuevo libro.</small>-->
+<!--        </div>-->
+        <div class="form-group">
+            <label for="bookTitle">Título:</label>
+            <input type="text" class="form-control" id="bookTitle" name="title" required value={{$book.Title}}>
+        </div>
+        <div class="form-group">
+            <label for="bookAuthor">Autor:</label>
+            <input type="text" class="form-control" id="bookAuthor" name="author" required value={{$book.Author}}>
+        </div>
+        <div class="form-group">
+            <label for="bookDescription">Descripción:</label>
+            <textarea class="form-control" id="bookDescription" name="description" value={{$book.Description}}></textarea>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="bookRead" name="read">
+            <label class="form-check-label" for="bookRead">Leído</label>
+        </div>
+        <div class="form-group">
+            <label for="bookGoodreadsLink">Enlace de Goodreads:</label>
+            <input type="url" class="form-control" id="bookGoodreadsLink" name="goodreads_link"
+                   value="{{if .Book.GoodreadsLink}}{{.Book.GoodreadsLink}}{{end}}"
+                   placeholder="URL de Goodreads">
+        </div>
+
+        <h4>Images</h4>
+        <div id="current-images">
+            <!-- Ejemplo de imágenes actuales con botón de eliminar -->
+            {{range $imgIndex, $image := $book.Base64Images}}
+            <div class="image-container">
+                <img src="data:image/jpeg;base64,{{$image}}" alt="Imagen del Libro" class="img-thumbnail">
+                <button type="button" class="remove-image" data-image-id="ID_de_la_imagen_1">X</button>
+            </div>
+            {{end}}
+        </div>
+
+        <h5>Añadir o Cambiar Imagenes</h5>
+        <div class="form-group">
+            <label for="bookImage">Imagen:</label>
+            <input type="file" class="form-control-file" id="bookImage" name="image">
+            <small class="form-text text-muted">Cargar solo si se desea agregar/modificar la imagen del libro.</small>
+        </div>
+        <button type="submit" class="btn btn-primary">Modificar Libro e Imagen</button>
+    </form>
+</div>
+
+<footer class="footer bg-dark py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 text-left text-white">
+                Libros en la base de datos: <span id="booksCount">12345</span>
+            </div>
+            <div class="col-6 text-right text-white">
+                © {{.Year}} leonlib
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery and Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="assets/script.js"></script>
+</body>
+
+</html>
