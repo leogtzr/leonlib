@@ -119,6 +119,19 @@
             margin: 10px;
         }
 
+        .info-modal {
+            display: none;
+            position: absolute;
+            border: 1px solid #2183e3;
+            background-color: #fee;
+            padding: 5px;
+            border-radius: 5px;
+            z-index: 10;
+            margin-top: 5px;
+            font-size: 0.8rem;
+            color: blue;
+        }
+
         .remove-image {
             position: absolute;
             top: -10px;
@@ -167,13 +180,9 @@
 
 <div class="container mt-5 main-container">
     {{$book := .Book}}
-    <form action="/ruta_para_modificar_books_y_book_images" method="post" enctype="multipart/form-data">
+    <form id="bookModifyForm" action="/modify" method="POST" enctype="multipart/form-data">
         <p>Modifying <span class="badge badge-counter ml-2">{{$book.ID}}</span></p>
-<!--        <div class="form-group">-->
-<!--            <label for="bookId">ID del Libro (para actualización):</label>-->
-<!--            <input type="number" class="form-control" id="bookId" name="id">-->
-<!--            <small class="form-text text-muted">Dejar en blanco para agregar un nuevo libro.</small>-->
-<!--        </div>-->
+        <input type="hidden" name="book_id" value="{{.Book.ID}}" id="{{.Book.ID}}">
         <div class="form-group">
             <label for="bookTitle">Título:</label>
             <input type="text" class="form-control" id="bookTitle" name="title" required value={{$book.Title}}>
@@ -187,7 +196,7 @@
             <textarea class="form-control" id="bookDescription" name="description" value={{$book.Description}}></textarea>
         </div>
         <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="bookRead" name="read">
+            <input type="checkbox" class="form-check-input" id="bookRead" name="read" {{if .Book.HasBeenRead}} checked {{end}}>
             <label class="form-check-label" for="bookRead">Leído</label>
         </div>
         <div class="form-group">
@@ -202,8 +211,8 @@
             <!-- Ejemplo de imágenes actuales con botón de eliminar -->
             {{range $imgIndex, $image := $book.Base64Images}}
             <div class="image-container">
-                <img src="data:image/jpeg;base64,{{$image}}" alt="Imagen del Libro" class="img-thumbnail">
-                <button type="button" class="remove-image" data-image-id="ID_de_la_imagen_1">X</button>
+                <img src="data:image/jpeg;base64,{{$image.Image}}" alt="Imagen del Libro" class="img-thumbnail">
+                <button type="button" class="remove-image" data-image-id="{{$image.ImageID}}">X</button>
             </div>
             {{end}}
         </div>
@@ -214,7 +223,8 @@
             <input type="file" class="form-control-file" id="bookImage" name="image">
             <small class="form-text text-muted">Cargar solo si se desea agregar/modificar la imagen del libro.</small>
         </div>
-        <button type="submit" class="btn btn-primary">Modificar Libro e Imagen</button>
+        <div class="info-modal"></div>
+        <button type="submit" class="btn btn-primary">Save</button>
     </form>
 </div>
 
@@ -237,7 +247,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<script src="assets/script.js"></script>
+<script src="/assets/script.js"></script>
 </body>
 
 </html>

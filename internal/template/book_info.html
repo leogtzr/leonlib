@@ -171,7 +171,7 @@
                     <h4>Añadido el <span class="badge badge-info">{{.AddedOn}}</span></h4>
 
                     {{range $imgIndex, $image := $book.Base64Images}}
-                    <img src="data:image/jpeg;base64,{{$image}}" alt="Book {{$book.Title}}" class="img-thumbnail" data-toggle="modal" data-target="#imageModal-{{$book.ID}}-{{$imgIndex}}">
+                    <img src="data:image/jpeg;base64,{{$image.Image}}" alt="Book {{$book.Title}}" class="img-thumbnail" data-toggle="modal" data-target="#imageModal-{{$book.ID}}-{{$imgIndex}}">
                     <div class="modal fade" id="imageModal-{{$book.ID}}-{{$imgIndex}}" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel-{{$book.ID}}-{{$imgIndex}}" aria-hidden="true">
                         <div class="modal-dialog modal-lg" role="document">
                             <div class="modal-content">
@@ -182,7 +182,7 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <img src="data:image/jpeg;base64,{{$image}}" alt="Book {{$book.Title}}" class="img-fluid">
+                                    <img src="data:image/jpeg;base64,{{$image.Image}}" alt="Book {{$book.Title}}" class="img-fluid">
                                 </div>
                             </div>
                         </div>
@@ -198,7 +198,7 @@
                         </form>
                         <span role="img" aria-label="like" class="like-emoji" data-book-id="{{.ID}}" data-toggle="tooltip" data-original-title="Dar like">👍</span>
                         <span class="badge badge-counter ml-2" data-book-id="{{.ID}}">0</span>
-                        <span role="img" aria-label="settings" class="gear-emoji" data-toggle="tooltip" data-original-title="Configurar"><a href="/modify?book_id={{$book.ID}}">⚙</a>️</span>
+                        <span role="img" aria-label="settings" class="gear-emoji" data-toggle="tooltip" data-original-title="Configurar"><a href="/admin/modify?book_id={{$book.ID}}">⚙</a>️</span>
 
                         <div class="error-modal">Error del servidor. Por favor, inténtalo de nuevo.</div>
                         <div class="info-modal"></div>

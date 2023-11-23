@@ -13,6 +13,7 @@ import (
 	"leonlib/internal/auth"
 	"leonlib/internal/captcha"
 	"log"
+	"mime/multipart"
 	"net/http"
 	"os"
 	"path/filepath"
@@ -37,9 +38,15 @@ type BookInfo struct {
 	HasBeenRead   bool
 	ImageNames    []string
 	Image         []byte
-	Base64Images  []string
+	Base64Images  []BookImageInfo
 	AddedOn       string
 	GoodreadsLink string
+}
+
+type BookImageInfo struct {
+	ImageID int
+	BookID  int
+	Image   string
 }
 
 type BookSearchType int
@@ -285,34 +292,40 @@ func getAllAuthors(db *sql.DB) ([]string, error) {
 	return authors, nil
 }
 
-func getImagesByBookID(db *sql.DB, bookID int) ([]string, error) {
-	bookImagesRows, err := db.Query(`SELECT i.image FROM book_images i WHERE i.book_id=$1`, bookID)
+func getImagesByBookID(db *sql.DB, bookID int) ([]BookImageInfo, error) {
+	bookImagesRows, err := db.Query(`SELECT i.image_id, i.book_id, i.image FROM book_images i WHERE i.book_id=$1`, bookID)
 	if err != nil {
-		return []string{}, err
+		return []BookImageInfo{}, err
 	}
 
 	defer func() {
 		_ = bookImagesRows.Close()
 	}()
 
-	var images []string
+	var images []BookImageInfo
 
 	for bookImagesRows.Next() {
+		var imageID int
+		var bookID int
 		var base64Image []byte
-		if err := bookImagesRows.Scan(&base64Image); err != nil {
-			return []string{}, err
+		if err = bookImagesRows.Scan(&imageID, &bookID, &base64Image); err != nil {
+			return []BookImageInfo{}, err
 		}
 
 		if len(base64Image) > 0 {
 			encodedImage := base64.StdEncoding.EncodeToString(base64Image)
-			images = append(images, encodedImage)
+			bookImageInfo := BookImageInfo{
+				ImageID: imageID,
+				BookID:  bookID,
+				Image:   encodedImage,
+			}
+			images = append(images, bookImageInfo)
 		}
 	}
 
 	return images, nil
 }
 
-// TODO: fix this
 func getBookByID(db *sql.DB, id int) (BookInfo, error) {
 	var err error
 	var queryStr = `SELECT b.id, b.title, b.author, b.description, b.read, b.added_on, b.goodreads_link FROM books b WHERE b.id=$1`
@@ -537,11 +550,11 @@ func BooksList(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	}
 
 	type BookDetail struct {
-		ID           int      `json:"id"`
-		Title        string   `json:"title"`
-		Author       string   `json:"author"`
-		Description  string   `json:"description"`
-		Base64Images []string `json:"images"`
+		ID           int             `json:"id"`
+		Title        string          `json:"title"`
+		Author       string          `json:"author"`
+		Description  string          `json:"description"`
+		Base64Images []BookImageInfo `json:"images"`
 	}
 
 	var results []BookDetail
@@ -704,10 +717,7 @@ func Auth0Callback(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	fmt.Println(userInfo)
-
 	_, err = db.Exec(`
-	
 			INSERT INTO users(user_id, email, name, oauth_identifier) 
 			VALUES($1, $2, $3, $4)
 			ON CONFLICT(user_id) DO UPDATE
@@ -1023,6 +1033,98 @@ func InfoBook(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+func ModifyBook(db *sql.DB, w http.ResponseWriter, r *http.Request) {
+	// TODO: check auth here
+	err := r.ParseMultipartForm(2 << 20)
+	if err != nil {
+		writeErrorGeneralStatus(w, err)
+
+		return
+	}
+
+	bookIDParam := r.FormValue("book_id")
+	title := r.FormValue("title")
+	author := r.FormValue("author")
+	description := r.FormValue("description")
+	read := r.FormValue("read") == "on"
+	goodreadsLink := r.FormValue("goodreadsLink")
+
+	fmt.Printf("debug:x bookID=(%s), title=(%s), author=(%s), description=(%s), read=(%t), goodreadsLink=(%s)\n",
+		bookIDParam, title, author, description, read, goodreadsLink)
+
+	id, err := strconv.Atoi(bookIDParam)
+	if err != nil {
+		writeErrorGeneralStatus(w, err)
+
+		return
+	}
+
+	file, _, err := r.FormFile("image")
+	err = addImageToBook(db, id, r, file)
+	if err != nil {
+		writeErrorGeneralStatus(w, err)
+
+		return
+	}
+
+	bookUpdate, err := db.Prepare(`
+		UPDATE books SET 
+			title = $1,
+			author = $2,
+			description = $3,
+			read = $4,
+			goodreads_link = $5
+		WHERE id = $6
+	`)
+	if err != nil {
+		writeErrorGeneralStatus(w, err)
+
+		return
+	}
+	defer func() {
+		_ = bookUpdate.Close()
+	}()
+
+	_, err = bookUpdate.Exec(title, author, description, read, goodreadsLink, id)
+	if err != nil {
+		writeErrorGeneralStatus(w, err)
+
+		return
+	}
+
+	w.Write([]byte("Libro modificado con exito"))
+}
+
+func addImageToBook(db *sql.DB, id int, r *http.Request, file multipart.File) error {
+	var imageData []byte
+	file, _, err := r.FormFile("image")
+	if err == nil {
+		defer file.Close()
+		imageData, err = io.ReadAll(file)
+		if err != nil {
+			return err
+		}
+	} else if !errors.Is(err, http.ErrMissingFile) {
+		return err
+	}
+
+	if len(imageData) == 0 {
+		return nil
+	}
+
+	imgStmt, err := db.Prepare("INSERT INTO book_images(book_id, image) VALUES($1, $2)")
+	if err != nil {
+		return err
+	}
+
+	_, err = imgStmt.Exec(id, imageData)
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func ModifyBookPage(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	idQueryParam := r.URL.Query().Get("book_id")
 
@@ -1036,6 +1138,7 @@ func ModifyBookPage(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 
 	bookByID, err := getBookByID(db, id)
 	if err != nil {
+		log.Printf("error2: %v", err)
 		redirectToErrorPage(w, r)
 		return
 	}
@@ -1073,6 +1176,7 @@ func ModifyBookPage(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 
 	t, err := template.ParseFiles(templatePath)
 	if err != nil {
+		log.Printf("templ: %v", err)
 		redirectToErrorPage(w, r)
 		return
 	}
@@ -1160,4 +1264,21 @@ func AddBookPage(w http.ResponseWriter, r *http.Request) {
 		log.Printf("template error: %v", err)
 		return
 	}
+}
+
+func RemoveImage(db *sql.DB, w http.ResponseWriter, r *http.Request) {
+	// TODO: check auth
+
+	r.ParseForm()
+	imageID := r.PostFormValue("image_id")
+
+	log.Printf("debug:x about to remove=(%s)", imageID)
+
+	_, err := db.Exec("DELETE FROM book_images WHERE image_id=$1", imageID)
+	if err != nil {
+		http.Error(w, "Error removing image", http.StatusInternalServerError)
+		return
+	}
+
+	w.Write([]byte("Image removed OK..."))
 }

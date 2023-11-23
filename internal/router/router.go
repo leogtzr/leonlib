@@ -56,7 +56,7 @@ func initRoutes(db *sql.DB) {
 		Router{
 			"",
 			"GET",
-			"/adm/initdb",
+			"/admin/initdb",
 			func(w http.ResponseWriter, r *http.Request) {
 				handler.CreateDBFromFile(db, w)
 			},
@@ -144,11 +144,19 @@ func initRoutes(db *sql.DB) {
 			},
 		},
 		Router{
-			"Modify Book Info",
+			"Modify Book Page",
 			"GET",
-			"/modify",
+			"/admin/modify",
 			func(w http.ResponseWriter, r *http.Request) {
 				handler.ModifyBookPage(db, w, r)
+			},
+		},
+		Router{
+			"Modify Book",
+			"POST",
+			"/modify",
+			func(w http.ResponseWriter, r *http.Request) {
+				handler.ModifyBook(db, w, r)
 			},
 		},
 		Router{
@@ -179,6 +187,14 @@ func initRoutes(db *sql.DB) {
 			"/api/books",
 			func(w http.ResponseWriter, r *http.Request) {
 				handler.BooksList(db, w, r)
+			},
+		},
+		Router{
+			"Remove Image",
+			"POST",
+			"/removeimage",
+			func(w http.ResponseWriter, r *http.Request) {
+				handler.RemoveImage(db, w, r)
 			},
 		},
 	}

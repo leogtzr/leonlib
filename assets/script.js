@@ -17,26 +17,25 @@ $(document).ready(function() {
     }
 
     $('.remove-image').click(function() {
-        if(confirm('¿Estás seguro de que quieres eliminar esta imagen?')) {
+        const $button = $(this); // Guarda una referencia al botón que se clickeó
+        if (confirm('¿Estás seguro de que quieres eliminar esta imagen?')) {
             const imageId = $(this).data('image-id');
             // Aquí puedes añadir lógica para eliminar la imagen
             // Por ejemplo, haciendo una petición AJAX al servidor
             console.log('Eliminar imagen con ID:', imageId);
 
-            // Ejemplo de petición AJAX para eliminar la imagen (ajustar según sea necesario)
-            /*
             $.ajax({
-                url: '/ruta_para_eliminar_imagen',
+                url: '/removeimage',
                 type: 'POST',
                 data: { image_id: imageId },
                 success: function(response) {
-                    // Manejar la respuesta del servidor
+                    $button.closest('.image-container').remove();
+                    console.log('Image removed successfully');
                 },
                 error: function(error) {
-                    // Manejar el error
+                    console.log('Error removing image: ', error);
                 }
             });
-            */
         }
     });
 
@@ -51,6 +50,42 @@ $(document).ready(function() {
         }
     });
 
+    $('#bookModifyForm').on('submit', function(e) {
+        e.preventDefault();
+
+        var formData = new FormData(this);
+
+        const clickedElement = $(this);
+
+        console.log('Will try to send: ', formData);
+        var bookID = formData.get("book_id");
+        console.log('Book ID:', bookID);
+
+        $.ajax({
+            url: '/modify',
+            type: 'POST',
+            data: formData,
+            contentType: false,
+            processData: false,
+            success: function(response) {
+                // TODO: finish impl, show a message here
+                console.log('Libro modificado OK', response);
+                const infoModal = clickedElement.find('.info-modal');
+                infoModal.text('Libro modificado exitosamente');
+                infoModal.show();
+
+                setTimeout(() => {
+                    infoModal.hide();
+                    window.location.href = `modify?book_id=${bookID}`;
+                    }, 800);
+            },
+            error: function(xhr, status, error) {
+                // TODO: finish impl, show a message here
+                console.error('Error modificando libro:', error);
+            }
+        });
+    });
+
     $('#bookForm').on('submit', function(e) {
         e.preventDefault();
 
@@ -63,9 +98,11 @@ $(document).ready(function() {
             contentType: false,
             processData: false,
             success: function(response) {
+                // TODO: finish impl
                 console.log('Libro agregado con éxito', response);
             },
             error: function(xhr, status, error) {
+                // TODO: finish impl
                 console.error('Error al agregar el libro:', error);
             }
         });
@@ -206,8 +243,9 @@ $(document).ready(function() {
                 books.forEach(book => {
                     let imagesHtml = '';
                     if (book.images && book.images.length > 0) {
+                        console.log(book.images);
                         book.images.forEach(image => {
-                            imagesHtml += `<img src="data:image/jpeg;base64,${image}" class="card-img-bottom" alt="Image of ${book.title}">`;
+                            imagesHtml += `<img src="data:image/jpeg;base64,${image.Image}" class="card-img-bottom" alt="Image of ${book.title}">`;
                         });
                     }
 
