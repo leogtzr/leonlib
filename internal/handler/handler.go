@@ -818,7 +818,10 @@ func LikeBook(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	r.ParseForm()
+	err = r.ParseForm()
+	if err != nil {
+		w.Write([]byte(fmt.Sprintf("error like book: %v", err.Error())))
+	}
 	bookID := r.PostFormValue("book_id")
 
 	_, err = db.Exec("INSERT INTO book_likes(book_id, user_id) VALUES($1, $2) ON CONFLICT(book_id, user_id) DO NOTHING", bookID, userID)
