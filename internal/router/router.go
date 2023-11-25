@@ -112,7 +112,7 @@ func initRoutes(db *sql.DB) {
 			"GET",
 			"/books_by_author",
 			func(w http.ResponseWriter, r *http.Request) {
-				handler.BooksByAuthor(db, w, r)
+				handler.BooksByAuthorPage(db, w, r)
 			},
 		},
 		Router{
@@ -122,17 +122,17 @@ func initRoutes(db *sql.DB) {
 			handler.ErrorPage,
 		},
 		Router{
-			"Index",
+			"IndexPage",
 			"GET",
 			"/",
-			handler.Index,
+			handler.IndexPage,
 		},
 		Router{
 			"Search for books",
 			"GET",
 			"/search_books",
 			func(w http.ResponseWriter, r *http.Request) {
-				handler.SearchBooks(db, w, r)
+				handler.SearchBooksPage(db, w, r)
 			},
 		},
 		Router{
@@ -160,10 +160,10 @@ func initRoutes(db *sql.DB) {
 			},
 		},
 		Router{
-			"Ingresar",
+			"IngresarPage",
 			"GET",
 			"/ingresar",
-			handler.Ingresar,
+			handler.IngresarPage,
 		},
 		//Router{
 		//	"Autocomplete",

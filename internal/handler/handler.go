@@ -201,8 +201,8 @@ func redirectToErrorPageWithMessageAndStatusCode(w http.ResponseWriter, errorMes
 
 	t, err := template.ParseFiles(templatePath)
 	if err != nil {
-		w.WriteHeader(http.StatusInternalServerError)
 		log.Printf("error: %v", err)
+		w.WriteHeader(http.StatusInternalServerError)
 		return
 	}
 
@@ -436,7 +436,7 @@ func uniqueSearchTypes(searchTypes []string) []string {
 	return result
 }
 
-func Index(w http.ResponseWriter, r *http.Request) {
+func IndexPage(w http.ResponseWriter, r *http.Request) {
 	now := time.Now()
 
 	pageVariables := PageVariables{
@@ -461,19 +461,22 @@ func Index(w http.ResponseWriter, r *http.Request) {
 
 	t, err := template.ParseFiles(templatePath)
 	if err != nil {
-		http.Error(w, err.Error(), http.StatusInternalServerError)
 		log.Printf("Error parsing template: %v", err)
+		redirectToErrorPageWithMessageAndStatusCode(w, err.Error(), http.StatusInternalServerError)
+
 		return
 	}
 
 	err = t.Execute(w, pageVariables)
 	if err != nil {
-		http.Error(w, err.Error(), http.StatusInternalServerError)
 		log.Printf("Error executing template: %v", err)
+		redirectToErrorPageWithMessageAndStatusCode(w, err.Error(), http.StatusInternalServerError)
+
+		return
 	}
 }
 
-func BooksByAuthor(db *sql.DB, w http.ResponseWriter, r *http.Request) {
+func BooksByAuthorPage(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	now := time.Now()
 	pageVariables := PageVariablesForAuthors{
 		Year:    now.Format("2006"),
@@ -491,7 +494,7 @@ func BooksByAuthor(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 
 	_, err = getCurrentUserID(r)
 	if err != nil {
-		log.Printf("(BooksByAuthor) User is not logged in: %v", err)
+		log.Printf("(BooksByAuthorPage) User is not logged in: %v", err)
 		pageVariables.LoggedIn = false
 	} else {
 		log.Println("User is logged in")
@@ -598,7 +601,7 @@ func BooksCount(db *sql.DB, w http.ResponseWriter) {
 	})
 }
 
-func SearchBooks(db *sql.DB, w http.ResponseWriter, r *http.Request) {
+func SearchBooksPage(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	bookQuery := r.URL.Query().Get("textSearch")
 	searchTypesStr := r.URL.Query().Get("searchType")
 	searchTypesParams := uniqueSearchTypes(strings.Split(searchTypesStr, ","))
@@ -618,11 +621,10 @@ func SearchBooks(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 		case ByTitle:
 			booksByTitle, err := getBooksBySearchTypeCoincidence(db, bookQuery, ByTitle)
 			if err != nil {
-				log.Printf("Error parsing template: %v", err)
-				redirectToErrorPage(w, r)
+				redirectToErrorPageWithMessageAndStatusCode(w, "Error getting information from the database", http.StatusInternalServerError)
+
 				return
 			}
-			log.Printf("Got=(%s)", booksByTitle)
 			results = append(results, booksByTitle...)
 
 		case ByAuthor:
@@ -635,7 +637,7 @@ func SearchBooks(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 
 		case Unknown:
 			log.Printf("Tipo de búsqueda en libros desconocido.")
-			redirectToErrorPage(w, r)
+			redirectToErrorPageWithMessageAndStatusCode(w, "Wrong search", http.StatusInternalServerError)
 
 			return
 		}
@@ -650,7 +652,7 @@ func SearchBooks(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 
 	templateDir := os.Getenv("TEMPLATE_DIR")
 	if templateDir == "" {
-		templateDir = "internal/template" // default value for local development
+		templateDir = "internal/template"
 	}
 	templatePath := filepath.Join(templateDir, "search_books.html")
 
@@ -671,7 +673,7 @@ func SearchBooks(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 func ErrorPage(w http.ResponseWriter, _ *http.Request) {
 	templateDir := os.Getenv("TEMPLATE_DIR")
 	if templateDir == "" {
-		templateDir = "internal/template" // default value for local development
+		templateDir = "internal/template"
 	}
 	templatePath := filepath.Join(templateDir, "error5xx.html")
 
@@ -688,7 +690,7 @@ func ErrorPage(w http.ResponseWriter, _ *http.Request) {
 	}
 }
 
-func Ingresar(w http.ResponseWriter, r *http.Request) {
+func IngresarPage(w http.ResponseWriter, r *http.Request) {
 	oauthState := generateRandomString(32)
 
 	session, _ := auth.SessionStore.Get(r, "user-session")
@@ -1130,16 +1132,13 @@ func ModifyBookPage(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 
 	id, err := strconv.Atoi(idQueryParam)
 	if err != nil {
-		redirectToErrorPage(w, r)
+		redirectToErrorPageWithMessageAndStatusCode(w, "wrong ID", http.StatusInternalServerError)
 		return
 	}
 
-	fmt.Printf("debug:x will modify book=(%d)\n", id)
-
 	bookByID, err := getBookByID(db, id)
 	if err != nil {
-		log.Printf("error2: %v", err)
-		redirectToErrorPage(w, r)
+		redirectToErrorPageWithMessageAndStatusCode(w, "error getting information from the database", http.StatusInternalServerError)
 		return
 	}
 
@@ -1176,15 +1175,14 @@ func ModifyBookPage(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 
 	t, err := template.ParseFiles(templatePath)
 	if err != nil {
-		log.Printf("templ: %v", err)
-		redirectToErrorPage(w, r)
+		redirectToErrorPageWithMessageAndStatusCode(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
 
 	err = t.Execute(w, pageVariables)
 	if err != nil {
-		w.WriteHeader(http.StatusInternalServerError)
-		log.Printf("template error: %v", err)
+		redirectToErrorPageWithMessageAndStatusCode(w, err.Error(), http.StatusInternalServerError)
+
 		return
 	}
 }
@@ -1198,7 +1196,7 @@ func AboutPage(w http.ResponseWriter, r *http.Request) {
 
 	t, err := template.ParseFiles(templatePath)
 	if err != nil {
-		redirectToErrorPage(w, r)
+		redirectToErrorPageWithMessageAndStatusCode(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
 
@@ -1212,8 +1210,7 @@ func AboutPage(w http.ResponseWriter, r *http.Request) {
 
 	err = t.Execute(w, pageVariables)
 	if err != nil {
-		w.WriteHeader(http.StatusInternalServerError)
-		log.Printf("error: %v", err)
+		redirectToErrorPageWithMessageAndStatusCode(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
 }
