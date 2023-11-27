@@ -116,6 +116,14 @@ func initRoutes(db *sql.DB) {
 			},
 		},
 		Router{
+			"Contact page",
+			"GET",
+			"/contact",
+			func(w http.ResponseWriter, r *http.Request) {
+				handler.ContactPage(w, r)
+			},
+		},
+		Router{
 			"ErrorPage",
 			"GET",
 			"/error",

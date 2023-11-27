@@ -486,7 +486,7 @@ func BooksByAuthorPage(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 	authors, err := getAllAuthors(db)
 	if err != nil {
 		log.Printf("Error getting authors: %v", err)
-		redirectToErrorPage(w, r)
+		redirectToErrorPageWithMessageAndStatusCode(w, "error getting information from the database", http.StatusInternalServerError)
 		return
 	}
 
@@ -630,7 +630,8 @@ func SearchBooksPage(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 		case ByAuthor:
 			booksByAuthor, err := getBooksBySearchTypeCoincidence(db, bookQuery, ByAuthor)
 			if err != nil {
-				redirectToErrorPage(w, r)
+				log.Printf("error getting info from the database: %v", err)
+				redirectToErrorPageWithMessageAndStatusCode(w, "error getting info from the database", http.StatusInternalServerError)
 				return
 			}
 			results = append(results, booksByAuthor...)
@@ -658,7 +659,8 @@ func SearchBooksPage(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 
 	t, err := template.ParseFiles(templatePath)
 	if err != nil {
-		redirectToErrorPage(w, r)
+		log.Printf("template error: %v", err)
+		redirectToErrorPageWithMessageAndStatusCode(w, "template error", http.StatusInternalServerError)
 		return
 	}
 
@@ -999,7 +1001,8 @@ func InfoBook(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 
 	bookByID, err := getBookByID(db, id)
 	if err != nil {
-		redirectToErrorPage(w, r)
+		log.Printf("error: getting information from the database")
+		redirectToErrorPageWithMessageAndStatusCode(w, "error getting information from the database", http.StatusInternalServerError)
 		return
 	}
 
@@ -1218,6 +1221,34 @@ func AboutPage(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+func ContactPage(w http.ResponseWriter, _ *http.Request) {
+	templateDir := os.Getenv("TEMPLATE_DIR")
+	if templateDir == "" {
+		templateDir = "internal/template" // default value for local development
+	}
+	templatePath := filepath.Join(templateDir, "contact.html")
+
+	t, err := template.ParseFiles(templatePath)
+	if err != nil {
+		redirectToErrorPageWithMessageAndStatusCode(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
+	now := time.Now()
+
+	pageVariables := PageVariables{
+		Year:     now.Format("2006"),
+		SiteKey:  captcha.SiteKey,
+		LoggedIn: false,
+	}
+
+	err = t.Execute(w, pageVariables)
+	if err != nil {
+		redirectToErrorPageWithMessageAndStatusCode(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+}
+
 func AddBookPage(w http.ResponseWriter, r *http.Request) {
 	/*
 		userID, err := getCurrentUserID(r)
@@ -1246,7 +1277,8 @@ func AddBookPage(w http.ResponseWriter, r *http.Request) {
 
 	t, err := template.ParseFiles(templatePath)
 	if err != nil {
-		redirectToErrorPage(w, r)
+		log.Printf("template error: %v", err)
+		redirectToErrorPageWithMessageAndStatusCode(w, fmt.Sprintf("template error: %v", err), http.StatusInternalServerError)
 		return
 	}
 
