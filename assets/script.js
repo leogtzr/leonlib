@@ -17,11 +17,9 @@ $(document).ready(function() {
     }
 
     $('.remove-image').click(function() {
-        const $button = $(this); // Guarda una referencia al botón que se clickeó
+        const $button = $(this);
         if (confirm('¿Estás seguro de que quieres eliminar esta imagen?')) {
             const imageId = $(this).data('image-id');
-            // Aquí puedes añadir lógica para eliminar la imagen
-            // Por ejemplo, haciendo una petición AJAX al servidor
             console.log('Eliminar imagen con ID:', imageId);
 
             $.ajax({
