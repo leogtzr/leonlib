@@ -24,7 +24,7 @@ parser/
 junk/
 
 database-data/
-library/
+# library/
 frontend-drafts/
 tmp/
 

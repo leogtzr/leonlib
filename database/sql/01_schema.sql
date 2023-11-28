@@ -5,8 +5,7 @@ CREATE TABLE books (
    description TEXT,
    read BOOLEAN DEFAULT FALSE,
    added_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-   goodreads_link VARCHAR(255),
-   CONSTRAINT unique_title_author UNIQUE (title, author)
+   goodreads_link VARCHAR(255)
 );
 
 CREATE TABLE book_images (
