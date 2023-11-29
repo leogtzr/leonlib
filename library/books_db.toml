@@ -1924,3 +1924,363 @@ imageNames = [ "222.jpg" ]
 addedOn = "2023-11-11"
 goodreadsLink = ""
 
+[[book]]
+title = "Assassin's Creed Black Flag"
+author = "Oliver Bowden"
+description = ""
+hasBeenRead = false
+imageNames = [ "222.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "A la sombra de las espadas, la batalla por el imperio global y el fin del mundo antiguo"
+author = "Tom Holland"
+description = "Editorial Planeta"
+hasBeenRead = false
+imageNames = [ "223.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "The Passionate Programmer, creating a remarkable career in software development"
+author = "Chad Fowler"
+description = "Editorial The Pragmatic Programmers"
+hasBeenRead = false
+imageNames = [ "224.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Cuerpos sin edad, mentes sin tiempo"
+author = "Deepak Chopra"
+description = "Editorial Vergara"
+hasBeenRead = false
+imageNames = [ "225.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "OCA/OCP Java SE 7 Programmer I & II Study Guide"
+author = "Kathy Sierra, Bert Bates"
+description = "Editorial Oracle"
+hasBeenRead = false
+imageNames = [ "226.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Cracking the Coding Interview, 6th edition"
+author = "Gayle Laakmann McDowell"
+description = ""
+hasBeenRead = false
+imageNames = [ "227.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Cracking the Coding Interview, 6th edition"
+author = "Gayle Laakmann McDowell"
+description = ""
+hasBeenRead = false
+imageNames = [ "227.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Perl, Manual de Referencia"
+author = "Martin C. Brown"
+description = ""
+hasBeenRead = false
+imageNames = [ "228.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Head First Design Patterns"
+author = "Eric Freeman & Elisabeth Freeman"
+description = ""
+hasBeenRead = false
+imageNames = [ "229.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Effective Java, Second Edition"
+author = "Joshua Bloch"
+description = ""
+hasBeenRead = false
+imageNames = [ "230.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Enciclopedia del lenguaje C"
+author = "Francisco Javier Ceballos"
+description = "Editorial Alfaomega"
+hasBeenRead = true
+imageNames = [ "231.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Las obras maestras de la pintura francesa"
+author = "Hajo Düchting"
+description = ""
+hasBeenRead = false
+imageNames = [ "232.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Dr. Slump, Tomo I"
+author = "Akira Toriyama"
+description = ""
+hasBeenRead = false
+imageNames = [ "234.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Sora No Otoshimono, Tomo I"
+author = "Suu Minauki"
+description = ""
+hasBeenRead = false
+imageNames = [ "235.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Weathering with you, Tomo I"
+author = "Makoto Shinkai"
+description = ""
+hasBeenRead = false
+imageNames = [ "236.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Soy una araña, Tomo I"
+author = "Okina Baba"
+description = ""
+hasBeenRead = false
+imageNames = [ "237.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Ataque de los Titanes, Tomo 3"
+author = "Hajime Isayama"
+description = ""
+hasBeenRead = false
+imageNames = [ "238.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "To Love-Ru"
+author = "Saki Hasemi"
+description = ""
+hasBeenRead = false
+imageNames = [ "239.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Bestiarius"
+author = "Masasumi Kakizaki"
+description = ""
+hasBeenRead = false
+imageNames = [ "240.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "To Love-Ru, Darkness I"
+author = "Saki Hasemi"
+description = ""
+hasBeenRead = false
+imageNames = [ "241.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "1001 Knights 1"
+author = "Yukiru Sugisaki"
+description = ""
+hasBeenRead = false
+imageNames = [ "242.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Netsuzou TRap NTR"
+author = "Kodama Naoko"
+description = ""
+hasBeenRead = false
+imageNames = [ "243.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Arte griego y romano"
+author = "Susan Woodford"
+description = ""
+hasBeenRead = false
+imageNames = [ "244.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Así es Monet"
+author = "Sara Pappworth"
+description = ""
+hasBeenRead = false
+imageNames = [ "245.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Guía de Arqueológía Roma"
+author = "Sofia Pescarin"
+description = ""
+hasBeenRead = false
+imageNames = [ "246.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "París, Arte y Arquitectura"
+author = "H. Fullmann"
+description = ""
+hasBeenRead = false
+imageNames = [ "247.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Hybrid Heart 01"
+author = "Masamune Kuji"
+description = ""
+hasBeenRead = false
+imageNames = [ "248.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Berserk 3"
+author = "Kentaro Miura"
+description = ""
+hasBeenRead = false
+imageNames = [ "249.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Rafael, Grandes Maestros de la Pintura"
+author = "Editorial Sol"
+description = ""
+hasBeenRead = false
+imageNames = [ "250.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Cézanne, Grandes Maestros de la Pintura"
+author = "Editorial Sol"
+description = ""
+hasBeenRead = false
+imageNames = [ "251.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Kandinsky, Grandes Maestros de la Pintura"
+author = "Editorial Sol"
+description = ""
+hasBeenRead = false
+imageNames = [ "252.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Leonardo, Grandes Maestros de la Pintura"
+author = "Editorial Sol"
+description = ""
+hasBeenRead = false
+imageNames = [ "253.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Miguel Ángel, Grandes Maestros de la Pintura"
+author = "Editorial Sol"
+description = ""
+hasBeenRead = false
+imageNames = [ "254.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Breve historia de la guerra con los Estados Unidos"
+author = "José C. Valadés"
+description = ""
+hasBeenRead = false
+imageNames = [ "255.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Maximiliano, Emperador de México"
+author = "Carlos Tello Díaz"
+description = ""
+hasBeenRead = false
+imageNames = [ "256.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "La Güera Rodríguez"
+author = "Artemio de Valle-Arizpe"
+description = "Editorial Lectorum"
+hasBeenRead = false
+imageNames = [ "257.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Vicente Guerrero, El carácter"
+author = "José Mancisidor"
+description = "Editorial Lectorum"
+hasBeenRead = false
+imageNames = [ "258.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "El cura Hidalgo y sus amigos"
+author = "Paco Ignacio Taibo II"
+description = ""
+hasBeenRead = false
+imageNames = [ "259.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "El general orejón ese"
+author = "Paco Ignacio Taibo II"
+description = ""
+hasBeenRead = false
+imageNames = [ "260.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "La guerra cristera, Aspectos del conflicto religioso de 1926 a 1929"
+author = "Alicia Olivera Sedano"
+description = ""
+hasBeenRead = false
+imageNames = [ "261.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
