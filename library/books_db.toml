@@ -1757,7 +1757,170 @@ goodreadsLink = ""
 title = "Hacker's Delight, second edition"
 author = "Henry S. Warren, JR."
 description = ""
-hasBeenRead = true
-imageNames = [ "202.jpg" ]
+hasBeenRead = false
+imageNames = [ "203.jpg" ]
 addedOn = "2023-11-11"
 goodreadsLink = ""
+
+[[book]]
+title = "PNL Conoce cómo te puede apoyar"
+author = "Deborah Peterson"
+description = ""
+hasBeenRead = false
+imageNames = [ "204.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Estructura de datos, Libro de problemas"
+author = "Luis Joyanes Aguilar"
+description = ""
+hasBeenRead = false
+imageNames = [ "205.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Revista Letras Libres 259"
+author = "Letras Libres"
+description = ""
+hasBeenRead = false
+imageNames = [ "206.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Clean Code"
+author = "Robert C. Martin"
+description = ""
+hasBeenRead = true
+imageNames = [ "207.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Sigo siendo yo"
+author = "Jojo Moyes"
+description = ""
+hasBeenRead = true
+imageNames = [ "208.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "The Agile Samurai, How Agile Masters Deliver Great Software"
+author = "Jonathan Rasmusson"
+description = "Editorial The Pragmatic Programmers"
+hasBeenRead = false
+imageNames = [ "209.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "La ecuación jamás resuelta"
+author = "Mario Livio"
+description = "Editorial Ariel"
+hasBeenRead = false
+imageNames = [ "210.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "The Software Craftsman, Professionalism, Pragmatism, Pride"
+author = "Sandro Mancuso"
+description = ""
+hasBeenRead = true
+imageNames = [ "212.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Mirreynato, la otra desigualdad"
+author = "Ricardo Raphael"
+description = ""
+hasBeenRead = false
+imageNames = [ "213.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Álgebra Lineal y teoría de matrices"
+author = "Rosa Barbolla, Paloma Saenz"
+description = "Editorial Prentice Hall"
+hasBeenRead = false
+imageNames = [ "214.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Elegant Objects, Volume I"
+author = "Yegor Bugayenko"
+description = ""
+hasBeenRead = true
+imageNames = [ "215.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Introduction to Aogorithms, Second Edition"
+author = "Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein"
+description = ""
+hasBeenRead = false
+imageNames = [ "216.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "La historia del mundo sin los trozos aburridos"
+author = "Fernando Garcés Blázquez"
+description = ""
+hasBeenRead = false
+imageNames = [ "217.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Los depredadores, La historia oculta del presidencialismo en México"
+author = "Franciszo Cruz, Marco A. Durán"
+description = ""
+hasBeenRead = false
+imageNames = [ "218.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "The Clean Coder, A Code of Conduct for Professional Programmers"
+author = "Robert C. Martin"
+description = ""
+hasBeenRead = true
+imageNames = [ "219.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Working Effectively with Unit Tests"
+author = "Jay Fields"
+description = ""
+hasBeenRead = false
+imageNames = [ "220.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Algorithms Unlocked"
+author = "Thomas H. Cormen"
+description = ""
+hasBeenRead = false
+imageNames = [ "221.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Assassin's Creed Black Flag"
+author = "Oliver Bowden"
+description = ""
+hasBeenRead = false
+imageNames = [ "222.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
