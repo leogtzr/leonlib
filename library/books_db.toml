@@ -1703,7 +1703,61 @@ goodreadsLink = ""
 title = "Guía rápida de las 48 leyes del poder"
 author = "Robert Greene"
 description = "Editorial Oceano"
-hasBeenRead = false
+hasBeenRead = true
 imageNames = [ "197.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Muchas vidas, muchos maestros"
+author = "Brian Weiss"
+description = "Editorial Alfaguara"
+hasBeenRead = true
+imageNames = [ "198.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Cuentos de amor, de locura y de muerte"
+author = "Horacio Quiroga"
+description = "Editorial Alfaguara"
+hasBeenRead = false
+imageNames = [ "199.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Dichos y frases hechas, Biblioteca práctica de la lengua"
+author = "Gobierno del Estado de Chihuahua"
+description = "Editorial Alfaguara"
+hasBeenRead = false
+imageNames = [ "200.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Flawless Execution"
+author = "James D. Murphy"
+description = ""
+hasBeenRead = false
+imageNames = [ "201.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "El temor de un hombre sabio"
+author = "Patrick Rothfuss"
+description = "Editorial debolsillo"
+hasBeenRead = true
+imageNames = [ "202.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Hacker's Delight, second edition"
+author = "Henry S. Warren, JR."
+description = ""
+hasBeenRead = true
+imageNames = [ "202.jpg" ]
 addedOn = "2023-11-11"
 goodreadsLink = ""
