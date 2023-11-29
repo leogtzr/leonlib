@@ -1122,3 +1122,588 @@ hasBeenRead = true
 imageNames = [ "132.jpg" ]
 addedOn = "2023-11-11"
 goodreadsLink = ""
+
+[[book]]
+title = "Los hijos de Húrin"
+author = "J. R. R. Tolkien"
+description = "Editado por Christopher Tolkien, ilustrado por Alan Lee. Editorial booklet"
+hasBeenRead = true
+imageNames = [ "133.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "El Hobbit"
+author = "J. R. R. Tolkien"
+description = "Pasta dura, grande. Editorial Minotauro"
+hasBeenRead = true
+imageNames = [ "134.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Los hijos de Húrin"
+author = "J. R. R. Tolkien"
+description = "Editado por Christopher Tolkien, ilustrado por Alan Lee. Editorial Minotauro"
+hasBeenRead = true
+imageNames = [ "135.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "El señor de los anillos III. El Retorno del Rey"
+author = "J. R. R. Tolkien"
+description = "Editorial Minotauro"
+hasBeenRead = true
+imageNames = [ "136.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "La caída de Arturo, editado por Christopher Tolkien"
+author = "J. R. R. Tolkien"
+description = "Editorial Minotauro"
+hasBeenRead = false
+imageNames = [ "137.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "J. R. R. Tolkien. La historia de Kullervo"
+author = "Verlyn Flieger"
+description = "Editorial Minotauro"
+hasBeenRead = false
+imageNames = [ "138.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Tolkien y El Señor de los anillos, la guía básica para descubrir su obra"
+author = "Colin Duriez"
+description = "Editorial Minotauro"
+hasBeenRead = true
+imageNames = [ "139.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "J. R. R. Tolkien"
+author = "Katharyn F. Crabbe"
+description = "Editorial Fondo de Cultura Económica"
+hasBeenRead = false
+imageNames = [ "140.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "El hobbit"
+author = "J. R. R. Tolkien"
+description = "Editorial booklet"
+hasBeenRead = true
+imageNames = [ "141.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Homenaje a Tolkien, 19 relatos fantásticos"
+author = "Martin H. Greenberg"
+description = "Editorial Timun Mas"
+hasBeenRead = false
+imageNames = [ "142.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "El Señor de los anillos, El retorno del rey, Guía de fotos"
+author = "Minotauro Ediciones Avd"
+description = "Minotauro Ediciones Avd"
+hasBeenRead = false
+imageNames = [ "143.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "El Poder del anillo, Trasfondo espiritual de El hobbit y El Señor de los anillos"
+author = "Stratford Caldecott"
+description = "Minotauro Ediciones Avd"
+hasBeenRead = false
+imageNames = [ "144.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "El señor de los anillos I. La Comunidad del Anillo"
+author = "J. R. R. Tolkien"
+description = "Editorial Minotauro"
+hasBeenRead = true
+imageNames = [ "145.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "El señor de los anillos II. Las Dos Torres"
+author = "J. R. R. Tolkien"
+description = "Editorial Minotauro"
+hasBeenRead = true
+imageNames = [ "146.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "La disciplina marcará tu destino"
+author = "Ryan Holiday"
+description = "Editorial Conecta"
+hasBeenRead = true
+imageNames = [ "147.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "El señor de los anillos I"
+author = "J. R. R. Tolkien"
+description = "Editorial Minotauro"
+hasBeenRead = true
+imageNames = [ "148.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "El señor de los anillos II"
+author = "J. R. R. Tolkien"
+description = "Editorial Minotauro"
+hasBeenRead = true
+imageNames = [ "149.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "El señor de los anillos III"
+author = "J. R. R. Tolkien"
+description = "Editorial Minotauro"
+hasBeenRead = true
+imageNames = [ "150.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "El Silmarillion"
+author = "J. R. R. Tolkien"
+description = "Editado por Christopher Tolkien. Editorial Minotauro"
+hasBeenRead = true
+imageNames = [ "151.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Cuentos Inconclusos de Númenor y La Tierra Media"
+author = "J. R. R. Tolkien"
+description = "Editado por Christopher Tolkien. Ilustrado por Alan Lee, John Howe, Ted Nasmith, Editorial Minotauro"
+hasBeenRead = false
+imageNames = [ "152.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Un polvo en condiciones"
+author = "Irvine Welsh"
+description = ""
+hasBeenRead = true
+imageNames = [ "153.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "El proceso, La muralla china y otros cuentos"
+author = "Franz Kafka"
+description = ""
+hasBeenRead = false
+imageNames = [ "154.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "La metamorfosis"
+author = "Franz Kafka"
+description = "Ilustraciones René Almanza, Traducción Diana Navoa"
+hasBeenRead = true
+imageNames = [ "155.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "El viejo y el mar"
+author = "Ernest Hemingway"
+description = ""
+hasBeenRead = true
+imageNames = [ "156.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Secreciones, excreciones y desatinos"
+author = "Rubem Fonseca"
+description = ""
+hasBeenRead = true
+imageNames = [ "157.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "El proceso"
+author = "Franz Kafka"
+description = ""
+hasBeenRead = true
+imageNames = [ "158.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "La Doncella"
+author = "Voltaire"
+description = ""
+hasBeenRead = false
+imageNames = [ "159.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "El extraño caso del Dr. Jekyll y Mr. Hyde"
+author = "Robert Louis Stevenson"
+description = ""
+hasBeenRead = false
+imageNames = [ "160.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Yerma"
+author = "Federico García Lorca"
+description = ""
+hasBeenRead = false
+imageNames = [ "161.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "La muerte de Jesús"
+author = "J. M. Coetzee"
+description = ""
+hasBeenRead = false
+imageNames = [ "162.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Ampliación del campo de batalla, Las partículas elementales, Plataforma"
+author = "Michael Houellebecq"
+description = ""
+hasBeenRead = false
+imageNames = [ "163.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Inferno"
+author = "August Strindberg"
+description = ""
+hasBeenRead = false
+imageNames = [ "164.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Historias del buen Dios"
+author = "Rainer María Rilke"
+description = ""
+hasBeenRead = false
+imageNames = [ "165.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Fedor Dostoievski, Vida y Obra"
+author = "norma.com"
+description = ""
+hasBeenRead = false
+imageNames = [ "166.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Mientras agonizo"
+author = "William Faulkner"
+description = ""
+hasBeenRead = false
+imageNames = [ "167.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "El cuerpo en que nací"
+author = "Guadalupe Nettel"
+description = ""
+hasBeenRead = true
+imageNames = [ "168.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Lo que guarda un caracol"
+author = "Paula Bombara"
+description = ""
+hasBeenRead = false
+imageNames = [ "169.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Residencia en la tierra"
+author = "Pablo Neruda"
+description = ""
+hasBeenRead = false
+imageNames = [ "170.jpg", "171.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "En otro país"
+author = "Ernest Hemingway"
+description = ""
+hasBeenRead = false
+imageNames = [ "172.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Lecturas para minutos"
+author = "Hermann Hesse"
+description = "Editorial Alianza"
+hasBeenRead = false
+imageNames = [ "173.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "El arte de caminar"
+author = "William Hazlitt, Robert Louis Stevenson"
+description = "Editorial UNAM"
+hasBeenRead = false
+imageNames = [ "174.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Once cuentos fantásticos de Kasparavičius"
+author = "Kęstutis Kasparavičius"
+description = ""
+hasBeenRead = false
+imageNames = [ "175.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Niebla"
+author = "Miguel de Unamuno"
+description = ""
+hasBeenRead = false
+imageNames = [ "176.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "El paraíso perdido"
+author = "John Milton"
+description = ""
+hasBeenRead = false
+imageNames = [ "177.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "La eneida"
+author = "Virgilio"
+description = "Editorial Editores Mexicanos Unidos"
+hasBeenRead = false
+imageNames = [ "178.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "El extranjero"
+author = "Albert Camus"
+description = "Editorial Alianza"
+hasBeenRead = false
+imageNames = [ "179.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Snuff"
+author = "Chuck Palahniuk"
+description = "Editorial Random House"
+hasBeenRead = false
+imageNames = [ "180.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Historias Cortas"
+author = "Rubem Fonseca"
+description = "Editorial Andanzas"
+hasBeenRead = false
+imageNames = [ "181.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Don Camaleón"
+author = "Curzio Malaparte"
+description = "Editorial Tusquets"
+hasBeenRead = false
+imageNames = [ "182.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Agua Corriente"
+author = "Antonio Ortuño"
+description = "Editorial Tusquets"
+hasBeenRead = false
+imageNames = [ "183.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "El Reino"
+author = "Emmanuel Carrère"
+description = "Editorial Anagrama"
+hasBeenRead = false
+imageNames = [ "184.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Stevenson, inadaptado"
+author = "Guillermo Fadanelli"
+description = "Editorial Random House"
+hasBeenRead = true
+imageNames = [ "185.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Huesos de San Lorenzo"
+author = "Vicente Alfonso"
+description = "Editorial Tusquets"
+hasBeenRead = false
+imageNames = [ "186.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "La gran bonanza de las antillas"
+author = "Italo Calvino"
+description = "Editorial Tusquets"
+hasBeenRead = false
+imageNames = [ "187.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Los abismos"
+author = "Pilar Quintana"
+description = "Editorial Alfaguara"
+hasBeenRead = false
+imageNames = [ "188.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Juego de niños"
+author = "Guido Tamayo"
+description = "Editorial Alfaguara"
+hasBeenRead = true
+imageNames = [ "189.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Apreciable Señor Wittgenstein"
+author = "Adriana Abdó"
+description = "Editorial Alfaguara"
+hasBeenRead = false
+imageNames = [ "190.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Los renglones torcidos de Dios"
+author = "Torcuato Luca de Tena"
+description = ""
+hasBeenRead = false
+imageNames = [ "191.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Alicia a través del espejo, Alicia en el país de las maravillas"
+author = "Lewis Carroll"
+description = ""
+hasBeenRead = true
+imageNames = [ "192.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Middlesex"
+author = "Jeffrey Eugenides"
+description = ""
+hasBeenRead = false
+imageNames = [ "193.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "El último lector"
+author = "David Toscana"
+description = "Editorial Alfaguara"
+hasBeenRead = false
+imageNames = [ "194.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "El último lector"
+author = "David Toscana"
+description = "Editorial Alfaguara"
+hasBeenRead = false
+imageNames = [ "194.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "El último lector"
+author = "David Toscana"
+description = "Editorial Alfaguara"
+hasBeenRead = false
+imageNames = [ "194.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Ciclo Mítico: Los antiguos Dioses, Tomo II"
+author = "H. P. Lovecraft"
+description = "Editorial Mirlo"
+hasBeenRead = false
+imageNames = [ "196.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Guía rápida de las 48 leyes del poder"
+author = "Robert Greene"
+description = "Editorial Oceano"
+hasBeenRead = false
+imageNames = [ "197.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""

@@ -102,9 +102,13 @@
                 <div class="col-md-12">
                     <form id="authorForm">
                         <div class="author-grid">
-                            {{range .Authors}}
-                                <label><input type="checkbox" name="author" value="{{.}}">{{.}}</label>
-                            {{end}}
+                            <ul>
+                                {{range .Authors}}
+                                    <li>
+                                        <label><input type="checkbox" name="author" value="{{.}}">{{.}}</label>
+                                    </li>
+                                {{end}}
+                            </ul>
                         </div>
                     </form>
                 </div>
