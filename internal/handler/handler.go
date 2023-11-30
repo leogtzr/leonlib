@@ -7,7 +7,6 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/gorilla/mux"
 	"html/template"
 	"io"
 	"leonlib/internal/auth"
@@ -20,6 +19,8 @@ import (
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/gorilla/mux"
 
 	"github.com/BurntSushi/toml"
 )
@@ -273,7 +274,7 @@ func getCurrentUserID(r *http.Request) (string, error) {
 func getAllAuthors(db *sql.DB) ([]string, error) {
 	var err error
 
-	allAuthorsRows, err := db.Query("SELECT DISTINCT author FROM books;")
+	allAuthorsRows, err := db.Query("SELECT DISTINCT author FROM books ORDER BY author")
 	if err != nil {
 		return []string{}, err
 	}
@@ -489,8 +490,6 @@ func BooksByAuthorPage(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 		redirectToErrorPageWithMessageAndStatusCode(w, "error getting information from the database", http.StatusInternalServerError)
 		return
 	}
-
-	log.Printf("debug:x authors=(%s)", authors)
 
 	_, err = getCurrentUserID(r)
 	if err != nil {

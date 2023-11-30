@@ -257,6 +257,11 @@ $(document).ready(function() {
                             ${imagesHtml}
                         </div>
                     `);
+
+                    var booksListSection = document.getElementById('booksList');
+
+                    // Hacer scroll hasta el elemento
+                    booksListSection.scrollIntoView({ behavior: 'smooth' });
                 });
             } catch (error) {
                 console.error("Error fetching books by author:", error);

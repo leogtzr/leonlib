@@ -185,7 +185,7 @@ addedOn = "2023-11-11"
 
 [[book]]
 title = "Poesía"
-author = "James joyce"
+author = "James Joyce"
 description = "Edición, prólogo, traducción y notas de Pablo Ingberg"
 hasBeenRead = false
 imageNames = [ "29.jpg" ]
