@@ -378,10 +378,10 @@ func getBookByID(db *sql.DB, id int) (BookInfo, error) {
 
 func getBooksBySearchTypeCoincidence(db *sql.DB, titleSearchText string, bookSearchType BookSearchType) ([]BookInfo, error) {
 	var err error
-	var queryStr = `SELECT b.id, b.title, b.author, b.description, b.read, b.added_on, b.goodreads_link FROM books b WHERE b.title ILIKE $1`
+	var queryStr = `SELECT b.id, b.title, b.author, b.description, b.read, b.added_on, b.goodreads_link FROM books b WHERE b.title ILIKE $1 ORDER BY b.title`
 
 	if bookSearchType == ByAuthor {
-		queryStr = `SELECT b.id, b.title, b.author, b.description, b.read, b.added_on, b.goodreads_link FROM books b WHERE b.author ILIKE $1`
+		queryStr = `SELECT b.id, b.title, b.author, b.description, b.read, b.added_on, b.goodreads_link FROM books b WHERE b.author ILIKE $1 ORDER BY b.title`
 	}
 
 	booksByTitleRows, err := db.Query(queryStr, "%"+titleSearchText+"%")
