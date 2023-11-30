@@ -2362,3 +2362,548 @@ description = "Editorial Mirlo"
 hasBeenRead = false
 imageNames = [ "326.jpg" ]
 addedOn = "2023-11-11"
+
+[[book]]
+title = "Los niños perdidos (Un ensayo en cuarenta preguntas)"
+author = "Valieria Luiselli"
+description = ""
+hasBeenRead = true
+imageNames = [ "327.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El valor desconocido"
+author = "Hermann Broch"
+description = "Editorial Narrativa Sextopiso"
+hasBeenRead = true
+imageNames = [ "328.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Ku Klux Klan"
+author = "David M. Chalmers"
+description = ""
+hasBeenRead = false
+imageNames = [ "329.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El chino del dolor"
+author = "Peter Handke"
+description = ""
+hasBeenRead = false
+imageNames = [ "330.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Tratado de la desesperación"
+author = "S. Kierkegaard"
+description = ""
+hasBeenRead = false
+imageNames = [ "331.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Otra vuelta de tuerca"
+author = "Henry James"
+description = "Editorial Penguin Classics"
+hasBeenRead = false
+imageNames = [ "332.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Sueño profundo"
+author = "Banana Yoshimoto"
+description = "Editorial Tusquets"
+hasBeenRead = false
+imageNames = [ "333.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Cándido, o el Optimismo"
+author = "Voltaire"
+description = ""
+hasBeenRead = false
+imageNames = [ "334.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La tercera persona y otros relatos fantásticos"
+author = "Henry James"
+description = ""
+hasBeenRead = false
+imageNames = [ "335.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El llano en llamas"
+author = "Juan Rulfo"
+description = "Lastimado, Editorial Fondo de Cultura Económica"
+hasBeenRead = false
+imageNames = [ "336.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Pedro Páramo"
+author = "Juan Rulfo"
+description = ""
+hasBeenRead = true
+imageNames = [ "337.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Aura"
+author = "Carlos Fuentes"
+description = "Editorial Era"
+hasBeenRead = true
+imageNames = [ "338.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La muerte de Artemio Cruz"
+author = "Carlos Fuentes"
+description = "Editorial Lecturas Mexicanas"
+hasBeenRead = false
+imageNames = [ "339.jpg", "341.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Las buenas conciencias"
+author = "Carlos Fuentes"
+description = ""
+hasBeenRead = false
+imageNames = [ "340.jpg", "342.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Agua Quemada"
+author = "Carlos Fuentes"
+description = ""
+hasBeenRead = false
+imageNames = [ "343.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Cantar de ciegos"
+author = "Carlos Fuentes"
+description = ""
+hasBeenRead = false
+imageNames = [ "344.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Terra Nostra"
+author = "Carlos Fuentes"
+description = ""
+hasBeenRead = false
+imageNames = [ "345.jpg", "346.jpg", "347.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Anna Karénina"
+author = "Lev Tolstói"
+description = ""
+hasBeenRead = false
+imageNames = [ "348.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Revolución"
+author = "Arturo Pérez Reverte"
+description = ""
+hasBeenRead = true
+imageNames = [ "349.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Chaplin"
+author = "José Carlos Mariátegui"
+description = "Editorial Vientos del Pueblo"
+hasBeenRead = false
+imageNames = [ "350.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Gustavo A. Madero"
+author = "Ignacio Solares"
+description = "Editorial Vientos del Pueblo"
+hasBeenRead = false
+imageNames = [ "351.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Fusilados"
+author = "Nellie Campobello"
+description = "Editorial Vientos del Pueblo"
+hasBeenRead = false
+imageNames = [ "352.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Leona Vicario"
+author = "Alejandro Rosas"
+description = "Editorial Vientos del Pueblo"
+hasBeenRead = false
+imageNames = [ "353.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La batalla de Zacatecas"
+author = "Alberto Caladíaz Barrera"
+description = "Editorial Vientos del Pueblo"
+hasBeenRead = false
+imageNames = [ "354.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Los mártires de Tacubaya"
+author = "Juan A. Mateos"
+description = "Editorial Vientos del Pueblo"
+hasBeenRead = false
+imageNames = [ "355.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Los treinta y tres negros"
+author = "Vicente Riva Palacio"
+description = "Editorial Vientos del Pueblo"
+hasBeenRead = false
+imageNames = [ "356.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La noche del 15, la madrugada del 16"
+author = "Luis Castillo Ledón"
+description = "Editorial Vientos del Pueblo"
+hasBeenRead = false
+imageNames = [ "357.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Bolívar"
+author = "Gabriela Mistral"
+description = "Editorial Vientos del Pueblo"
+hasBeenRead = false
+imageNames = [ "358.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Sentimientos de la nación"
+author = "José María Morelos y Pavón"
+description = "Editorial Vientos del Pueblo"
+hasBeenRead = false
+imageNames = [ "359.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Exposición de la declaración de los derechos "
+author = "República Francesa"
+description = ""
+hasBeenRead = false
+imageNames = [ "360.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Los muros de Zapata"
+author = "Víctor Soler Claudín"
+description = ""
+hasBeenRead = false
+imageNames = [ "361.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Fiesta"
+author = "Ernest Hemingway"
+description = ""
+hasBeenRead = true
+imageNames = [ "362.jpg", "363.jpg", "364.jpg", "365.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Hidalgo. El joven teólogo"
+author = "Agustín Rivera"
+description = "Editorial Biblioteca Jalisciense"
+hasBeenRead = false
+imageNames = [ "366.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
