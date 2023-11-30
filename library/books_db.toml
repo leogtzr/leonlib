@@ -2636,75 +2636,75 @@ imageNames = [ "366.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "Un amor de Swann"
+author = "Marcel Proust"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "367.jpg", "368.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "Nostalgia"
+author = "Mircea Cărtărescu"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "369.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "Los Aztecas"
+author = "Manuel Yáñez Solana"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "370.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "Diego Rivera y Frida Kahlo. El amor entre el elefante y la paloma"
+author = "Gabriel Sánchez Sorondo"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "371.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
-description = ""
+title = "México Bárbaro"
+author = "John Kenneth Turner"
+description = "Editorial Dante"
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "372.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "El mexicano enano. Un mal de nuestro tiempo"
+author = "Oscar Monroy"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "373.jpg", "374.jpg", "375.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "La verdadera Revolución mexicana. Primera etapa (1901 a 1913)"
+author = "Alfonso Teracena"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "376.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "La verdadera Revolución mexicana. Primera etapa (1913 a 1914)"
+author = "Alfonso Teracena"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "377.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "Juárez. Discutido como dictador y estadista"
+author = "Carlos Pereyra"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "378.jpg", "379.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
