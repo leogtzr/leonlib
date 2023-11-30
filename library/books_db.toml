@@ -2284,3 +2284,1623 @@ imageNames = [ "261.jpg" ]
 addedOn = "2023-11-11"
 goodreadsLink = ""
 
+[[book]]
+title = "El batallón de San Patricio"
+author = "Pino Cacucci"
+description = "Editorial Grijalbo"
+hasBeenRead = false
+imageNames = [ "262.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "La Guerra de Tres Años 1857-1861"
+author = "Will Fowler"
+description = "Editorial Crítica"
+hasBeenRead = false
+imageNames = [ "263.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "La batalla por Tenochtitlan"
+author = "Pedro Salmerón Sanginés"
+description = "Editorial Fondo de Cultura Económica"
+hasBeenRead = false
+imageNames = [ "264.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Yaquis"
+author = "Paco Ignacio Taibo II"
+description = "Editorial booklet"
+hasBeenRead = false
+imageNames = [ "265.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Apuntes para mis hijos"
+author = "Benito Juárez"
+description = "Editorial Fondo de Cultura Económica"
+hasBeenRead = false
+imageNames = [ "266.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Hibakusha, testimonio de Yasuaki Yamashita"
+author = "Sergio Hernández"
+description = "Editorial Fondo de Cultura Económica"
+hasBeenRead = false
+imageNames = [ "267.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Nueva historia mínima de México"
+author = "El Colegio de México"
+description = ""
+hasBeenRead = false
+imageNames = [ "268.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Benito Juárez, El hombre y el símbolo"
+author = "Patricia Galeana"
+description = ""
+hasBeenRead = false
+imageNames = [ "269.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "El virrey"
+author = "José Manuel Villalpando"
+description = ""
+hasBeenRead = false
+imageNames = [ "270.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "La patria como oficio"
+author = "Guillermo Prieto"
+description = ""
+hasBeenRead = false
+imageNames = [ "271.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "La palabra de la reforma en la república de las letras, una antología general"
+author = "Ignacio Ramírez"
+description = "Editorial Biblioteca Americana"
+hasBeenRead = false
+imageNames = [ "272.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Las balas del invasor, La expansión territorial de los Estados Unidos y el costo para México"
+author = "José Manuel Villalpando"
+description = ""
+hasBeenRead = false
+imageNames = [ "273.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Juárez"
+author = "Pedro Salmerón Sanginés"
+description = ""
+hasBeenRead = false
+imageNames = [ "274.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Patria III, La caída del imperio"
+author = "Paco Ignacio Taibo II"
+description = ""
+hasBeenRead = true
+imageNames = [ "275.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Patria II, La intervención francesa"
+author = "Paco Ignacio Taibo II"
+description = ""
+hasBeenRead = true
+imageNames = [ "276.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Patria I, De la revolución de Ayutla a la Guerra de Reforma"
+author = "Paco Ignacio Taibo II"
+description = ""
+hasBeenRead = false
+imageNames = [ "277.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Felipe Ángeles y los destinos de la Revolución mexicana"
+author = "Odile Guilpain Peuliard"
+description = "Editorial Fondo de Cultura Económica"
+hasBeenRead = false
+imageNames = [ "278.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "La otra historia de México, Juárez y Maximiliano, La roca y el ensueño"
+author = "Armando Fuentes Aguirre Catón"
+description = ""
+hasBeenRead = false
+imageNames = [ "279.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Luz Corral de Villa, La Mera Mera"
+author = "Alfonso Escárcega"
+description = ""
+hasBeenRead = false
+imageNames = [ "280.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Santa Anna, ¿Héroe o villano? La biografía que rompe el mito"
+author = "Will Fowler"
+description = ""
+hasBeenRead = true
+imageNames = [ "281.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "La Revolución de Texas"
+author = "Gustavo Vázquez Lozano & Charles River Edttors"
+description = ""
+hasBeenRead = true
+imageNames = [ "282.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Los libertadores toman café"
+author = "José Manuel Villalpando"
+description = ""
+hasBeenRead = false
+imageNames = [ "283.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Jecker. El hombre que quiso vender México"
+author = "Martín Reyes Vayssade"
+description = ""
+hasBeenRead = false
+imageNames = [ "284.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Maximiliano. El juicio de la historia"
+author = "José Manuel Villalpando"
+description = "Editorial Grijalbo"
+hasBeenRead = false
+imageNames = [ "285.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Érase una vez México II"
+author = "Sandra Molina y Alejandro Rosas"
+description = ""
+hasBeenRead = false
+imageNames = [ "286.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "De héroes y mitos"
+author = "Enrique Krauze"
+description = "Editorial Tusquets"
+hasBeenRead = false
+imageNames = [ "287.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "De la paz al olvido, Porfirio Díaz y el final del mundo"
+author = "Rafael Tovar y de Teresa"
+description = ""
+hasBeenRead = false
+imageNames = [ "288.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "El Alamo"
+author = "Paco Ignacio Taibo II"
+description = ""
+hasBeenRead = false
+imageNames = [ "289.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Cara o cruz: Miguel Hidalgo"
+author = "Carlos Silva, Isabel Revuelta"
+description = ""
+hasBeenRead = false
+imageNames = [ "290.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Pancho Villa, una biografía narrativa"
+author = "Paco Ignacio Taibo II"
+description = ""
+hasBeenRead = false
+imageNames = [ "291.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Historia Ilustrada de México. De Hernán Cortés a Miguel de la Madrid, tomo I"
+author = "José Fuentes Mares"
+description = ""
+hasBeenRead = false
+imageNames = [ "292.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Historia Ilustrada de México. De Hernán Cortés a Miguel de la Madrid, tomo 2"
+author = "José Fuentes Mares"
+description = ""
+hasBeenRead = false
+imageNames = [ "293.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Historia Ilustrada de México. De Hernán Cortés a Miguel de la Madrid, tomo 3"
+author = "José Fuentes Mares"
+description = ""
+hasBeenRead = false
+imageNames = [ "294.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Temporada de zopilotes. Una historia narrativa de la Decena Trágica"
+author = "Paco Ignacio Taibo II"
+description = ""
+hasBeenRead = true
+imageNames = [ "295.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Breve historia de la Revolución Mexicana"
+author = "Felipe Ávila, Pedro Salmerón"
+description = ""
+hasBeenRead = true
+imageNames = [ "296.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Continuación del Cuadro Histórico 8"
+author = "Carlos Ma. de Bustamante"
+description = ""
+hasBeenRead = false
+imageNames = [ "297.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Historia de la Conquista de México I"
+author = "W. H. Prescott"
+description = ""
+hasBeenRead = false
+imageNames = [ "298.jpg", "299.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Historia de la Conquista de México II"
+author = "W. H. Prescott"
+description = ""
+hasBeenRead = false
+imageNames = [ "300.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Juárez y su México, tomo I"
+author = "Ralph Roeder"
+description = ""
+hasBeenRead = false
+imageNames = [ "301.jpg", "302.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Juárez y su México, tomo I"
+author = "Ralph Roeder"
+description = ""
+hasBeenRead = false
+imageNames = [ "303.jpg", "304.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Acta Constitutiva de la Federación, Año de 1824"
+author = "Gobierno de México"
+description = ""
+hasBeenRead = false
+imageNames = [ "305.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Napoleón"
+author = "Irmengarde Eberle Koehler y Arnold W. Koehler"
+description = ""
+hasBeenRead = false
+imageNames = [ "306.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Juárez y su México"
+author = "Ralph Roeder"
+description = "Editorial Fondo de Cultura Económica"
+hasBeenRead = false
+imageNames = [ "307.jpg", "308.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Porfirio Díaz, Su vida y su tiempo. La guerra 1830-1867"
+author = "Carlos Tello Díaz"
+description = ""
+hasBeenRead = false
+imageNames = [ "309.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Esbozo histórico de la cultura norteamericana"
+author = "Albert Harkness, Jr."
+description = ""
+hasBeenRead = false
+imageNames = [ "310.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Los secretos de la Inquisición"
+author = "Edward Burman"
+description = "Historia y legado del Santo Oficio, desde Inocencio III a Juan Pablo II"
+hasBeenRead = false
+imageNames = [ "311.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "El cerro de las campanas"
+author = "J. Mateo"
+description = "Libro intonso"
+hasBeenRead = false
+imageNames = [ "312.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = "Conquista de Méjico"
+author = "Don Antonio de Solis"
+description = ""
+hasBeenRead = false
+imageNames = [ "313.jpg", "314.jpg" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+goodreadsLink = ""
+
