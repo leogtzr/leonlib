@@ -2708,147 +2708,307 @@ imageNames = [ "378.jpg", "379.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "Degollado, el Santo de la Reforma"
+author = "José G. Zuno Hernández"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "380.jpg", "381.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "Selenoide"
+author = "Mircea Cărtărescu"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "382.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "Renueva tu mente. Una perspectiva biblíca del mundo y de la vida."
+author = "Miguel Ñúñez"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "383.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "Más allá del orden. 12 nuevas reglas para vivir"
+author = "Jordan B. Peterson"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "384.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
-description = ""
+title = "La revolución interrumpida"
+author = "Adolfo Gilly"
+description = "Sexta edición"
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "385.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "Como polvo en el viento"
+author = "Leonardo Padura"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "386.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "Carpeta de ilustraciones de El ingenioso Hidalgo, Don Quijote de la Mancha"
+author = "Miguel de Cervantes Saavedra"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "387.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "Revista Afroméxico"
+author = "Algarabia"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "388.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "El padrino"
+author = "Mario Puzo"
 description = ""
-hasBeenRead = false
-imageNames = [ "" ]
+hasBeenRead = true
+imageNames = [ "389.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
+title = "El Siciliano"
+author = "Mario Puzo"
+description = "Editorial Grijalbo"
+hasBeenRead = true
+imageNames = [ "390.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "El Siciliano"
+author = "Mario Puzo"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "391.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "La naranja mecánica"
+author = "Anthony Burgess"
 description = ""
-hasBeenRead = false
-imageNames = [ "" ]
+hasBeenRead = true
+imageNames = [ "392.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
-description = ""
+title = "Don Quijote de la Mancha, tomo I"
+author = "Miguel de Cervantes Saavedra"
+description = "Editorial por el Gobierno del Estado de Chihuahua"
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "393.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
-description = ""
+title = "Don Quijote de la Mancha, tomo II"
+author = "Miguel de Cervantes Saavedra"
+description = "Editorial por el Gobierno del Estado de Chihuahua"
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "394.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
-description = ""
+title = "Don Quijote de la Mancha, tomo III"
+author = "Miguel de Cervantes Saavedra"
+description = "Editorial por el Gobierno del Estado de Chihuahua"
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "395.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
-description = ""
+title = "Don Quijote de la Mancha, tomo IV"
+author = "Miguel de Cervantes Saavedra"
+description = "Editorial por el Gobierno del Estado de Chihuahua"
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "398.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
-description = ""
+title = "Don Quijote de la Mancha, tomo V"
+author = "Miguel de Cervantes Saavedra"
+description = "Editorial por el Gobierno del Estado de Chihuahua"
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "397.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "Don Quijote de la Mancha, tomo VI"
+author = "Miguel de Cervantes Saavedra"
+description = "Editorial por el Gobierno del Estado de Chihuahua"
+hasBeenRead = false
+imageNames = [ "397.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Historia de un país en caricatura"
+author = "Rafael Barajas Durán (el Fisgón)"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "399.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Ordo Hebdomodae Sanctae Instauratus"
+author = "Iglesia Católica"
+description = ""
+hasBeenRead = false
+imageNames = [ "400.jpg", "401.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Missae Defunctorum. Ex missali romano"
+author = "Iglesia Católica"
+description = ""
+hasBeenRead = false
+imageNames = [ "402.jpg", "403.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Historia de México, tomo I"
+author = "Salvat Mexicana de Ediciones"
+description = ""
+hasBeenRead = false
+imageNames = [ "404.jpg", "405.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Historia de México, tomo II"
+author = "Salvat Mexicana de Ediciones"
+description = ""
+hasBeenRead = false
+imageNames = [ "406.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Historia de México, tomo III"
+author = "Salvat Mexicana de Ediciones"
+description = ""
+hasBeenRead = false
+imageNames = [ "407.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Historia de México, tomo IV"
+author = "Salvat Mexicana de Ediciones"
+description = ""
+hasBeenRead = false
+imageNames = [ "408.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Historia de México, tomo V"
+author = "Salvat Mexicana de Ediciones"
+description = ""
+hasBeenRead = false
+imageNames = [ "409.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Historia de México, tomo VI"
+author = "Salvat Mexicana de Ediciones"
+description = ""
+hasBeenRead = false
+imageNames = [ "410.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Historia de México, tomo VIII"
+author = "Salvat Mexicana de Ediciones"
+description = ""
+hasBeenRead = false
+imageNames = [ "412.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Historia de México, tomo IX"
+author = "Salvat Mexicana de Ediciones"
+description = ""
+hasBeenRead = false
+imageNames = [ "413.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Historia de México, tomo X"
+author = "Salvat Mexicana de Ediciones"
+description = ""
+hasBeenRead = false
+imageNames = [ "414.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Historia de México, tomo XI"
+author = "Salvat Mexicana de Ediciones"
+description = ""
+hasBeenRead = false
+imageNames = [ "415.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Historia de México, tomo XII"
+author = "Salvat Mexicana de Ediciones"
+description = ""
+hasBeenRead = false
+imageNames = [ "416.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Revolución Mexicana. Crónica ilustrada, Tomo I"
+author = "Biblioteca Virtual Miguel de Cervantes"
+description = ""
+hasBeenRead = false
+imageNames = [ "417.jpg", "418.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Revolución Mexicana. Crónica ilustrada, Tomo II"
+author = "Biblioteca Virtual Miguel de Cervantes"
+description = ""
+hasBeenRead = false
+imageNames = [ "419.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Revolución Mexicana. Crónica ilustrada, Tomo III"
+author = "Biblioteca Virtual Miguel de Cervantes"
+description = ""
+hasBeenRead = false
+imageNames = [ "420.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Revolución Mexicana. Crónica ilustrada, Tomo IV"
+author = "Biblioteca Virtual Miguel de Cervantes"
+description = ""
+hasBeenRead = false
+imageNames = [ "421.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Revolución Mexicana. Crónica ilustrada, Tomo V"
+author = "Biblioteca Virtual Miguel de Cervantes"
+description = ""
+hasBeenRead = false
+imageNames = [ "422.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Revolución Mexicana. Crónica ilustrada, Tomo VI"
+author = "Biblioteca Virtual Miguel de Cervantes"
+description = ""
+hasBeenRead = false
+imageNames = [ "423.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
