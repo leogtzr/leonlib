@@ -1,11 +1,9 @@
 [[book]]
 title = "Napoleón, La Obsesión por el poder"
 author = "María Rosas"
-description = ""
 hasBeenRead = false
 imageNames = [ "1.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "La Divina Comedia"
@@ -14,7 +12,6 @@ description = "Editorial Épíca, edición abreviada"
 hasBeenRead = false
 imageNames = [ "2.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Ulises"
@@ -23,7 +20,6 @@ description = "Editorial Colofón"
 hasBeenRead = false
 imageNames = [ "3.jpg", "4.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Ulises"
@@ -32,7 +28,6 @@ description = "Editorial Origen, Edicomunicación"
 hasBeenRead = false
 imageNames = [ "5.jpg", "6.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Gótico Carpintero"
@@ -41,7 +36,6 @@ description = "Editorial Sexto Piso"
 hasBeenRead = false
 imageNames = [ "7.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El Evangelio del Nuevo Mundo"
@@ -50,7 +44,6 @@ description = "Traducción de Martha Asunción Alonso"
 hasBeenRead = false
 imageNames = [ "8.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Ajedrez de torneo, Candidatos. Zúrich 1953"
@@ -59,7 +52,6 @@ description = "Edición Revisada, Editorial La casa del Ajedrez"
 hasBeenRead = false
 imageNames = [ "9.jpg", "10.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El salvaje de la ópera"
@@ -68,7 +60,6 @@ description = "Editorial Cal y Arena"
 hasBeenRead = false
 imageNames = [ "11.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Nuestra parte de noche"
@@ -77,7 +68,6 @@ description = "Premio Herralde de Novela, Editorial Anagrama"
 hasBeenRead = false
 imageNames = [ "12.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Arsène Lupin, Caballero-ladrón"
@@ -86,7 +76,6 @@ description = "Versión íntegra ilustrada, traducción de Jorge Rodríguez Gali
 hasBeenRead = false
 imageNames = [ "13.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El remitente misterioso y otros relatos inéditos"
@@ -95,7 +84,6 @@ description = "Editorial Lumen"
 hasBeenRead = false
 imageNames = [ "14.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El ritmo infinito, el ser humano y la música a lo largo de la historia"
@@ -104,7 +92,6 @@ description = "Editorial Ariel"
 hasBeenRead = false
 imageNames = [ "15.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Deja de ser tú, la mente crea la realidad"
@@ -113,25 +100,20 @@ description = "Editorial Ariel"
 hasBeenRead = false
 imageNames = [ "16.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Elementos para la iconografía de la catedral de Chihuahua"
 author = "María Luisa Reyes Landa"
-description = ""
 hasBeenRead = false
 imageNames = [ "17.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Poems for Notre Dame, selected by Shakespeare and Company Paris"
 author = "Shakespeare and Company"
-description = ""
 hasBeenRead = false
 imageNames = [ "18.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El laberinto de la soledad, Postdata, Vuelta a \"El laberinto de la Soledad\""
@@ -140,34 +122,27 @@ description = "Editorial Fondo de Cultura Económica"
 hasBeenRead = true
 imageNames = [ "19.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Poemas, Manzanas"
 author = "James Joyce"
-description = ""
 hasBeenRead = false
 imageNames = [ "20.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Como la lluvia"
 author = "José Emilio Pacheco"
-description = ""
 hasBeenRead = true
 imageNames = [ "21.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El Mono Gramático"
 author = "Octavio Paz"
-description = ""
 hasBeenRead = false
 imageNames = [ "22.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Antología Bilingüe"
@@ -176,7 +151,6 @@ description = "Editorial Alianza"
 hasBeenRead = false
 imageNames = [ "23.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "La Divina Comedia"
@@ -185,7 +159,6 @@ description = "Edición de Giorgio Petrocchi y Luis Martínez de Merlo, editoria
 hasBeenRead = false
 imageNames = [ "24.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Los días que no se nombran, antología personal"
@@ -194,7 +167,6 @@ description = "Editorial Era"
 hasBeenRead = false
 imageNames = [ "25.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Álbum de toda especia de poemas, antología personal"
@@ -203,16 +175,13 @@ description = "Editorial Lumen"
 hasBeenRead = true
 imageNames = [ "26.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Las palabras y los días, una antología introductoria"
 author = "Octavio Paz"
-description = ""
 hasBeenRead = false
 imageNames = [ "27.jpg", "28.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Poesía"
@@ -221,7 +190,6 @@ description = "Edición, prólogo, traducción y notas de Pablo Ingberg"
 hasBeenRead = false
 imageNames = [ "29.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "¡Oh, capitán!, ¡mi capitán!"
@@ -230,7 +198,6 @@ description = "Editorial Poesía Portatil"
 hasBeenRead = true
 imageNames = [ "30.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Antología"
@@ -239,7 +206,6 @@ description = "Colección Visor de Poesía"
 hasBeenRead = false
 imageNames = [ "31.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Poesías completas"
@@ -248,7 +214,6 @@ description = "Editorial Cátedra Letras Universales"
 hasBeenRead = false
 imageNames = [ "32.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Lo mejor de Octavio Paz I, selección y prólogo del autor"
@@ -257,7 +222,6 @@ description = "Editorial Planeta"
 hasBeenRead = false
 imageNames = [ "33.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Cartas a un joven poeta, Elegías de Duino"
@@ -266,7 +230,6 @@ description = "Editorial Planeta"
 hasBeenRead = true
 imageNames = [ "34.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "20 poemas de amor y una canción desesperada"
@@ -275,7 +238,6 @@ description = "Editorial Tomo"
 hasBeenRead = false
 imageNames = [ "35.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Canto a mi mismo"
@@ -284,7 +246,6 @@ description = "Prólogo y paráfrasis de León Felipe, UNAM"
 hasBeenRead = false
 imageNames = [ "36.jpg", "37.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Antinoo"
@@ -293,7 +254,6 @@ description = "Versión de Cayetano Cantú y José Férez Kuri, Editorial Ácron
 hasBeenRead = false
 imageNames = [ "38.jpg", "39.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Rimas y Leyendas"
@@ -302,7 +262,6 @@ description = "Editorial Buque de Letras"
 hasBeenRead = false
 imageNames = [ "40.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Poesía Amorosa"
@@ -311,7 +270,6 @@ description = "Joaquín Mortiz"
 hasBeenRead = false
 imageNames = [ "41.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Antología Poética"
@@ -320,7 +278,6 @@ description = "Editorial Alianza"
 hasBeenRead = false
 imageNames = [ "42.jpg", "43.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El último apaga la luz, Obra selecta"
@@ -329,16 +286,13 @@ description = "Editorial Lumen"
 hasBeenRead = true
 imageNames = [ "44.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Canciones de amor y dudas, selección de José María Plaza, ilustraciones de Antonio Felipe"
 author = "Espejo de Urania"
-description = ""
 hasBeenRead = false
 imageNames = [ "45.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "México en la obra de Octavio Paz, III. Los privilegios de la vista, Arte de México"
@@ -347,7 +301,6 @@ description = "Editorial Fondo de Cultura Económica"
 hasBeenRead = false
 imageNames = [ "46.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "México en la obra de Octavio Paz, III. Los privilegios de la vista, Arte de México"
@@ -356,7 +309,6 @@ description = "Editorial Fondo de Cultura Económica"
 hasBeenRead = false
 imageNames = [ "46.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Mirándola dormir, Perséfone"
@@ -365,7 +317,6 @@ description = "Editorial Lecturas Mexicanas"
 hasBeenRead = true
 imageNames = [ "47.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Sonetos"
@@ -374,7 +325,6 @@ description = "Editorial Tomo"
 hasBeenRead = false
 imageNames = [ "48.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Las flores del mal"
@@ -383,7 +333,6 @@ description = "Editorial Austral"
 hasBeenRead = false
 imageNames = [ "49.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Estrella Distante"
@@ -392,7 +341,6 @@ description = "Javier Fernández, Fanny Marín"
 hasBeenRead = true
 imageNames = [ "50.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Monsieur Pain"
@@ -401,7 +349,6 @@ description = "Editorial Vintage"
 hasBeenRead = true
 imageNames = [ "51.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Estrella Distante"
@@ -410,7 +357,6 @@ description = "Editorial Vintage"
 hasBeenRead = true
 imageNames = [ "52.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "La pista de hielo"
@@ -419,7 +365,6 @@ description = "Editorial debolsillo"
 hasBeenRead = true
 imageNames = [ "53.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Amuleto"
@@ -428,7 +373,6 @@ description = "Editorial debolsillo"
 hasBeenRead = true
 imageNames = [ "54.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El gaucho insufrible"
@@ -437,7 +381,6 @@ description = "Editorial Anagrama"
 hasBeenRead = true
 imageNames = [ "55.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Llamadas telefónicas"
@@ -446,7 +389,6 @@ description = "Editorial Anagrama"
 hasBeenRead = true
 imageNames = [ "56.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Amberes"
@@ -455,7 +397,6 @@ description = "Editorial Anagrama"
 hasBeenRead = true
 imageNames = [ "57.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El Tercer Reich"
@@ -464,7 +405,6 @@ description = "Editorial Anagrama"
 hasBeenRead = true
 imageNames = [ "58.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Los sinsabores del verdadero policía"
@@ -473,7 +413,6 @@ description = "Editorial Anagrama"
 hasBeenRead = true
 imageNames = [ "59.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Bolaño: Otra vuelta de tuerca"
@@ -482,7 +421,6 @@ description = "Editorial Universidad Academia"
 hasBeenRead = false
 imageNames = [ "60.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Poesía Reunida"
@@ -491,7 +429,6 @@ description = "Editorial Alfaguara"
 hasBeenRead = true
 imageNames = [ "61.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Putas Asesinas"
@@ -500,7 +437,6 @@ description = "Editorial Alfaguara"
 hasBeenRead = true
 imageNames = [ "62.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "2666"
@@ -509,7 +445,6 @@ description = "Versión en inglés, Editorial Picador USA"
 hasBeenRead = false
 imageNames = [ "63.jpg", "64.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Consejos de un discípulo de Morrison a un fanático de Joyce, seguido de Diario de bar"
@@ -518,7 +453,6 @@ description = "Editorial Acantilado"
 hasBeenRead = true
 imageNames = [ "65.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "2666"
@@ -527,7 +461,6 @@ description = "Editorial Alfaguara"
 hasBeenRead = true
 imageNames = [ "66.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Cuentos Completos"
@@ -536,7 +469,6 @@ description = "Editorial Alfaguara"
 hasBeenRead = false
 imageNames = [ "67.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Los detectives salvajes"
@@ -545,7 +477,6 @@ description = "Editorial Alfaguara"
 hasBeenRead = true
 imageNames = [ "68.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Nocturno de Chile"
@@ -554,7 +485,6 @@ description = "Editorial Alfaguara"
 hasBeenRead = true
 imageNames = [ "69.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "A la intemperie"
@@ -563,7 +493,6 @@ description = "Editorial Alfaguara"
 hasBeenRead = false
 imageNames = [ "70.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El secreto del mal"
@@ -572,7 +501,6 @@ description = "Editorial Anagrama, edición de Ignacio Echeverría"
 hasBeenRead = true
 imageNames = [ "71.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "La literatura Nazi en América"
@@ -581,7 +509,6 @@ description = "Editorial debolsillo"
 hasBeenRead = true
 imageNames = [ "72.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El espíritu de la ciencia ficción"
@@ -590,7 +517,6 @@ description = "Editorial Alfaguara"
 hasBeenRead = true
 imageNames = [ "73.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Sepulcros de vaqueros"
@@ -599,7 +525,6 @@ description = "Editorial Alfaguara"
 hasBeenRead = true
 imageNames = [ "74.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "La broma infinita"
@@ -608,7 +533,6 @@ description = "Editorial debolsillo"
 hasBeenRead = true
 imageNames = [ "75.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "La escoba del sistema"
@@ -617,25 +541,20 @@ description = "Editorial Pálido Fuego"
 hasBeenRead = false
 imageNames = [ "76.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Ilustres raperos, El rap explicado a los blancos"
 author = "David Foster Wallace, Mark Costello"
-description = ""
 hasBeenRead = true
 imageNames = [ "77.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Aunque por supuesto, terminas siendo tú, un viaje con David Foster Wallace"
 author = "David Lipsky"
-description = ""
 hasBeenRead = false
 imageNames = [ "78.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Portátil, relatos, ensayos & materiales inéditos"
@@ -644,7 +563,6 @@ description = "Editorial Random House"
 hasBeenRead = false
 imageNames = [ "79.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "La niña del pelo raro"
@@ -653,7 +571,6 @@ description = "Editorial Mondadori"
 hasBeenRead = true
 imageNames = [ "80.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Entrevistas breves con hombres repulsivos"
@@ -662,7 +579,6 @@ description = "Editorial debolsillo"
 hasBeenRead = true
 imageNames = [ "81.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Hablemos de langostas"
@@ -671,7 +587,6 @@ description = "Editorial debolsillo"
 hasBeenRead = false
 imageNames = [ "82.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El rey pálido"
@@ -680,7 +595,6 @@ description = "Editorial Mondadori"
 hasBeenRead = false
 imageNames = [ "83.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El cuerpo y en lo otro"
@@ -689,7 +603,6 @@ description = "Editorial Mondadori"
 hasBeenRead = false
 imageNames = [ "84.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Un lento aprendizaje"
@@ -698,7 +611,6 @@ description = "Editorial Tusquets"
 hasBeenRead = true
 imageNames = [ "85.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "V."
@@ -707,7 +619,6 @@ description = "Editorial Tusquets"
 hasBeenRead = true
 imageNames = [ "86.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Vicio propio"
@@ -716,7 +627,6 @@ description = "Editorial Tusquets"
 hasBeenRead = true
 imageNames = [ "87.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Stoner"
@@ -725,7 +635,6 @@ description = "Editorial Fiordo"
 hasBeenRead = true
 imageNames = [ "88.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "La subasta del lote 49"
@@ -734,7 +643,6 @@ description = "Editorial Tusquets"
 hasBeenRead = true
 imageNames = [ "89.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Contraluz"
@@ -743,7 +651,6 @@ description = "Editorial Tusquets"
 hasBeenRead = false
 imageNames = [ "90.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Contraluz"
@@ -752,7 +659,6 @@ description = "Editorial Tusquets"
 hasBeenRead = false
 imageNames = [ "90.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El hobbit"
@@ -761,7 +667,6 @@ description = "Edición pequeña, Editorial minotauro"
 hasBeenRead = true
 imageNames = [ "91.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Hoja de Niggle, Las aventuras de Tom Bombadil"
@@ -770,7 +675,6 @@ description = "Edición pequeña, Editorial minotauro"
 hasBeenRead = true
 imageNames = [ "92.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Roverandom"
@@ -779,7 +683,6 @@ description = "Edición pequeña, Editorial minotauro"
 hasBeenRead = true
 imageNames = [ "93.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Egidio, el granjero de Ham, El herrero de Wootton Mayor"
@@ -788,7 +691,6 @@ description = "Edición pequeña, Editorial minotauro"
 hasBeenRead = true
 imageNames = [ "94.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Tolkien, el origen de El señor de los anillos"
@@ -797,7 +699,6 @@ description = "Editorial Ediciones B Grupo Zeta"
 hasBeenRead = false
 imageNames = [ "95.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Las cartas de Papá Noel"
@@ -806,16 +707,13 @@ description = "Ilustrado por J. R. R. Tolkien"
 hasBeenRead = false
 imageNames = [ "96.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El Silmarillion"
 author = "J. R. R. Tolkien"
-description = ""
 hasBeenRead = true
 imageNames = [ "97.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El Silmarillion"
@@ -824,7 +722,6 @@ description = "Editorial booklet"
 hasBeenRead = true
 imageNames = [ "98.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Diccionario enciclopédico Tolkien"
@@ -833,7 +730,6 @@ description = "Editorial Plaza Janés"
 hasBeenRead = false
 imageNames = [ "99.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Cuentos desde el reino peligroso"
@@ -842,7 +738,6 @@ description = "Ilustrado por Alan Lee, Editorial booklet"
 hasBeenRead = true
 imageNames = [ "100.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Beren and Luthien, edited by Christopher Tolkien"
@@ -851,7 +746,6 @@ description = "Edición en inglés, ilustraciones por Alan Lee"
 hasBeenRead = false
 imageNames = [ "101.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Las aventuras de Tom Bombadil"
@@ -860,7 +754,6 @@ description = "Ilustrado por Pauline Baynes, Editorial Minotauro"
 hasBeenRead = true
 imageNames = [ "102.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Beowulf, traducción y comentario, editado por Christopher Tolkien"
@@ -869,7 +762,6 @@ description = "Incluye Sellic Spell, Editorial Minotauro"
 hasBeenRead = true
 imageNames = [ "103.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El hobbit"
@@ -878,7 +770,6 @@ description = "Editorial Minotauro, edición de los 90s"
 hasBeenRead = true
 imageNames = [ "104.jpg", "105.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Cuentos Inconclusos I, La primera edad"
@@ -887,7 +778,6 @@ description = "Editorial Minotauro"
 hasBeenRead = true
 imageNames = [ "106.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Cuentos Inconclusos II, La segunda edad"
@@ -896,7 +786,6 @@ description = "Editorial Minotauro"
 hasBeenRead = true
 imageNames = [ "107.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El señor de los anillos, tomo I"
@@ -905,7 +794,6 @@ description = "Editorial Minotauro"
 hasBeenRead = true
 imageNames = [ "108.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El señor de los anillos, tomo II"
@@ -914,7 +802,6 @@ description = "Editorial Minotauro"
 hasBeenRead = true
 imageNames = [ "109.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El señor de los anillos, tomo III"
@@ -923,7 +810,6 @@ description = "Editorial Minotauro"
 hasBeenRead = true
 imageNames = [ "110.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Guía completa de la tierra media (A-G)"
@@ -932,7 +818,6 @@ description = "Editorial Minotauro, Planeta DeAgostini"
 hasBeenRead = true
 imageNames = [ "111.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Guía completa de la tierra media (H-Z)"
@@ -941,7 +826,6 @@ description = "Editorial Minotauro, Planeta DeAgostini"
 hasBeenRead = true
 imageNames = [ "112.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Árbol y Hoja y el poema de Mitopoeia con una introducción de Christopher Tolkien"
@@ -950,7 +834,6 @@ description = "Editorial Minotauro, Planeta DeAgostini"
 hasBeenRead = true
 imageNames = [ "113.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El retorno de la sombra I, La historia de El señor de los anillos"
@@ -959,7 +842,6 @@ description = "Editorial Minotauro, Planeta DeAgostini"
 hasBeenRead = false
 imageNames = [ "114.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "La formación de la tierra media 4, Historia de la tierra media"
@@ -968,7 +850,6 @@ description = "Editorial Minotauro, Planeta DeAgostini"
 hasBeenRead = false
 imageNames = [ "115.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El fin de la tercera edad 4, La historia de El señor de los anillos"
@@ -977,7 +858,6 @@ description = "Editorial Minotauro, Planeta DeAgostini"
 hasBeenRead = false
 imageNames = [ "116.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "J. R. R. Tolkien, Señor de la Tierra Media"
@@ -986,7 +866,6 @@ description = "Editorial Minotauro, Planeta DeAgostini"
 hasBeenRead = false
 imageNames = [ "117.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El señor de los anillos I, La comunidad del anillo"
@@ -995,7 +874,6 @@ description = "Primera Parte, Editorial Minotauro, Planeta DeAgostini"
 hasBeenRead = true
 imageNames = [ "118.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El señor de los anillos I, La comunidad del anillo"
@@ -1004,7 +882,6 @@ description = "Segunda Parte, Editorial Minotauro, Planeta DeAgostini"
 hasBeenRead = true
 imageNames = [ "119.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El señor de los anillos II, Las dos torres"
@@ -1013,7 +890,6 @@ description = "Editorial Minotauro, Planeta DeAgostini"
 hasBeenRead = true
 imageNames = [ "120.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El señor de los anillos II, El retorno del rey"
@@ -1022,7 +898,6 @@ description = "Editorial Minotauro, Planeta DeAgostini"
 hasBeenRead = true
 imageNames = [ "121.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El camino a la tierra media"
@@ -1031,7 +906,6 @@ description = "Editorial Minotauro, Planeta DeAgostini"
 hasBeenRead = false
 imageNames = [ "122.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "J. R. R. Tolkien, una biografía"
@@ -1040,7 +914,6 @@ description = "Editorial Minotauro, Planeta DeAgostini"
 hasBeenRead = true
 imageNames = [ "123.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El anillo de Morgoth 7, Historia de la Tierra Media"
@@ -1049,7 +922,6 @@ description = "Editorial Minotauro, Planeta DeAgostini"
 hasBeenRead = true
 imageNames = [ "124.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El fin de la tercera edad 4, Historia de la Tierra Media"
@@ -1058,7 +930,6 @@ description = "Editorial Minotauro, Planeta DeAgostini"
 hasBeenRead = false
 imageNames = [ "125.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Las baladas de Beleriand 3, Historia de la Tierra Media"
@@ -1067,7 +938,6 @@ description = "Editorial Minotauro, Planeta DeAgostini"
 hasBeenRead = false
 imageNames = [ "126.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "La traición de Isengard 2, La historia de El señor de los anillos"
@@ -1076,7 +946,6 @@ description = "Editorial Minotauro, Planeta DeAgostini"
 hasBeenRead = false
 imageNames = [ "127.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El anillo de Morgoth 7, Historia de la Tierra Media"
@@ -1085,7 +954,6 @@ description = "Editorial Minotauro, Planeta DeAgostini, este lo tengo repetido."
 hasBeenRead = false
 imageNames = [ "128.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El señor de los anillos, Apéndices"
@@ -1094,7 +962,6 @@ description = "Editorial Minotauro, Planeta DeAgostini"
 hasBeenRead = false
 imageNames = [ "129.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "La guerra del anillo, La historia de El señor de los anillos"
@@ -1103,7 +970,6 @@ description = "Editorial Minotauro, Planeta DeAgostini"
 hasBeenRead = false
 imageNames = [ "130.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "J. R. R. Tolkien, the mind of a genius"
@@ -1112,7 +978,6 @@ description = "Revista Newsweek"
 hasBeenRead = false
 imageNames = [ "131.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El Silmarillion"
@@ -1121,7 +986,6 @@ description = "Editorial booklet, repetido"
 hasBeenRead = true
 imageNames = [ "132.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Los hijos de Húrin"
@@ -1130,7 +994,6 @@ description = "Editado por Christopher Tolkien, ilustrado por Alan Lee. Editoria
 hasBeenRead = true
 imageNames = [ "133.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El Hobbit"
@@ -1139,7 +1002,6 @@ description = "Pasta dura, grande. Editorial Minotauro"
 hasBeenRead = true
 imageNames = [ "134.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Los hijos de Húrin"
@@ -1148,7 +1010,6 @@ description = "Editado por Christopher Tolkien, ilustrado por Alan Lee. Editoria
 hasBeenRead = true
 imageNames = [ "135.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El señor de los anillos III. El Retorno del Rey"
@@ -1157,7 +1018,6 @@ description = "Editorial Minotauro"
 hasBeenRead = true
 imageNames = [ "136.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "La caída de Arturo, editado por Christopher Tolkien"
@@ -1166,7 +1026,6 @@ description = "Editorial Minotauro"
 hasBeenRead = false
 imageNames = [ "137.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "J. R. R. Tolkien. La historia de Kullervo"
@@ -1175,7 +1034,6 @@ description = "Editorial Minotauro"
 hasBeenRead = false
 imageNames = [ "138.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Tolkien y El Señor de los anillos, la guía básica para descubrir su obra"
@@ -1184,7 +1042,6 @@ description = "Editorial Minotauro"
 hasBeenRead = true
 imageNames = [ "139.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "J. R. R. Tolkien"
@@ -1193,7 +1050,6 @@ description = "Editorial Fondo de Cultura Económica"
 hasBeenRead = false
 imageNames = [ "140.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El hobbit"
@@ -1202,7 +1058,6 @@ description = "Editorial booklet"
 hasBeenRead = true
 imageNames = [ "141.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Homenaje a Tolkien, 19 relatos fantásticos"
@@ -1211,7 +1066,6 @@ description = "Editorial Timun Mas"
 hasBeenRead = false
 imageNames = [ "142.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El Señor de los anillos, El retorno del rey, Guía de fotos"
@@ -1220,7 +1074,6 @@ description = "Minotauro Ediciones Avd"
 hasBeenRead = false
 imageNames = [ "143.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El Poder del anillo, Trasfondo espiritual de El hobbit y El Señor de los anillos"
@@ -1229,7 +1082,6 @@ description = "Minotauro Ediciones Avd"
 hasBeenRead = false
 imageNames = [ "144.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El señor de los anillos I. La Comunidad del Anillo"
@@ -1238,7 +1090,6 @@ description = "Editorial Minotauro"
 hasBeenRead = true
 imageNames = [ "145.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El señor de los anillos II. Las Dos Torres"
@@ -1247,7 +1098,6 @@ description = "Editorial Minotauro"
 hasBeenRead = true
 imageNames = [ "146.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "La disciplina marcará tu destino"
@@ -1256,7 +1106,6 @@ description = "Editorial Conecta"
 hasBeenRead = true
 imageNames = [ "147.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El señor de los anillos I"
@@ -1265,7 +1114,6 @@ description = "Editorial Minotauro"
 hasBeenRead = true
 imageNames = [ "148.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El señor de los anillos II"
@@ -1274,7 +1122,6 @@ description = "Editorial Minotauro"
 hasBeenRead = true
 imageNames = [ "149.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El señor de los anillos III"
@@ -1283,7 +1130,6 @@ description = "Editorial Minotauro"
 hasBeenRead = true
 imageNames = [ "150.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El Silmarillion"
@@ -1292,7 +1138,6 @@ description = "Editado por Christopher Tolkien. Editorial Minotauro"
 hasBeenRead = true
 imageNames = [ "151.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Cuentos Inconclusos de Númenor y La Tierra Media"
@@ -1301,25 +1146,20 @@ description = "Editado por Christopher Tolkien. Ilustrado por Alan Lee, John How
 hasBeenRead = false
 imageNames = [ "152.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Un polvo en condiciones"
 author = "Irvine Welsh"
-description = ""
 hasBeenRead = true
 imageNames = [ "153.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El proceso, La muralla china y otros cuentos"
 author = "Franz Kafka"
-description = ""
 hasBeenRead = false
 imageNames = [ "154.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "La metamorfosis"
@@ -1328,151 +1168,118 @@ description = "Ilustraciones René Almanza, Traducción Diana Navoa"
 hasBeenRead = true
 imageNames = [ "155.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El viejo y el mar"
 author = "Ernest Hemingway"
-description = ""
 hasBeenRead = true
 imageNames = [ "156.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Secreciones, excreciones y desatinos"
 author = "Rubem Fonseca"
-description = ""
 hasBeenRead = true
 imageNames = [ "157.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El proceso"
 author = "Franz Kafka"
-description = ""
 hasBeenRead = true
 imageNames = [ "158.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "La Doncella"
 author = "Voltaire"
-description = ""
 hasBeenRead = false
 imageNames = [ "159.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El extraño caso del Dr. Jekyll y Mr. Hyde"
 author = "Robert Louis Stevenson"
-description = ""
 hasBeenRead = false
 imageNames = [ "160.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Yerma"
 author = "Federico García Lorca"
-description = ""
 hasBeenRead = false
 imageNames = [ "161.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "La muerte de Jesús"
 author = "J. M. Coetzee"
-description = ""
 hasBeenRead = false
 imageNames = [ "162.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Ampliación del campo de batalla, Las partículas elementales, Plataforma"
 author = "Michael Houellebecq"
-description = ""
 hasBeenRead = false
 imageNames = [ "163.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Inferno"
 author = "August Strindberg"
-description = ""
 hasBeenRead = false
 imageNames = [ "164.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Historias del buen Dios"
 author = "Rainer María Rilke"
-description = ""
 hasBeenRead = false
 imageNames = [ "165.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Fedor Dostoievski, Vida y Obra"
 author = "norma.com"
-description = ""
 hasBeenRead = false
 imageNames = [ "166.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Mientras agonizo"
 author = "William Faulkner"
-description = ""
 hasBeenRead = false
 imageNames = [ "167.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El cuerpo en que nací"
 author = "Guadalupe Nettel"
-description = ""
 hasBeenRead = true
 imageNames = [ "168.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Lo que guarda un caracol"
 author = "Paula Bombara"
-description = ""
 hasBeenRead = false
 imageNames = [ "169.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Residencia en la tierra"
 author = "Pablo Neruda"
-description = ""
 hasBeenRead = false
 imageNames = [ "170.jpg", "171.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "En otro país"
 author = "Ernest Hemingway"
-description = ""
 hasBeenRead = false
 imageNames = [ "172.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Lecturas para minutos"
@@ -1481,7 +1288,6 @@ description = "Editorial Alianza"
 hasBeenRead = false
 imageNames = [ "173.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El arte de caminar"
@@ -1490,34 +1296,27 @@ description = "Editorial UNAM"
 hasBeenRead = false
 imageNames = [ "174.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Once cuentos fantásticos de Kasparavičius"
 author = "Kęstutis Kasparavičius"
-description = ""
 hasBeenRead = false
 imageNames = [ "175.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Niebla"
 author = "Miguel de Unamuno"
-description = ""
 hasBeenRead = false
 imageNames = [ "176.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El paraíso perdido"
 author = "John Milton"
-description = ""
 hasBeenRead = false
 imageNames = [ "177.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "La eneida"
@@ -1526,7 +1325,6 @@ description = "Editorial Editores Mexicanos Unidos"
 hasBeenRead = false
 imageNames = [ "178.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El extranjero"
@@ -1535,7 +1333,6 @@ description = "Editorial Alianza"
 hasBeenRead = false
 imageNames = [ "179.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Snuff"
@@ -1544,7 +1341,6 @@ description = "Editorial Random House"
 hasBeenRead = false
 imageNames = [ "180.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Historias Cortas"
@@ -1553,7 +1349,6 @@ description = "Editorial Andanzas"
 hasBeenRead = false
 imageNames = [ "181.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Don Camaleón"
@@ -1562,7 +1357,6 @@ description = "Editorial Tusquets"
 hasBeenRead = false
 imageNames = [ "182.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Agua Corriente"
@@ -1571,7 +1365,6 @@ description = "Editorial Tusquets"
 hasBeenRead = false
 imageNames = [ "183.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El Reino"
@@ -1580,7 +1373,6 @@ description = "Editorial Anagrama"
 hasBeenRead = false
 imageNames = [ "184.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Stevenson, inadaptado"
@@ -1589,7 +1381,6 @@ description = "Editorial Random House"
 hasBeenRead = true
 imageNames = [ "185.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Huesos de San Lorenzo"
@@ -1598,7 +1389,6 @@ description = "Editorial Tusquets"
 hasBeenRead = false
 imageNames = [ "186.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "La gran bonanza de las antillas"
@@ -1607,7 +1397,6 @@ description = "Editorial Tusquets"
 hasBeenRead = false
 imageNames = [ "187.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Los abismos"
@@ -1616,7 +1405,6 @@ description = "Editorial Alfaguara"
 hasBeenRead = false
 imageNames = [ "188.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Juego de niños"
@@ -1625,7 +1413,6 @@ description = "Editorial Alfaguara"
 hasBeenRead = true
 imageNames = [ "189.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Apreciable Señor Wittgenstein"
@@ -1634,34 +1421,27 @@ description = "Editorial Alfaguara"
 hasBeenRead = false
 imageNames = [ "190.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Los renglones torcidos de Dios"
 author = "Torcuato Luca de Tena"
-description = ""
 hasBeenRead = false
 imageNames = [ "191.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Alicia a través del espejo, Alicia en el país de las maravillas"
 author = "Lewis Carroll"
-description = ""
 hasBeenRead = true
 imageNames = [ "192.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Middlesex"
 author = "Jeffrey Eugenides"
-description = ""
 hasBeenRead = false
 imageNames = [ "193.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El último lector"
@@ -1670,7 +1450,6 @@ description = "Editorial Alfaguara"
 hasBeenRead = false
 imageNames = [ "194.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El último lector"
@@ -1679,7 +1458,6 @@ description = "Editorial Alfaguara"
 hasBeenRead = false
 imageNames = [ "194.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El último lector"
@@ -1688,7 +1466,6 @@ description = "Editorial Alfaguara"
 hasBeenRead = false
 imageNames = [ "194.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Ciclo Mítico: Los antiguos Dioses, Tomo II"
@@ -1697,7 +1474,6 @@ description = "Editorial Mirlo"
 hasBeenRead = false
 imageNames = [ "196.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Guía rápida de las 48 leyes del poder"
@@ -1706,7 +1482,6 @@ description = "Editorial Oceano"
 hasBeenRead = true
 imageNames = [ "197.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Muchas vidas, muchos maestros"
@@ -1715,7 +1490,6 @@ description = "Editorial Alfaguara"
 hasBeenRead = true
 imageNames = [ "198.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Cuentos de amor, de locura y de muerte"
@@ -1724,7 +1498,6 @@ description = "Editorial Alfaguara"
 hasBeenRead = false
 imageNames = [ "199.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Dichos y frases hechas, Biblioteca práctica de la lengua"
@@ -1733,16 +1506,13 @@ description = "Editorial Alfaguara"
 hasBeenRead = false
 imageNames = [ "200.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Flawless Execution"
 author = "James D. Murphy"
-description = ""
 hasBeenRead = false
 imageNames = [ "201.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El temor de un hombre sabio"
@@ -1751,61 +1521,48 @@ description = "Editorial debolsillo"
 hasBeenRead = true
 imageNames = [ "202.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Hacker's Delight, second edition"
 author = "Henry S. Warren, JR."
-description = ""
 hasBeenRead = false
 imageNames = [ "203.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "PNL Conoce cómo te puede apoyar"
 author = "Deborah Peterson"
-description = ""
 hasBeenRead = false
 imageNames = [ "204.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Estructura de datos, Libro de problemas"
 author = "Luis Joyanes Aguilar"
-description = ""
 hasBeenRead = false
 imageNames = [ "205.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Revista Letras Libres 259"
 author = "Letras Libres"
-description = ""
 hasBeenRead = false
 imageNames = [ "206.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Clean Code"
 author = "Robert C. Martin"
-description = ""
 hasBeenRead = true
 imageNames = [ "207.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Sigo siendo yo"
 author = "Jojo Moyes"
-description = ""
 hasBeenRead = true
 imageNames = [ "208.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "The Agile Samurai, How Agile Masters Deliver Great Software"
@@ -1814,7 +1571,6 @@ description = "Editorial The Pragmatic Programmers"
 hasBeenRead = false
 imageNames = [ "209.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "La ecuación jamás resuelta"
@@ -1823,25 +1579,20 @@ description = "Editorial Ariel"
 hasBeenRead = false
 imageNames = [ "210.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "The Software Craftsman, Professionalism, Pragmatism, Pride"
 author = "Sandro Mancuso"
-description = ""
 hasBeenRead = true
 imageNames = [ "212.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Mirreynato, la otra desigualdad"
 author = "Ricardo Raphael"
-description = ""
 hasBeenRead = false
 imageNames = [ "213.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Álgebra Lineal y teoría de matrices"
@@ -1850,88 +1601,69 @@ description = "Editorial Prentice Hall"
 hasBeenRead = false
 imageNames = [ "214.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Elegant Objects, Volume I"
 author = "Yegor Bugayenko"
-description = ""
 hasBeenRead = true
 imageNames = [ "215.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Introduction to Aogorithms, Second Edition"
 author = "Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein"
-description = ""
 hasBeenRead = false
 imageNames = [ "216.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "La historia del mundo sin los trozos aburridos"
 author = "Fernando Garcés Blázquez"
-description = ""
 hasBeenRead = false
 imageNames = [ "217.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Los depredadores, La historia oculta del presidencialismo en México"
 author = "Franciszo Cruz, Marco A. Durán"
-description = ""
 hasBeenRead = false
 imageNames = [ "218.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "The Clean Coder, A Code of Conduct for Professional Programmers"
 author = "Robert C. Martin"
-description = ""
 hasBeenRead = true
 imageNames = [ "219.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Working Effectively with Unit Tests"
 author = "Jay Fields"
-description = ""
 hasBeenRead = false
 imageNames = [ "220.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Algorithms Unlocked"
 author = "Thomas H. Cormen"
-description = ""
 hasBeenRead = false
 imageNames = [ "221.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Assassin's Creed Black Flag"
 author = "Oliver Bowden"
-description = ""
 hasBeenRead = false
 imageNames = [ "222.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Assassin's Creed Black Flag"
 author = "Oliver Bowden"
-description = ""
 hasBeenRead = false
 imageNames = [ "222.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "A la sombra de las espadas, la batalla por el imperio global y el fin del mundo antiguo"
@@ -1940,7 +1672,6 @@ description = "Editorial Planeta"
 hasBeenRead = false
 imageNames = [ "223.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "The Passionate Programmer, creating a remarkable career in software development"
@@ -1949,7 +1680,6 @@ description = "Editorial The Pragmatic Programmers"
 hasBeenRead = false
 imageNames = [ "224.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Cuerpos sin edad, mentes sin tiempo"
@@ -1958,7 +1688,6 @@ description = "Editorial Vergara"
 hasBeenRead = false
 imageNames = [ "225.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "OCA/OCP Java SE 7 Programmer I & II Study Guide"
@@ -1967,52 +1696,41 @@ description = "Editorial Oracle"
 hasBeenRead = false
 imageNames = [ "226.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Cracking the Coding Interview, 6th edition"
 author = "Gayle Laakmann McDowell"
-description = ""
 hasBeenRead = false
 imageNames = [ "227.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Cracking the Coding Interview, 6th edition"
 author = "Gayle Laakmann McDowell"
-description = ""
 hasBeenRead = false
 imageNames = [ "227.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Perl, Manual de Referencia"
 author = "Martin C. Brown"
-description = ""
 hasBeenRead = false
 imageNames = [ "228.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Head First Design Patterns"
 author = "Eric Freeman & Elisabeth Freeman"
-description = ""
 hasBeenRead = false
 imageNames = [ "229.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Effective Java, Second Edition"
 author = "Joshua Bloch"
-description = ""
 hasBeenRead = false
 imageNames = [ "230.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Enciclopedia del lenguaje C"
@@ -2021,223 +1739,174 @@ description = "Editorial Alfaomega"
 hasBeenRead = true
 imageNames = [ "231.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Las obras maestras de la pintura francesa"
 author = "Hajo Düchting"
-description = ""
 hasBeenRead = false
 imageNames = [ "232.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Dr. Slump, Tomo I"
 author = "Akira Toriyama"
-description = ""
 hasBeenRead = false
 imageNames = [ "234.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Sora No Otoshimono, Tomo I"
 author = "Suu Minauki"
-description = ""
 hasBeenRead = false
 imageNames = [ "235.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Weathering with you, Tomo I"
 author = "Makoto Shinkai"
-description = ""
 hasBeenRead = false
 imageNames = [ "236.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Soy una araña, Tomo I"
 author = "Okina Baba"
-description = ""
 hasBeenRead = false
 imageNames = [ "237.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Ataque de los Titanes, Tomo 3"
 author = "Hajime Isayama"
-description = ""
 hasBeenRead = false
 imageNames = [ "238.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "To Love-Ru"
 author = "Saki Hasemi"
-description = ""
 hasBeenRead = false
 imageNames = [ "239.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Bestiarius"
 author = "Masasumi Kakizaki"
-description = ""
 hasBeenRead = false
 imageNames = [ "240.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "To Love-Ru, Darkness I"
 author = "Saki Hasemi"
-description = ""
 hasBeenRead = false
 imageNames = [ "241.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "1001 Knights 1"
 author = "Yukiru Sugisaki"
-description = ""
 hasBeenRead = false
 imageNames = [ "242.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Netsuzou TRap NTR"
 author = "Kodama Naoko"
-description = ""
 hasBeenRead = false
 imageNames = [ "243.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Arte griego y romano"
 author = "Susan Woodford"
-description = ""
 hasBeenRead = false
 imageNames = [ "244.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Así es Monet"
 author = "Sara Pappworth"
-description = ""
 hasBeenRead = false
 imageNames = [ "245.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Guía de Arqueológía Roma"
 author = "Sofia Pescarin"
-description = ""
 hasBeenRead = false
 imageNames = [ "246.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "París, Arte y Arquitectura"
 author = "H. Fullmann"
-description = ""
 hasBeenRead = false
 imageNames = [ "247.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Hybrid Heart 01"
 author = "Masamune Kuji"
-description = ""
 hasBeenRead = false
 imageNames = [ "248.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Berserk 3"
 author = "Kentaro Miura"
-description = ""
 hasBeenRead = false
 imageNames = [ "249.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Rafael, Grandes Maestros de la Pintura"
 author = "Editorial Sol"
-description = ""
 hasBeenRead = false
 imageNames = [ "250.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Cézanne, Grandes Maestros de la Pintura"
 author = "Editorial Sol"
-description = ""
 hasBeenRead = false
 imageNames = [ "251.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Kandinsky, Grandes Maestros de la Pintura"
 author = "Editorial Sol"
-description = ""
 hasBeenRead = false
 imageNames = [ "252.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Leonardo, Grandes Maestros de la Pintura"
 author = "Editorial Sol"
-description = ""
 hasBeenRead = false
 imageNames = [ "253.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Miguel Ángel, Grandes Maestros de la Pintura"
 author = "Editorial Sol"
-description = ""
 hasBeenRead = false
 imageNames = [ "254.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Breve historia de la guerra con los Estados Unidos"
 author = "José C. Valadés"
-description = ""
 hasBeenRead = false
 imageNames = [ "255.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Maximiliano, Emperador de México"
 author = "Carlos Tello Díaz"
-description = ""
 hasBeenRead = false
 imageNames = [ "256.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "La Güera Rodríguez"
@@ -2246,7 +1915,6 @@ description = "Editorial Lectorum"
 hasBeenRead = false
 imageNames = [ "257.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Vicente Guerrero, El carácter"
@@ -2255,34 +1923,27 @@ description = "Editorial Lectorum"
 hasBeenRead = false
 imageNames = [ "258.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El cura Hidalgo y sus amigos"
 author = "Paco Ignacio Taibo II"
-description = ""
 hasBeenRead = false
 imageNames = [ "259.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El general orejón ese"
 author = "Paco Ignacio Taibo II"
-description = ""
 hasBeenRead = false
 imageNames = [ "260.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "La guerra cristera, Aspectos del conflicto religioso de 1926 a 1929"
 author = "Alicia Olivera Sedano"
-description = ""
 hasBeenRead = false
 imageNames = [ "261.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El batallón de San Patricio"
@@ -2291,7 +1952,6 @@ description = "Editorial Grijalbo"
 hasBeenRead = false
 imageNames = [ "262.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "La Guerra de Tres Años 1857-1861"
@@ -2300,7 +1960,6 @@ description = "Editorial Crítica"
 hasBeenRead = false
 imageNames = [ "263.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "La batalla por Tenochtitlan"
@@ -2309,7 +1968,6 @@ description = "Editorial Fondo de Cultura Económica"
 hasBeenRead = false
 imageNames = [ "264.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Yaquis"
@@ -2318,7 +1976,6 @@ description = "Editorial booklet"
 hasBeenRead = false
 imageNames = [ "265.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Apuntes para mis hijos"
@@ -2327,7 +1984,6 @@ description = "Editorial Fondo de Cultura Económica"
 hasBeenRead = false
 imageNames = [ "266.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Hibakusha, testimonio de Yasuaki Yamashita"
@@ -2336,43 +1992,34 @@ description = "Editorial Fondo de Cultura Económica"
 hasBeenRead = false
 imageNames = [ "267.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Nueva historia mínima de México"
 author = "El Colegio de México"
-description = ""
 hasBeenRead = false
 imageNames = [ "268.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Benito Juárez, El hombre y el símbolo"
 author = "Patricia Galeana"
-description = ""
 hasBeenRead = false
 imageNames = [ "269.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El virrey"
 author = "José Manuel Villalpando"
-description = ""
 hasBeenRead = false
 imageNames = [ "270.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "La patria como oficio"
 author = "Guillermo Prieto"
-description = ""
 hasBeenRead = false
 imageNames = [ "271.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "La palabra de la reforma en la república de las letras, una antología general"
@@ -2381,52 +2028,41 @@ description = "Editorial Biblioteca Americana"
 hasBeenRead = false
 imageNames = [ "272.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Las balas del invasor, La expansión territorial de los Estados Unidos y el costo para México"
 author = "José Manuel Villalpando"
-description = ""
 hasBeenRead = false
 imageNames = [ "273.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Juárez"
 author = "Pedro Salmerón Sanginés"
-description = ""
 hasBeenRead = false
 imageNames = [ "274.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Patria III, La caída del imperio"
 author = "Paco Ignacio Taibo II"
-description = ""
 hasBeenRead = true
 imageNames = [ "275.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Patria II, La intervención francesa"
 author = "Paco Ignacio Taibo II"
-description = ""
 hasBeenRead = true
 imageNames = [ "276.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Patria I, De la revolución de Ayutla a la Guerra de Reforma"
 author = "Paco Ignacio Taibo II"
-description = ""
 hasBeenRead = false
 imageNames = [ "277.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Felipe Ángeles y los destinos de la Revolución mexicana"
@@ -2435,61 +2071,48 @@ description = "Editorial Fondo de Cultura Económica"
 hasBeenRead = false
 imageNames = [ "278.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "La otra historia de México, Juárez y Maximiliano, La roca y el ensueño"
 author = "Armando Fuentes Aguirre Catón"
-description = ""
 hasBeenRead = false
 imageNames = [ "279.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Luz Corral de Villa, La Mera Mera"
 author = "Alfonso Escárcega"
-description = ""
 hasBeenRead = false
 imageNames = [ "280.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Santa Anna, ¿Héroe o villano? La biografía que rompe el mito"
 author = "Will Fowler"
-description = ""
 hasBeenRead = true
 imageNames = [ "281.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "La Revolución de Texas"
 author = "Gustavo Vázquez Lozano & Charles River Edttors"
-description = ""
 hasBeenRead = true
 imageNames = [ "282.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Los libertadores toman café"
 author = "José Manuel Villalpando"
-description = ""
 hasBeenRead = false
 imageNames = [ "283.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Jecker. El hombre que quiso vender México"
 author = "Martín Reyes Vayssade"
-description = ""
 hasBeenRead = false
 imageNames = [ "284.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Maximiliano. El juicio de la historia"
@@ -2498,16 +2121,13 @@ description = "Editorial Grijalbo"
 hasBeenRead = false
 imageNames = [ "285.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Érase una vez México II"
 author = "Sandra Molina y Alejandro Rosas"
-description = ""
 hasBeenRead = false
 imageNames = [ "286.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "De héroes y mitos"
@@ -2516,151 +2136,118 @@ description = "Editorial Tusquets"
 hasBeenRead = false
 imageNames = [ "287.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "De la paz al olvido, Porfirio Díaz y el final del mundo"
 author = "Rafael Tovar y de Teresa"
-description = ""
 hasBeenRead = false
 imageNames = [ "288.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El Alamo"
 author = "Paco Ignacio Taibo II"
-description = ""
 hasBeenRead = false
 imageNames = [ "289.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Cara o cruz: Miguel Hidalgo"
 author = "Carlos Silva, Isabel Revuelta"
-description = ""
 hasBeenRead = false
 imageNames = [ "290.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Pancho Villa, una biografía narrativa"
 author = "Paco Ignacio Taibo II"
-description = ""
 hasBeenRead = false
 imageNames = [ "291.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Historia Ilustrada de México. De Hernán Cortés a Miguel de la Madrid, tomo I"
 author = "José Fuentes Mares"
-description = ""
 hasBeenRead = false
 imageNames = [ "292.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Historia Ilustrada de México. De Hernán Cortés a Miguel de la Madrid, tomo 2"
 author = "José Fuentes Mares"
-description = ""
 hasBeenRead = false
 imageNames = [ "293.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Historia Ilustrada de México. De Hernán Cortés a Miguel de la Madrid, tomo 3"
 author = "José Fuentes Mares"
-description = ""
 hasBeenRead = false
 imageNames = [ "294.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Temporada de zopilotes. Una historia narrativa de la Decena Trágica"
 author = "Paco Ignacio Taibo II"
-description = ""
 hasBeenRead = true
 imageNames = [ "295.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Breve historia de la Revolución Mexicana"
 author = "Felipe Ávila, Pedro Salmerón"
-description = ""
 hasBeenRead = true
 imageNames = [ "296.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Continuación del Cuadro Histórico 8"
 author = "Carlos Ma. de Bustamante"
-description = ""
 hasBeenRead = false
 imageNames = [ "297.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Historia de la Conquista de México I"
 author = "W. H. Prescott"
-description = ""
 hasBeenRead = false
 imageNames = [ "298.jpg", "299.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Historia de la Conquista de México II"
 author = "W. H. Prescott"
-description = ""
 hasBeenRead = false
 imageNames = [ "300.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Juárez y su México, tomo I"
 author = "Ralph Roeder"
-description = ""
 hasBeenRead = false
 imageNames = [ "301.jpg", "302.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Juárez y su México, tomo I"
 author = "Ralph Roeder"
-description = ""
 hasBeenRead = false
 imageNames = [ "303.jpg", "304.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Acta Constitutiva de la Federación, Año de 1824"
 author = "Gobierno de México"
-description = ""
 hasBeenRead = false
 imageNames = [ "305.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Napoleón"
 author = "Irmengarde Eberle Koehler y Arnold W. Koehler"
-description = ""
 hasBeenRead = false
 imageNames = [ "306.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Juárez y su México"
@@ -2669,25 +2256,20 @@ description = "Editorial Fondo de Cultura Económica"
 hasBeenRead = false
 imageNames = [ "307.jpg", "308.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Porfirio Díaz, Su vida y su tiempo. La guerra 1830-1867"
 author = "Carlos Tello Díaz"
-description = ""
 hasBeenRead = false
 imageNames = [ "309.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Esbozo histórico de la cultura norteamericana"
 author = "Albert Harkness, Jr."
-description = ""
 hasBeenRead = false
 imageNames = [ "310.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Los secretos de la Inquisición"
@@ -2696,7 +2278,6 @@ description = "Historia y legado del Santo Oficio, desde Inocencio III a Juan Pa
 hasBeenRead = false
 imageNames = [ "311.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "El cerro de las campanas"
@@ -2705,1202 +2286,79 @@ description = "Libro intonso"
 hasBeenRead = false
 imageNames = [ "312.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
 title = "Conquista de Méjico"
 author = "Don Antonio de Solis"
-description = ""
 hasBeenRead = false
 imageNames = [ "313.jpg", "314.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
-title = ""
-author = ""
-description = ""
+title = "Apuntes para mis hijos"
+author = "Florencio Zamarripa M."
+description = "Editorial Centro Mexicano de Estudios Culturales"
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "315.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
-title = ""
-author = ""
-description = ""
+title = "El verdadero Pancho Villa"
+author = "Silvestre Terrazas"
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "316.jpg", "317.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
-title = ""
-author = ""
-description = ""
+title = "Los esclavos de Yucatán"
+author = "John Kenneth Turner"
+description = "Editorial Vientos del pueblo Fondo de Cultura Económica"
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "318.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
-title = ""
-author = ""
-description = ""
+title = "El asesinato de Zapata"
+author = "Felipe Ávila"
+description = "Editorial Vientos del pueblo Fondo de Cultura Económica"
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "319.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
-title = ""
-author = ""
-description = ""
+title = "La segunda Guerra Mundial"
+author = "Hellmuth Guenther Dahms"
+description = "Editorial Bruguera"
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "320.jpg", "321.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
-title = ""
-author = ""
-description = ""
+title = "Crónica de la Revolución Mexicana"
+author = "Roberto Blanco Moheno"
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "322.jpg", "323.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
-title = ""
-author = ""
-description = ""
+title = "Europa y los faunos"
+author = "Pablo Soler Frost"
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "324.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
-title = ""
-author = ""
-description = ""
+title = "El paraíso perdido"
+author = "John Milton"
+description = "Letra súper pequeña, horrible."
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "325.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
 
 [[book]]
-title = ""
-author = ""
-description = ""
+title = "Drácula. Novela Gráfica"
+author = "Bram Stocker"
+description = "Editorial Mirlo"
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "326.jpg" ]
 addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-goodreadsLink = ""
-
