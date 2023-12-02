@@ -3843,3 +3843,355 @@ hasBeenRead = false
 imageNames = [ "529.jpg" ]
 addedOn = "2023-11-11"
 
+[[book]]
+title = "Desarrollo de personalidad y psicopatología. Un enfoque dinámico"
+author = "Norman Cameron"
+description = "Editorial Trillas"
+hasBeenRead = false
+imageNames = [ "530.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Psiquiatría, 2a edición"
+author = "Renato D. Alarcón, Guido Mazzotti, Humberto Nicolini"
+description = ""
+hasBeenRead = false
+imageNames = [ "531.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "DSM-5. Manual Diagnóstico y Estadístico de los trastornos mentales"
+author = "American Psychiatric Association"
+description = ""
+hasBeenRead = false
+imageNames = [ "532.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Trastornos Graves de la Personalidad"
+author = "O. F. Kernberg"
+description = ""
+hasBeenRead = false
+imageNames = [ "533.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Sinópsis de psiquiatría"
+author = "BEnjamin James Sadock, Virginia Alcott Sadock, Pedro Ruiz"
+description = ""
+hasBeenRead = false
+imageNames = [ "534.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El mito de Sísifo, Cartas a un amigo alemán"
+author = "Albert Camus"
+description = ""
+hasBeenRead = false
+imageNames = [ "535.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Al este del edén"
+author = "John Steinbeck"
+description = ""
+hasBeenRead = false
+imageNames = [ "536.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El libro de arena"
+author = "Jorge Luis Borges"
+description = "Editorial debolsillo"
+hasBeenRead = true
+imageNames = [ "537.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El Aleph"
+author = "Jorge Luis Borge"
+description = ""
+hasBeenRead = false
+imageNames = [ "538.jpg", "539.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Cien años de soledad"
+author = "Gabriel García Márquez"
+description = ""
+hasBeenRead = true
+imageNames = [ "540.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La leyenda de los soles"
+author = "Homero Aridjis"
+description = ""
+hasBeenRead = false
+imageNames = [ "541.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "1492. Vida y tiempo de Juan Cabezón de Castilla"
+author = "Homero Aridjis"
+description = ""
+hasBeenRead = false
+imageNames = [ "542.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Las ciudades invisibles"
+author = "Italo Calvino"
+description = ""
+hasBeenRead = true
+imageNames = [ "543.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Rosshalde"
+author = "Hermann Hesse"
+description = ""
+hasBeenRead = false
+imageNames = [ "544.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El lecho de Procusto"
+author = "Nassim Nicholas Taleb"
+description = ""
+hasBeenRead = false
+imageNames = [ "545.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Mitología Griega. Dioses y héroes"
+author = "Ángel María Garibay Kintana"
+description = ""
+hasBeenRead = false
+imageNames = [ "546.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Antifrágil, las cosas que se benefician del desorden"
+author = "Nassim Nicholas Taleb"
+description = ""
+hasBeenRead = false
+imageNames = [ "547.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El almuerzo desnudo"
+author = "William S. Burroughs"
+description = ""
+hasBeenRead = false
+imageNames = [ "548.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Ficciones"
+author = "Jorge Luis Borges"
+description = ""
+hasBeenRead = false
+imageNames = [ "549.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El pasajero. Stella Maris"
+author = "Cormac McCarthy"
+description = ""
+hasBeenRead = true
+imageNames = [ "550.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La carretera"
+author = "Cormac McCarthy"
+description = ""
+hasBeenRead = true
+imageNames = [ "551.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
