@@ -3012,58 +3012,834 @@ imageNames = [ "423.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "Historia de Las cruzadas, tomo I"
+author = "J. F. Michaud"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "424.jpg", "425.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "Historia de Las cruzadas, tomo II"
+author = "J. F. Michaud"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "426.jpg", "427.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "México a través de los siglos. Historia antigua y de la conquista. Tomo I"
+author = "Vicente Riva Palacio"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "428.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "México a través de los siglos. Historia antigua y de la conquista. Tomo II"
+author = "Vicente Riva Palacio"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "429.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "México a través de los siglos. Historia del virreinato. Tomo III"
+author = "Vicente Riva Palacio"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "430.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "México a través de los siglos. Historia del virreinato. Tomo IV"
+author = "Vicente Riva Palacio"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "431.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "México a través de los siglos. La guerra de Independencia. Tomo V"
+author = "Vicente Riva Palacio"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "432.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "México a través de los siglos. La guerra de Independencia. Tomo VI"
+author = "Vicente Riva Palacio"
+description = ""
+hasBeenRead = false
+imageNames = [ "433.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "México a través de los siglos. México Independiente. Tomo VII"
+author = "Vicente Riva Palacio"
+description = ""
+hasBeenRead = false
+imageNames = [ "434.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "México a través de los siglos. México Independiente. Tomo VIII"
+author = "Vicente Riva Palacio"
+description = ""
+hasBeenRead = false
+imageNames = [ "435.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "México a través de los siglos. La Reforma. Tomo IX"
+author = "Vicente Riva Palacio"
+description = ""
+hasBeenRead = false
+imageNames = [ "436.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "México a través de los siglos. La Reforma. Tomo X"
+author = "Vicente Riva Palacio"
+description = ""
+hasBeenRead = false
+imageNames = [ "437.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La sociedad de la transpariencia"
+author = "Byung-Chul Han"
+description = ""
+hasBeenRead = false
+imageNames = [ "438.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Psicopolítica"
+author = "Byung-Chul Han"
+description = ""
+hasBeenRead = false
+imageNames = [ "439.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La salvación de lo bello"
+author = "Byung-Chul Han"
+description = ""
+hasBeenRead = false
+imageNames = [ "440.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El anticristo"
+author = "Friedrich Nietzsche"
+description = "Editorial Nuevo Talento"
+hasBeenRead = false
+imageNames = [ "441.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Curso de filosofía en seis horas y cuarto"
+author = "Witold Gombrowicz"
+description = ""
+hasBeenRead = false
+imageNames = [ "442.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El asombro ante el mundo"
+author = "Alberto Constante"
+description = ""
+hasBeenRead = false
+imageNames = [ "443.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Crítica de la razón pura"
+author = "Immanuel Kant"
+description = ""
+hasBeenRead = false
+imageNames = [ "444.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Fenomenología del espíritu"
+author = "G. W. F. Hegel"
+description = ""
+hasBeenRead = false
+imageNames = [ "445.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Introducción a El Ser y el Tiempo de Martin Heidegger"
+author = "José Gaos"
+description = ""
+hasBeenRead = false
+imageNames = [ "446.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Diálogos"
+author = "Platón"
+description = "Editorial Literatura Universal"
+hasBeenRead = false
+imageNames = [ "447.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Platón, diversos: Apología de Sócrates, Critón, Eutifrón, Ion,  Lisis, Cármides, Hipias Menor, Hipias Mayor, Laques, Protágoras, Gorgias"
+author = ""
+description = "Editorial Gredos"
+hasBeenRead = false
+imageNames = [ "448.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La sociedad del cansancio"
+author = "Byung-Chul Han"
+description = "Segunda edición ampliada"
+hasBeenRead = true
+imageNames = [ "449.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La expulsión de lo distinto"
+author = "Byung-Chul Han"
+description = ""
+hasBeenRead = false
+imageNames = [ "450.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Sobre el poder"
+author = "Byung-Chul Han"
+description = ""
+hasBeenRead = false
+imageNames = [ "451.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "En el enjambre"
+author = "Byung-Chul Han"
+description = ""
+hasBeenRead = false
+imageNames = [ "452.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Topología de la violencia"
+author = "Byung-Chul Han"
+description = ""
+hasBeenRead = false
+imageNames = [ "453.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El aroma del tiempo"
+author = "Byung-Chul Han"
+description = ""
+hasBeenRead = false
+imageNames = [ "454.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La Odisea"
+author = "Homero"
+description = ""
+hasBeenRead = false
+imageNames = [ "455.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Los dolores del mundo"
+author = "Arthur Schopenhauer"
+description = ""
+hasBeenRead = false
+imageNames = [ "456.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Confesiones"
+author = "San Agustin"
+description = ""
+hasBeenRead = false
+imageNames = [ "457.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Folosofía en el tocador"
+author = "Marqués de Sade"
+description = ""
+hasBeenRead = false
+imageNames = [ "458.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La República"
+author = "Platón"
+description = ""
+hasBeenRead = false
+imageNames = [ "459.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Más allá del bien y del mal"
+author = "Friedrich Nietzsche"
+description = ""
+hasBeenRead = false
+imageNames = [ "460.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Crítica de la razón pura"
+author = "Immanuel Kant"
+description = ""
+hasBeenRead = false
+imageNames = [ "461.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El esoterismo de Dante"
+author = "René Guenón"
+description = ""
+hasBeenRead = false
+imageNames = [ "462.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El existencialismo es un humanismo"
+author = "Jean Paul Sartre"
+description = ""
+hasBeenRead = false
+imageNames = [ "463.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Solo la lógica permite al hombre pensar con claridad"
+author = "Bertrand Russell"
+description = ""
+hasBeenRead = false
+imageNames = [ "464.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Muerte y alteridad"
+author = "Byung-Chul Han"
+description = ""
+hasBeenRead = false
+imageNames = [ "465.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Una ética basada en la conciencia de la finitud y el respeto al prójimo"
+author = "Séneca"
+description = ""
+hasBeenRead = false
+imageNames = [ "466.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Platón"
+author = "J. C. B. Gosling"
+description = ""
+hasBeenRead = false
+imageNames = [ "467.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Tractatus logico-philosophicus"
+author = "Ludwig Wittgenstein"
+description = ""
+hasBeenRead = false
+imageNames = [ "468.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Filosofía en el tocador"
+author = "Marqués de Sade"
+description = ""
+hasBeenRead = false
+imageNames = [ "469.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La nueva lucha de clases"
+author = "Slavoj Žižek"
+description = ""
+hasBeenRead = false
+imageNames = [ "470.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Misa Negra, la religión apocalíptica y la muerte de la utopía"
+author = "John Gray"
+description = ""
+hasBeenRead = false
+imageNames = [ "471.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La metáfora de las cosas (Nietzsche, Heidegger, Rilke, Freud)"
+author = "Alberto Constante"
+description = ""
+hasBeenRead = false
+imageNames = [ "472.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El arte de la guerra"
+author = "Sun Tzu"
+description = ""
+hasBeenRead = false
+imageNames = [ "473.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "¿Qué haría Nietzsche? Cómo los grandes filósofos resolverían los problemas cotidianos"
+author = "Marcus Weeks"
+description = ""
+hasBeenRead = false
+imageNames = [ "474.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "¿Existe el tiempo?"
+author = "Étienne Klein"
+description = ""
+hasBeenRead = false
+imageNames = [ "475.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La adolescencia normal"
+author = "A. Aberastury, M. Knobel"
+description = ""
+hasBeenRead = false
+imageNames = [ "476.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Gödel, Escher, Bach"
+author = "Douglas R. Hofstadter"
+description = ""
+hasBeenRead = false
+imageNames = [ "477.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Suma Teológica (Selección)"
+author = "Santo Tomás de Aquino"
+description = ""
+hasBeenRead = false
+imageNames = [ "478.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El príncipe"
+author = "Niccolò Machiavelli"
+description = ""
+hasBeenRead = false
+imageNames = [ "479.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Las leyes humanas de la naturaleza humana"
+author = "Robert Greene"
+description = ""
+hasBeenRead = false
+imageNames = [ "480.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Vida líquida"
+author = "Zygmung Bauman"
+description = ""
+hasBeenRead = false
+imageNames = [ "481.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Gigantes de la filosofía"
+author = "Oriol Fina"
+description = "Editorial Bruguera"
+hasBeenRead = false
+imageNames = [ "482.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Así hablaba Zaratustra"
+author = "Friedrich Nietzsche"
+description = ""
+hasBeenRead = false
+imageNames = [ "483.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Humano, demasiado humano"
+author = "Friedrich Nietzsche"
+description = ""
+hasBeenRead = false
+imageNames = [ "484.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "50 cosas que hay que saber sobre psicología"
+author = "Adrian Furnham"
+description = ""
+hasBeenRead = false
+imageNames = [ "485.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Historia de la sexualidad. 2. El uso de los placeres"
+author = "Michel Foucault"
+description = ""
+hasBeenRead = false
+imageNames = [ "486.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Escritos 2"
+author = "Jacques Lacan"
+description = ""
+hasBeenRead = false
+imageNames = [ "487.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Cómo controlar la ansiedad antes de que le controle a usted"
+author = "Albert Ellis"
+description = ""
+hasBeenRead = false
+imageNames = [ "488.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Nuevas aportaciones a la psicoanálisis"
+author = "Sigmund Freud"
+description = ""
+hasBeenRead = false
+imageNames = [ "489.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Psicología de las masas"
+author = "Sigmund Freud"
+description = ""
+hasBeenRead = false
+imageNames = [ "490.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Anna Freud"
+author = "El Yo y los mecanismos de defensa"
+description = ""
+hasBeenRead = false
+imageNames = [ "491.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Escritos 1"
+author = "Jacques Lacan"
+description = ""
+hasBeenRead = false
+imageNames = [ "492.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Las teorías sexuales en psicoanálisis"
+author = "Silvia Bleichmar"
+description = ""
+hasBeenRead = false
+imageNames = [ "493.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Psicología del mexicano. Descubrimiento de la etnopsicología"
+author = "Rogelio Díaz-Guerrero"
+description = ""
+hasBeenRead = false
+imageNames = [ "494.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Ansiedad"
+author = "Augusto Curry"
+description = ""
+hasBeenRead = false
+imageNames = [ "495.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Fenomenología de la violencia, una perspectiva desde México"
+author = "Luis Herrera-Lasso M."
+description = ""
+hasBeenRead = false
+imageNames = [ "496.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El ultimísimo Lacan"
+author = "Jacques Alain Miller"
+description = ""
+hasBeenRead = false
+imageNames = [ "497.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El hombre y las ratas, y la neurosis obsesiva"
+author = "Sigmund Freud"
+description = ""
+hasBeenRead = false
+imageNames = [ "498.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "J. D. Nasio"
+author = "Un psicoanalista en el diván"
+description = ""
+hasBeenRead = false
+imageNames = [ "499.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Historia de la sexualidad. 2. La voluntad de saber"
+author = "Michel Foucault"
+description = ""
+hasBeenRead = false
+imageNames = [ "500.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Sueño y vigilia, el cerebro en marcha"
+author = "Dario Acuña Castroviejo"
+description = ""
+hasBeenRead = false
+imageNames = [ "501.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Cuentos Completos"
+author = "Vladimir Nabokov"
+description = ""
+hasBeenRead = false
+imageNames = [ "502.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Ada o el ardor"
+author = "Vladimir Nabokov"
+description = ""
+hasBeenRead = false
+imageNames = [ "503.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El ojo"
+author = "Vladimir Nabokov"
+description = ""
+hasBeenRead = false
+imageNames = [ "504.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Lolita"
+author = "Vladimir Nabokov"
+description = ""
+hasBeenRead = false
+imageNames = [ "505.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Barra Siniestra"
+author = "Vladimir Nabokov"
+description = ""
+hasBeenRead = false
+imageNames = [ "506.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Pnin"
+author = "Vladimir Nabokov"
+description = ""
+hasBeenRead = false
+imageNames = [ "507.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Pálido fuego"
+author = "Vladimir Nabokov"
+description = ""
+hasBeenRead = false
+imageNames = [ "508.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La defensa"
+author = "Vladimir Nabokov"
+description = ""
+hasBeenRead = false
+imageNames = [ "509.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El hechicero"
+author = "Vladimir Nabokov"
+description = ""
+hasBeenRead = false
+imageNames = [ "510.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Desesperación"
+author = "Vladimir Nabokov"
+description = ""
+hasBeenRead = false
+imageNames = [ "511.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "James Joyce en Padua"
+author = "James Joyce, Louis Berrone"
+description = ""
+hasBeenRead = false
+imageNames = [ "512.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Dublineses, Retrato del artista adolescente"
+author = "James Joyce"
+description = ""
+hasBeenRead = false
+imageNames = [ "513.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Don Quijote de la Mancha"
+author = "Miguel de Cervantes Saavedra"
+description = "Edición IV Centenario, Real Academia Española"
+hasBeenRead = false
+imageNames = [ "514.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Don Quijote de la Mancha"
+author = "Miguel de Cervantes Saavedra"
+description = "Editorial Íconos Literarios"
+hasBeenRead = false
+imageNames = [ "515.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Don Quijote de la Mancha"
+author = "Miguel de Cervantes Saavedra"
+description = "Editorial Penguin Classics"
+hasBeenRead = false
+imageNames = [ "516.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El ego es el enemigo"
+author = "Ryan Holiday"
+description = ""
+hasBeenRead = true
+imageNames = [ "517.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Meditaciones"
+author = "Marco Aurelio"
+description = ""
+hasBeenRead = false
+imageNames = [ "518.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La quietud es la clave"
+author = "Ryan Holiday"
+description = "Editorial Oceano"
+hasBeenRead = true
+imageNames = [ "519.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "¿Por qué el psicoanálisis?"
+author = "Élisabeth Roudinesco"
+description = ""
+hasBeenRead = false
+imageNames = [ "520.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Psicología del mexicano 2. Bajo las garras de la cultura"
+author = "Rogelio Diaz-Guerrero"
+description = ""
+hasBeenRead = false
+imageNames = [ "521.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El libro negro de la psicopatología contemporánea"
+author = "Silvia Fendrik, Alfredo Jerusalinsky"
+description = ""
+hasBeenRead = false
+imageNames = [ "522.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Tres ensayos sobre teoría sexual"
+author = "Sigmund Freud"
+description = ""
+hasBeenRead = false
+imageNames = [ "523.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Las Psicosis 3"
+author = "Jacques Lacan"
+description = "Editorial Paidós, El seminario"
+hasBeenRead = false
+imageNames = [ "525.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Prisioneros del odio"
+author = "Aaron T. Beck"
+description = ""
+hasBeenRead = false
+imageNames = [ "525.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Estoicismo cotidiano"
+author = "Ryan Holiday y Stephen Hanselman"
+description = ""
+hasBeenRead = false
+imageNames = [ "526.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El libro rojo"
+author = "C. G. Jung"
+description = ""
+hasBeenRead = false
+imageNames = [ "527.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Manual de Bolsillo de Psiquiatría clínica, 6ta edición"
+author = "Benjamin J. Sadock, Samoon Ahmad, Virginia A. Sadock"
+description = ""
+hasBeenRead = false
+imageNames = [ "528.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Aun 20"
+author = "Jacques Lacan"
+description = "Editorial Paidós, El seminario"
+hasBeenRead = false
+imageNames = [ "529.jpg" ]
 addedOn = "2023-11-11"
 

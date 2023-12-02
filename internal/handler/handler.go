@@ -948,6 +948,8 @@ func CreateDBFromFile(db *sql.DB, w http.ResponseWriter) {
 
 	w.Header().Set("Content-Type", "application/json")
 
+	startTime := time.Now()
+
 	for _, book := range library.Book {
 		log.Printf("Reading: (%s)", book)
 
@@ -985,6 +987,10 @@ func CreateDBFromFile(db *sql.DB, w http.ResponseWriter) {
 			}
 		}
 	}
+
+	elapsedTime := time.Since(startTime)
+
+	log.Printf("Books loaded in: %s\n", elapsedTime)
 
 	json.NewEncoder(w).Encode(map[string]string{"status": "OK"})
 }
