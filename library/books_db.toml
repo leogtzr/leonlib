@@ -2612,14 +2612,6 @@ imageNames = [ "361.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-
-[[book]]
 title = "Fiesta"
 author = "Ernest Hemingway"
 description = ""
@@ -4012,139 +4004,315 @@ imageNames = [ "551.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "Meridiano de sangre"
+author = "Cormac McCarthy"
 description = ""
-hasBeenRead = false
-imageNames = [ "" ]
+hasBeenRead = true
+imageNames = [ "552.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "El caballero"
+author = "Gene Wolfe"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "553.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "Gramática del italiano"
+author = "Giovanni da Milano"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "554.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "Fahrenheit 451"
+author = "Ray Bradbury"
 description = ""
-hasBeenRead = false
-imageNames = [ "" ]
+hasBeenRead = true
+imageNames = [ "555.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "Shiloh"
+author = "Bobbie Ann Mason"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "556.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "La estructura ausente"
+author = "Umberto Eco"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "557.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "El péndulo de Foucault"
+author = "Umberto Eco"
 description = ""
-hasBeenRead = false
-imageNames = [ "" ]
+hasBeenRead = true
+imageNames = [ "558.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "La memoria vegetal"
+author = "Umberto Eco"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "559.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "El nombre de la rosa"
+author = "Umberto Eco"
 description = ""
-hasBeenRead = false
-imageNames = [ "" ]
+hasBeenRead = true
+imageNames = [ "560.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "El retrato de Dorian Gray"
+author = "Óscar Wilde"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "561.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
-description = ""
+title = "El retrato de Dorian Gray"
+author = "Óscar Wilde"
+description = "Editorial Austral"
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "562.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
+title = "Trampa 22"
+author = "Joseph Heller"
+description = "Editorial El Arca de Papel"
+hasBeenRead = true
+imageNames = [ "563.jpg", "564.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "La conjura de los necios"
+author = "John Kennedy Toole"
 description = ""
-hasBeenRead = false
-imageNames = [ "" ]
+hasBeenRead = true
+imageNames = [ "565.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
+title = "El perfume"
+author = "Patrick Süskind"
+description = "Editorial Seix Barral"
+hasBeenRead = true
+imageNames = [ "566.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "Historias de cronopio y de famas"
+author = "Julio Cortázar"
 description = ""
-hasBeenRead = false
-imageNames = [ "" ]
+hasBeenRead = true
+imageNames = [ "567.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "Octaedro"
+author = "Julio Cortázar"
 description = ""
-hasBeenRead = false
-imageNames = [ "" ]
+hasBeenRead = true
+imageNames = [ "568.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "Rayuela"
+author = "Julio Cortázar"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "569.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El diabo desinteresado y otras novelas cortas"
+author = "Amado Nervo"
+description = ""
+hasBeenRead = true
+imageNames = [ "570.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Matar a un ruiseñor"
+author = "Harper Lee"
+description = ""
+hasBeenRead = true
+imageNames = [ "571.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Los hermanos Karamázov, Humillados y ofendidos, Ladrón Honrado"
+author = "Fedor Dostoievski"
+description = ""
+hasBeenRead = false
+imageNames = [ "572.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Apuntes del subsuelo"
+author = "Fedor Dostoievski"
+description = ""
+hasBeenRead = false
+imageNames = [ "573.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Crimen y castigo"
+author = "Fedor Dostoievski"
+description = ""
+hasBeenRead = true
+imageNames = [ "574.jpg", "575.jpg", "576.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Los hermanos Karamázov"
+author = "Fedor Dostoievski"
+description = "Editorial Bruguera"
+hasBeenRead = false
+imageNames = [ "577.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El jugador"
+author = "Fedor Dostoievski"
+description = ""
+hasBeenRead = false
+imageNames = [ "578.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Diario de un escritor y otros escritos"
+author = "Fedor Dostoievski"
+description = ""
+hasBeenRead = false
+imageNames = [ "579.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El idiota"
+author = "Fedor Dostoievski"
+description = ""
+hasBeenRead = true
+imageNames = [ "580.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El capitán salió a comer y los marineros tomaron el barco"
+author = "Charles Bukowski"
+description = ""
+hasBeenRead = false
+imageNames = [ "581.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La senda del perdedor"
+author = "Charles Bukowski"
+description = ""
+hasBeenRead = true
+imageNames = [ "582.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Cartero"
+author = "Charles Bukowski"
+description = ""
+hasBeenRead = false
+imageNames = [ "583.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Mujeres"
+author = "Charles Bukowski"
+description = ""
+hasBeenRead = true
+imageNames = [ "584.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Se busca una mujer"
+author = "Charles Bukowski"
+description = ""
+hasBeenRead = true
+imageNames = [ "585.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Factótum"
+author = "Charles Bukowski"
+description = ""
+hasBeenRead = true
+imageNames = [ "586.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Hijo de Satanás"
+author = "Charles Bukowski"
+description = ""
+hasBeenRead = false
+imageNames = [ "587.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La guerra de los mundos"
+author = "H. G. Wells"
+description = ""
+hasBeenRead = false
+imageNames = [ "588.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Cuentos de amor, de locura y muerte"
+author = "Horacio Quiroga"
+description = ""
+hasBeenRead = false
+imageNames = [ "589.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Frankenstein"
+author = "Mary W. Shelley"
+description = ""
+hasBeenRead = false
+imageNames = [ "590.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El loco. El vagabundo"
+author = "Jalil Gibran"
+description = ""
+hasBeenRead = false
+imageNames = [ "591.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El viaje vertical"
+author = "Enrique Vila-Matas"
+description = ""
+hasBeenRead = false
+imageNames = [ "592.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Los 120 días de sodoma"
+author = "Marqués de Sade"
+description = ""
+hasBeenRead = true
+imageNames = [ "593.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
