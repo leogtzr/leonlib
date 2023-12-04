@@ -2357,7 +2357,7 @@ addedOn = "2023-11-11"
 
 [[book]]
 title = "Drácula. Novela Gráfica"
-author = "Bram Stocker"
+author = "Bram Stoker"
 description = "Editorial Mirlo"
 hasBeenRead = false
 imageNames = [ "326.jpg" ]
@@ -3301,7 +3301,7 @@ addedOn = "2023-11-11"
 
 [[book]]
 title = "El existencialismo es un humanismo"
-author = "Jean Paul Sartre"
+author = "Jean-Paul Sartre"
 description = ""
 hasBeenRead = false
 imageNames = [ "463.jpg" ]
@@ -3821,7 +3821,7 @@ addedOn = "2023-11-11"
 
 [[book]]
 title = "Manual de Bolsillo de Psiquiatría clínica, 6ta edición"
-author = "Benjamin J. Sadock, Samoon Ahmad, Virginia A. Sadock"
+author = "Benjamin James Sadock, Samoon Ahmad, Virginia A. Sadock"
 description = ""
 hasBeenRead = false
 imageNames = [ "528.jpg" ]
@@ -3869,7 +3869,7 @@ addedOn = "2023-11-11"
 
 [[book]]
 title = "Sinópsis de psiquiatría"
-author = "BEnjamin James Sadock, Virginia Alcott Sadock, Pedro Ruiz"
+author = "Benjamin James Sadock, Virginia Alcott Sadock, Pedro Ruiz"
 description = ""
 hasBeenRead = false
 imageNames = [ "534.jpg" ]
@@ -3901,7 +3901,7 @@ addedOn = "2023-11-11"
 
 [[book]]
 title = "El Aleph"
-author = "Jorge Luis Borge"
+author = "Jorge Luis Borges"
 description = ""
 hasBeenRead = false
 imageNames = [ "538.jpg", "539.jpg" ]
@@ -4797,7 +4797,7 @@ addedOn = "2023-11-11"
 
 [[book]]
 title = "Un cuento de navidad"
-author = "654.jpg"
+author = "Emilio Carballido"
 description = ""
 hasBeenRead = false
 imageNames = [ "654.jpg" ]
