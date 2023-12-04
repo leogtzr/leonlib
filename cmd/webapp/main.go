@@ -5,7 +5,7 @@ import (
 	"database/sql"
 	"fmt"
 	"github.com/gorilla/sessions"
-	_ "github.com/lib/pq"
+	_ "github.com/mattn/go-sqlite3"
 	"golang.org/x/oauth2"
 	"leonlib/internal/auth"
 	"leonlib/internal/captcha"
@@ -16,17 +16,16 @@ import (
 )
 
 var (
-	dbHost      = os.Getenv("PGHOST")
-	dbUser      = os.Getenv("PGUSER")
-	dbPassword  = os.Getenv("POSTGRES_PASSWORD")
-	dbName      = os.Getenv("PGDATABASE")
-	dbPort      = os.Getenv("PGPORT")
-	DB          *sql.DB
+	dbMode      = os.Getenv("DB_MODE")
 	ctx         = context.Background()
 	mainAppUser = os.Getenv("LEONLIB_MAINAPP_USER")
+	DB          *sql.DB
 )
 
 func init() {
+	if dbMode == "" {
+		log.Fatal("error: DB_MODE not defined")
+	}
 	if mainAppUser == "" {
 		log.Fatal("error: LEONLIB_MAINAPP_USER not defined")
 	}
@@ -53,25 +52,88 @@ func init() {
 	auth.SessionStore = sessions.NewCookieStore([]byte(os.Getenv("SESSION_SECRET")))
 }
 
-func main() {
-	var psqlInfo string
+type DBConnectionInfo struct {
+	driverName    string
+	connectionURL string
+}
 
-	psqlInfo = "host=" + dbHost + " port=" + dbPort + " user=" + dbUser + " password=" + dbPassword + " dbname=" + dbName + " sslmode=disable"
-
-	fmt.Printf("debug:x connection=(%s)\n", psqlInfo)
-
-	var err error
-	DB, err = sql.Open("postgres", psqlInfo)
-	if err != nil {
-		panic(err)
+func getConnectionInfo() (DBConnectionInfo, error) {
+	switch dbMode {
+	case "inmemory":
+		return DBConnectionInfo{
+			driverName:    "sqlite3",
+			connectionURL: "/var/lib/appdata/leonlib.db",
+		}, nil
 	}
+
+	return DBConnectionInfo{}, fmt.Errorf("wrong DB mode")
+}
+
+func initDB() (*sql.DB, error) {
+	switch dbMode {
+	case "inmemory":
+		return sql.Open("sqlite3", "/var/lib/appdata/leonlib.db")
+	}
+
+	return nil, fmt.Errorf("wrong DB mode")
+}
+
+func main() {
+	DB, err := initDB()
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer func() {
+		_ = DB.Close()
+	}()
 
 	err = DB.Ping()
 	if err != nil {
 		panic(err)
 	}
 
-	defer DB.Close()
+	sqlCommands := []string{
+		`CREATE TABLE IF NOT EXISTS books (
+			id INTEGER PRIMARY KEY AUTOINCREMENT,
+			title TEXT NOT NULL,
+			author TEXT NOT NULL,
+			description TEXT,
+			read BOOLEAN DEFAULT FALSE,
+			added_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+			goodreads_link TEXT
+		)`,
+		`CREATE TABLE IF NOT EXISTS book_images (
+			image_id INTEGER PRIMARY KEY AUTOINCREMENT,
+			book_id INTEGER NOT NULL REFERENCES books(id),
+			image BLOB NOT NULL,
+			added_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+		)`,
+		`CREATE TABLE IF NOT EXISTS users (
+			user_id TEXT PRIMARY KEY,
+			email TEXT NOT NULL UNIQUE,
+			name TEXT,
+			oauth_identifier TEXT NOT NULL
+		)`,
+		`CREATE TABLE IF NOT EXISTS book_likes (
+			like_id INTEGER PRIMARY KEY AUTOINCREMENT,
+			book_id INTEGER REFERENCES books(id),
+			created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+			user_id TEXT REFERENCES users(user_id),
+			UNIQUE(book_id, user_id)
+		)`,
+		`CREATE INDEX IF NOT EXISTS idx_books_title ON books (title)`,
+		`CREATE INDEX IF NOT EXISTS idx_books_author ON books (author)`,
+		`CREATE INDEX IF NOT EXISTS idx_books_added_on ON books (added_on)`,
+		`CREATE INDEX IF NOT EXISTS idx_book_images_book_id ON book_images (book_id)`,
+	}
+
+	for _, sqlCommand := range sqlCommands {
+		_, err := DB.Exec(sqlCommand)
+		if err != nil {
+			log.Fatal(err)
+		}
+		log.Printf("SQL command: (%.35s...) executed correctly", sqlCommand)
+	}
 
 	r := router.NewRouter(DB)
 

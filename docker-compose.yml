@@ -1,17 +1,6 @@
-version: "3.3"
-services:
-  books_db:
-    container_name: leonlib
-    image: postgres:latest
-    environment:
-      - POSTGRES_PASSWORD=${LEONLIB_DB_PASSWORD}
-      - POSTGRES_USER=${LEONLIB_DB_USER}
-      - POSTGRES_DB=${LEONLIB_DB}
-      - PGPASSWORD=${LEONLIB_DB_PASSWORD}
-    volumes:
-      - ./database-data:/var/lib/postgresql/data/
-      - ./database/sql:/docker-entrypoint-initdb.d/
+version: '3.8'
 
+services:
   app:
     build:
       context: .
@@ -20,30 +9,20 @@ services:
     ports:
       - "8180:8180"
     environment:
-      - LEONLIB_DB_PASSWORD=${LEONLIB_DB_PASSWORD}
-      - LEONLIB_DB_USER=leo
-      - LEONLIB_DB=leonlib
-      - LEONLIB_DB_HOST=leonlib
+      - LEONLIB_DB_PATH=/var/lib/appdata/leonlib.db
       - LEONLIB_CAPTCHA_SITE_KEY=${LEONLIB_CAPTCHA_SITE_KEY}
       - LEONLIB_CAPTCHA_SECRET_KEY=${LEONLIB_CAPTCHA_SECRET_KEY}
       - LEONLIB_GOOGLE_OAUTH_CLIENT_ID=${LEONLIB_GOOGLE_OAUTH_CLIENT_ID}
       - LEONLIB_GOOGLE_OAUTH_CLIENT_SECRET=${LEONLIB_GOOGLE_OAUTH_CLIENT_SECRET}
       - LEONLIB_GOOGLE_OATH_CALLBACK=${LEONLIB_GOOGLE_OATH_CALLBACK}
+      - DB_MODE=${DB_MODE}
       - PORT=8180
-      - POSTGRES_PASSWORD=${LEONLIB_DB_PASSWORD}
-      - PGUSER=${LEONLIB_DB_USER}
-      - PGDATABASE=${LEONLIB_DB}
-      - PGHOST=${LEONLIB_DB_HOST}
-      - PGPORT=${PGPORT}
       - AUTH0_CLIENT_ID=${AUTH0_CLIENT_ID}
       - AUTH0_CLIENT_SECRET=${AUTH0_CLIENT_SECRET}
       - AUTH0_CALLBACK_URL=${AUTH0_CALLBACK_URL}
       - AUTH0_DOMAIN=${AUTH0_DOMAIN}
       - SESSION_SECRET=${SESSION_SECRET}
       - LEONLIB_MAINAPP_USER=${LEONLIB_MAINAPP_USER}
-    depends_on:
-      - books_db
-
 
 volumes:
-  database-data: # named volumes can be managed easier using docker-compose
+  database-data:
