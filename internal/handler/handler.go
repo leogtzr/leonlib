@@ -293,6 +293,49 @@ func getAllAuthors(db *sql.DB) ([]string, error) {
 	return authors, nil
 }
 
+func getAllBooks(db *sql.DB) ([]BookInfo, error) {
+	var err error
+	var queryStr = `SELECT b.id, b.title, b.author, b.description, b.read, b.added_on, b.goodreads_link FROM books b ORDER BY b.author`
+
+	booksRows, err := db.Query(queryStr)
+	if err != nil {
+		return []BookInfo{}, err
+	}
+
+	defer booksRows.Close()
+
+	var books []BookInfo
+	var id int
+	var title string
+	var author string
+	var description string
+	var hasBeenRead bool
+	var addedOn time.Time
+	var goodreadsLink string
+	for booksRows.Next() {
+		var bookInfo BookInfo
+		if err := booksRows.Scan(&id, &title, &author, &description, &hasBeenRead, &addedOn, &goodreadsLink); err != nil {
+			return []BookInfo{}, err
+		}
+
+		bookInfo.ID = id
+		bookInfo.Title = title
+		bookInfo.Author = author
+		bookImages, err := getImagesByBookID(db, id)
+		if err != nil {
+			return []BookInfo{}, err
+		}
+
+		bookInfo.Base64Images = bookImages
+		bookInfo.Description = description
+		bookInfo.HasBeenRead = hasBeenRead
+		bookInfo.AddedOn = addedOn.Format("2006-01-02")
+		books = append(books, bookInfo)
+	}
+
+	return books, nil
+}
+
 func getImagesByBookID(db *sql.DB, bookID int) ([]BookImageInfo, error) {
 	bookImagesRows, err := db.Query(`SELECT i.image_id, i.book_id, i.image FROM book_images i WHERE i.book_id=$1`, bookID)
 	if err != nil {
@@ -507,6 +550,51 @@ func BooksByAuthorPage(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 		templateDir = "internal/template" // default value for local development
 	}
 	templatePath := filepath.Join(templateDir, "books_by_author.html")
+
+	t, err := template.ParseFiles(templatePath)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		log.Printf("Error parsing template: %v", err)
+		return
+	}
+
+	err = t.Execute(w, pageVariables)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		log.Printf("Error executing template: %v", err)
+	}
+}
+
+func AllBooksPage(db *sql.DB, w http.ResponseWriter, r *http.Request) {
+	now := time.Now()
+	pageVariables := PageResultsVariables{
+		Year:    now.Format("2006"),
+		SiteKey: captcha.SiteKey,
+	}
+
+	books, err := getAllBooks(db)
+	if err != nil {
+		log.Printf("Error getting books: %v", err)
+		redirectToErrorPageWithMessageAndStatusCode(w, "error getting information from the database", http.StatusInternalServerError)
+		return
+	}
+
+	_, err = getCurrentUserID(r)
+	if err != nil {
+		log.Printf("(AllBooksPage) User is not logged in: %v", err)
+		pageVariables.LoggedIn = false
+	} else {
+		log.Println("User is logged in")
+		pageVariables.LoggedIn = true
+	}
+
+	pageVariables.Results = books
+
+	templateDir := os.Getenv("TEMPLATE_DIR")
+	if templateDir == "" {
+		templateDir = "internal/template" // default value for local development
+	}
+	templatePath := filepath.Join(templateDir, "allbooks.html")
 
 	t, err := template.ParseFiles(templatePath)
 	if err != nil {

@@ -30,6 +30,14 @@ func initRoutes(db *sql.DB) {
 			},
 		},
 		Router{
+			"All Books",
+			"GET",
+			"/allbooks",
+			func(w http.ResponseWriter, r *http.Request) {
+				handler.AllBooksPage(db, w, r)
+			},
+		},
+		Router{
 			"Add Book Page",
 			"GET",
 			"/admin/add",
