@@ -4316,11 +4316,123 @@ imageNames = [ "593.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
+title = "Las aventuras de Pinocho"
+author = "Carlo Collodi"
+description = ""
+hasBeenRead = true
+imageNames = [ "594.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Cuentos clásicos del antiguo Egipto"
+author = "Felipe Sen Montero, Ángel Sánchez Rodríguez"
+description = ""
+hasBeenRead = false
+imageNames = [ "595.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La rebelión de Lucifer"
+author = "J. J. Benítez"
+description = ""
+hasBeenRead = false
+imageNames = [ "596.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El entierro de las ratas y otros relatos de horror"
+author = "Bram Stoker"
+description = ""
+hasBeenRead = false
+imageNames = [ "597.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Dios le bendiga Mr. Rosewater"
+author = "Kurt Vonnegut"
+description = ""
+hasBeenRead = false
+imageNames = [ "598.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Fausto"
+author = "Goethe"
+description = ""
+hasBeenRead = false
+imageNames = [ "599.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El juego de la lógica"
+author = "Lewis Carroll"
+description = ""
+hasBeenRead = false
+imageNames = [ "600.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La músic del silencio"
+author = "Patrick Rothfuss"
+description = ""
+hasBeenRead = false
+imageNames = [ "601.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Diario de Ana Frank"
+author = "Ana Frank"
+description = ""
+hasBeenRead = false
+imageNames = [ "602.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La leyenda del jinete sin cabeza"
+author = "Washington Irving"
+description = ""
+hasBeenRead = false
+imageNames = [ "603.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El príncipe y el mendigo"
+author = "Mark Twain"
+description = ""
+hasBeenRead = false
+imageNames = [ "604.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La herida de Paulina"
+author = "Elena Poniatowska"
+description = ""
+hasBeenRead = true
+imageNames = [ "605.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
 title = ""
 author = ""
 description = ""
 hasBeenRead = false
 imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Agujeros negros"
+author = "Stephen Hawking"
+description = ""
+hasBeenRead = false
+imageNames = [ "606.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "1984"
+author = "George Orwell"
+description = ""
+hasBeenRead = false
+imageNames = [ "607.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
@@ -4340,11 +4452,203 @@ imageNames = [ "" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
+title = "Revista Letras Libres. La nueva crítica de cine"
+author = "Letras Libres"
 description = ""
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "608.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Revista Letras Libres. El hombre de negro"
+author = "Letras Libres"
+description = ""
+hasBeenRead = false
+imageNames = [ "609.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Vidas criminales"
+author = "Juan Madrid"
+description = ""
+hasBeenRead = false
+imageNames = [ "610.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El lazarillo de Tormes"
+author = "Anónimo"
+description = ""
+hasBeenRead = false
+imageNames = [ "611.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Encuentro con un medio desconocido"
+author = "César Francisco Pacheco Loya"
+description = ""
+hasBeenRead = false
+imageNames = [ "612.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El retorno de Quetzalcoatl"
+author = "Roger Vilar"
+description = ""
+hasBeenRead = false
+imageNames = [ "613.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Il Piccolo Principe"
+author = "Antoine de Saint-Exupéry"
+description = ""
+hasBeenRead = false
+imageNames = [ "614.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El hombre que confundió a su mujer con su sombrero"
+author = "Oliver Sacks"
+description = ""
+hasBeenRead = true
+imageNames = [ "615.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Mijaíl Bulgákov"
+author = "El maestro y Margarita"
+description = ""
+hasBeenRead = true
+imageNames = [ "616.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Satán en Goray"
+author = "Isaac Bashevis Singer"
+description = ""
+hasBeenRead = true
+imageNames = [ "617.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La ciudad y los perros"
+author = "Mario Vargas Llosa"
+description = ""
+hasBeenRead = false
+imageNames = [ "618.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El club de la pelea"
+author = "Chuck Palahniuk"
+description = "Editorial debolsillo"
+hasBeenRead = true
+imageNames = [ "619.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La cartuja de Parma"
+author = "Stendhal"
+description = ""
+hasBeenRead = false
+imageNames = [ "620.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La ruta interior"
+author = "Hermann Hesse"
+description = ""
+hasBeenRead = false
+imageNames = [ "621.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La peste"
+author = "Albert Camus"
+description = ""
+hasBeenRead = false
+imageNames = [ "622.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Cuentos"
+author = "Antón Chéjov"
+description = ""
+hasBeenRead = false
+imageNames = [ "623.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El muro"
+author = "Jean-Paul Sartre"
+description = ""
+hasBeenRead = false
+imageNames = [ "624.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El corazón de las tinieblas"
+author = "Joseph Conrad"
+description = ""
+hasBeenRead = true
+imageNames = [ "625.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Los cachorros"
+author = "Mario Vargas Llosa"
+description = ""
+hasBeenRead = false
+imageNames = [ "626.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Pantaleón y las visitadoras"
+author = "Mario Vargas Llosa"
+description = ""
+hasBeenRead = false
+imageNames = [ "627.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Siddharta"
+author = "Hermann Hesse"
+description = "Editorial Mexicanos Unidos"
+hasBeenRead = true
+imageNames = [ "628.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Vagabundo"
+author = "Hermann Hesse"
+description = ""
+hasBeenRead = false
+imageNames = [ "629.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Bajo la rueda"
+author = "Hermann Hesse"
+description = ""
+hasBeenRead = true
+imageNames = [ "630.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Beatriz y Virgilio"
+author = "Yann Martel"
+description = ""
+hasBeenRead = true
+imageNames = [ "631.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Accidente nocturno"
+author = "Patrick Modiano"
+description = ""
+hasBeenRead = true
+imageNames = [ "632.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
@@ -4356,6 +4660,30 @@ imageNames = [ "" ]
 addedOn = "2023-11-11"
 
 [[book]]
+title = "Seda"
+author = "Alessandro Baricco"
+description = ""
+hasBeenRead = true
+imageNames = [ "633.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La pampa imposible"
+author = "David Miklos"
+description = ""
+hasBeenRead = true
+imageNames = [ "634.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Facsímil"
+author = "Alejandro Zambra"
+description = ""
+hasBeenRead = false
+imageNames = [ "635.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
 title = ""
 author = ""
 description = ""
@@ -4363,3 +4691,394 @@ hasBeenRead = false
 imageNames = [ "" ]
 addedOn = "2023-11-11"
 
+[[book]]
+title = "Estoico y frugal"
+author = "Pedro Juan Gutiérrez"
+description = ""
+hasBeenRead = true
+imageNames = [ "636.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La hija única"
+author = "Guadalupe Nettel"
+description = ""
+hasBeenRead = true
+imageNames = [ "637.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La náusea"
+author = "Jean-Paul Sartre"
+description = ""
+hasBeenRead = false
+imageNames = [ "638.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Las aventuras de Huckleberry Finn"
+author = "Mark Twain"
+description = ""
+hasBeenRead = false
+imageNames = [ "639.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Jota Erre"
+author = "William Gaddis"
+description = ""
+hasBeenRead = false
+imageNames = [ "640.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Los reconocimientos"
+author = "William Gaddis"
+description = ""
+hasBeenRead = false
+imageNames = [ "641.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Moby Dick"
+author = "Herman Melville"
+description = ""
+hasBeenRead = true
+imageNames = [ "642.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El gran Gatsby"
+author = "Scott Fitzgerald"
+description = ""
+hasBeenRead = true
+imageNames = [ "643.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Fahrenheit 451"
+author = "Ray Bradbury"
+description = "Editorial Minotauro"
+hasBeenRead = true
+imageNames = [ "644.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El conde de Montecristo"
+author = "Alejandro Dumas"
+description = ""
+hasBeenRead = true
+imageNames = [ "645.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Los negros"
+author = "Monteiro Lobato"
+description = "Editorial Vientos del pueblo Fondo de Cultura Económica"
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Libro de desasosiego"
+author = "Fernando Pessoa"
+description = ""
+hasBeenRead = false
+imageNames = [ "647.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Nikolái Gógol"
+author = "Vladimir Nabokov"
+description = ""
+hasBeenRead = false
+imageNames = [ "648.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Donantes de sueño"
+author = "Karen Russell"
+description = ""
+hasBeenRead = true
+imageNames = [ "649.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Contigo a la distancia"
+author = "Carla Guelfenbein"
+description = ""
+hasBeenRead = true
+imageNames = [ "650.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Eminencia"
+author = "Morris West"
+description = ""
+hasBeenRead = true
+imageNames = [ "651.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La trampa"
+author = "Rogelio Guedea"
+description = ""
+hasBeenRead = false
+imageNames = [ "652.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Con tinta sangre"
+author = "Juan Sasturain"
+description = ""
+hasBeenRead = false
+imageNames = [ "653.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Un cuento de navidad"
+author = "654.jpg"
+description = ""
+hasBeenRead = false
+imageNames = [ "654.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Sfumato más azul"
+author = "Elia Barceló"
+description = ""
+hasBeenRead = false
+imageNames = [ "655.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Bola de Sebo"
+author = "Guy de Maupassant"
+description = ""
+hasBeenRead = false
+imageNames = [ "656.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Víctimas de la opulencia y otros relatos"
+author = "Mariano Azuela"
+description = ""
+hasBeenRead = false
+imageNames = [ "657.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = ""
+author = ""
+description = ""
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Los crímenes de la calle morgue"
+author = "Edgar Allan Poe"
+description = ""
+hasBeenRead = false
+imageNames = [ "658.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Sobrevivir los domingos"
+author = "Eduardo Halfon"
+description = ""
+hasBeenRead = false
+imageNames = [ "659.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El complot contra los escipiones"
+author = "Valerio Massimo Manfredi"
+description = ""
+hasBeenRead = false
+imageNames = [ "660.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La confesión de Leontina"
+author = "Lygia Fagundes Telles"
+description = ""
+hasBeenRead = false
+imageNames = [ "661.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Con tinta sangre"
+author = "Juan Sasturain"
+description = "Editorial Vientos del pueblo Fondo de Cultura Económica. Duplicado"
+hasBeenRead = false
+imageNames = [ "" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Víctimas de la opulencia y otros relatos"
+author = "Mariano Azuela"
+description = "Editorial Vientos del pueblo Fondo de Cultura Económica. Duplicado"
+hasBeenRead = false
+imageNames = [ "663.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Gotita"
+author = "Arturo Bolívar Barreto"
+description = "Editorial Vientos del pueblo Fondo de Cultura Económica"
+hasBeenRead = false
+imageNames = [ "664.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "El barcarola"
+author = "Eduardo Rojas Rebolledo"
+description = "Editorial Vientos del pueblo Fondo de Cultura Económica"
+hasBeenRead = false
+imageNames = [ "665.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La cruzada de los niños"
+author = "Marcel Schwob"
+description = "Editorial Vientos del pueblo Fondo de Cultura Económica"
+hasBeenRead = false
+imageNames = [ "666.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La huelga de nueva rosita"
+author = "Mario Gill"
+description = "Editorial Vientos del pueblo Fondo de Cultura Económica"
+hasBeenRead = false
+imageNames = [ "667.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "A la luz del relámpago. Cuba en Octubre"
+author = "Adolfo Gilly"
+description = "Editorial Vientos del pueblo Fondo de Cultura Económica"
+hasBeenRead = false
+imageNames = [ "668.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Relatos e historias de México. Tecuichpo"
+author = "Revista Relatos e historia"
+description = ""
+hasBeenRead = false
+imageNames = [ "669.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Drogas, Fármacos y venenos"
+author = "David Sucunza"
+description = ""
+hasBeenRead = false
+imageNames = [ "670.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Le dedico mi silencio"
+author = "Mario Vargas Llosa"
+description = ""
+hasBeenRead = true
+imageNames = [ "671.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Ulises"
+author = "James Joyce"
+description = "Editorial Lumen"
+hasBeenRead = false
+imageNames = [ "672.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Metrópolis"
+author = "Philip Kerr"
+description = "Editorial RBA"
+hasBeenRead = false
+imageNames = [ "673.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Don Quijote de la Mancha"
+author = "Miguel de Cervantes Saavedra"
+description = "Enriquecida con 109 grabados de Gustavo Doré"
+hasBeenRead = false
+imageNames = [ "674.jpg", "675.jpg", "676.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Historia de la música"
+author = "CODEX"
+description = ""
+hasBeenRead = false
+imageNames = [ "677.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Revista Relatos e historias en México. Iturbide"
+author = "Relatos e historias en México"
+description = ""
+hasBeenRead = false
+imageNames = [ "678.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Porfirio. El origen"
+author = "Enrique Krauze, Fausto Zerón-Medina"
+description = ""
+hasBeenRead = false
+imageNames = [ "679.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Porfirio. El origen"
+author = "Enrique Krauze, Fausto Zerón-Medina"
+description = ""
+hasBeenRead = false
+imageNames = [ "679.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Porfirio. La guerra"
+author = "Enrique Krauze, Fausto Zerón-Medina"
+description = ""
+hasBeenRead = false
+imageNames = [ "680.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "Porfirio. El destierro"
+author = "Enrique Krauze, Fausto Zerón-Medina"
+description = ""
+hasBeenRead = false
+imageNames = [ "681.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "EL señor de los anillos"
+author = "J. R. R. Tolkien"
+description = "Editorial Minotauro, 1977"
+hasBeenRead = true
+imageNames = [ "682.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "La Divina Comedia"
+author = "Dante Alighieri"
+description = "Edición Ángel Chiclana"
+hasBeenRead = false
+imageNames = [ "684.jpg" ]
+addedOn = "2023-11-11"
+
+[[book]]
+title = "James Joyce en 90 minutos"
+author = "Paul Strathern"
+description = ""
+hasBeenRead = false
+imageNames = [ "685.jpg" ]
+addedOn = "2023-11-11"
