@@ -3181,7 +3181,7 @@ addedOn = "2023-11-11"
 
 [[book]]
 title = "Platón, diversos: Apología de Sócrates, Critón, Eutifrón, Ion,  Lisis, Cármides, Hipias Menor, Hipias Mayor, Laques, Protágoras, Gorgias"
-author = ""
+author = "Gredos"
 description = "Editorial Gredos"
 hasBeenRead = false
 imageNames = [ "448.jpg" ]
@@ -4412,14 +4412,6 @@ imageNames = [ "605.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-
-[[book]]
 title = "Agujeros negros"
 author = "Stephen Hawking"
 description = ""
@@ -4433,22 +4425,6 @@ author = "George Orwell"
 description = ""
 hasBeenRead = false
 imageNames = [ "607.jpg" ]
-addedOn = "2023-11-11"
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
 addedOn = "2023-11-11"
 
 [[book]]
@@ -4652,14 +4628,6 @@ imageNames = [ "632.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-
-[[book]]
 title = "Seda"
 author = "Alessandro Baricco"
 description = ""
@@ -4681,14 +4649,6 @@ author = "Alejandro Zambra"
 description = ""
 hasBeenRead = false
 imageNames = [ "635.jpg" ]
-addedOn = "2023-11-11"
-
-[[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
 addedOn = "2023-11-11"
 
 [[book]]
@@ -4776,7 +4736,7 @@ title = "Los negros"
 author = "Monteiro Lobato"
 description = "Editorial Vientos del pueblo Fondo de Cultura Económica"
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "646.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
@@ -4868,14 +4828,6 @@ imageNames = [ "657.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]
-title = ""
-author = ""
-description = ""
-hasBeenRead = false
-imageNames = [ "" ]
-addedOn = "2023-11-11"
-
-[[book]]
 title = "Los crímenes de la calle morgue"
 author = "Edgar Allan Poe"
 description = ""
@@ -4912,7 +4864,7 @@ title = "Con tinta sangre"
 author = "Juan Sasturain"
 description = "Editorial Vientos del pueblo Fondo de Cultura Económica. Duplicado"
 hasBeenRead = false
-imageNames = [ "" ]
+imageNames = [ "662.jpg" ]
 addedOn = "2023-11-11"
 
 [[book]]

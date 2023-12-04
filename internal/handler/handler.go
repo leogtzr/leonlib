@@ -966,7 +966,6 @@ func CreateDBFromFile(db *sql.DB, w http.ResponseWriter) {
 			return
 		}
 
-		// Process images:
 		for _, imageName := range book.ImageNames {
 			imgBytes, err := os.ReadFile(filepath.Join("images", imageName))
 			if err != nil {
@@ -990,7 +989,7 @@ func CreateDBFromFile(db *sql.DB, w http.ResponseWriter) {
 
 	elapsedTime := time.Since(startTime)
 
-	log.Printf("Books loaded in: %s\n", elapsedTime)
+	log.Printf("Books loaded in: %.2f seconds\n", elapsedTime.Seconds())
 
 	json.NewEncoder(w).Encode(map[string]string{"status": "OK"})
 }
